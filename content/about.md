@@ -12,7 +12,7 @@ My name is Jin.
 
 ---
 
-##### 🧠 Currently learning...
+### 🧠 Currently learning...
 
  - Full stack fundamentals via [The Odin Project][top] (now: JavaScript)
 
@@ -21,7 +21,7 @@ My name is Jin.
  - [Atlassian tools][atlassian] (Confluence, Jira, Trello)
 
 
-##### 🔧 Currently working on...
+### 🔧 Currently working on...
 
 - [Static site portfolio][staticpf] (Hugo)
 
