@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jin C.</title>
+    <link>http://localhost:1313/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 Jun 2026 16:58:36 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/index.html</link>
+      <pubDate>Sat, 06 Jun 2026 16:58:36 -0700</pubDate>
+      <guid>http://localhost:1313/about/index.html</guid>
+      <description>Well met! 🛰️✨ My name is Jin.&#xA;My full portfolio is available in Confluence while construction here is underway. Cheers!&#xA;🧠 Currently learning… Full stack fundamentals via The Odin Project (now: JavaScript)&#xA;How to build Hugo static sites&#xA;Atlassian tools (Confluence, Jira, Trello)&#xA;🔧 Currently working on… Static site portfolio (Hugo)</description>
+    </item>
+    <item>
+      <title>Posts</title>
+      <link>http://localhost:1313/posts/index.html</link>
+      <pubDate>Sat, 06 Jun 2026 16:46:47 -0700</pubDate>
+      <guid>http://localhost:1313/posts/index.html</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

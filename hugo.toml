@@ -1,0 +1,6 @@
+baseURL = 'https://redzhift.github.io/'
+locale = 'en-us'
+title = "Jin C."
+decription = "Technical writing and documentation portfolio."
+theme = "relearn"
+
