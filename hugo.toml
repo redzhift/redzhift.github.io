@@ -1,4 +1,4 @@
-baseURL = "[https://redzhift.github.io/](https://redzhift.github.io/)"
+baseURL = "https://redzhift.github.io/"
 locale = "en-us"
 title = "Jin C. | Technical Writer"
 decription = "Documentation and writing portfolio."
