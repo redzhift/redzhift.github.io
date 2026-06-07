@@ -4,6 +4,32 @@ My name is Jin.
 
 **[My full portfolio][pflink]** is available in Confluence while construction here is underway. Cheers!
 
+
+-- 
+
+Project Structure
+```
+[redzhift.github.io/](http://redzhift.github.io/)
+├── .github/
+│   └── workflows/
+│       └── hugo.yml          # GitHub Actions workflow
+├── content/
+│   ├── posts/                # Blog posts
+│   ├── projects/             # Project showcase
+│   ├── [about.md](http://about.md/)             # About page
+│   └── [contact.md](http://contact.md/)           # Contact page
+├── static/                   # Static assets
+│   └── img/
+├── themes/
+│   └── congo/               # Theme (as git submodule)
+├── .gitignore
+├── .gitmodules
+├── hugo.toml                # Hugo configuration
+└── [README.md](http://readme.md/)
+```
+
+
+
 ---
 
 ### 🧠 Currently learning...
