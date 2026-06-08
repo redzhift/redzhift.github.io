@@ -1,0 +1,6 @@
+[submodule "redzhift.github.io/themes/xmin"]
+	path = redzhift.github.io/themes/xmin
+	url = https://github.com/yihui/hugo-xmin.git
+[submodule "redzhift.github.io/themes/m10c"]
+	path = redzhift.github.io/themes/m10c
+	url = https://github.com/vaga/hugo-theme-m10c
