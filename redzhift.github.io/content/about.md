@@ -1,7 +1,7 @@
 +++
-date = '2026-06-08T15:44:21-07:00'
+date = '2026-06-08T16:39:54-07:00'
 draft = false
-title = "Jin's Portfolio"
+title = 'About'
 +++
 
 **Well met!** 🛰️✨ \
