@@ -37,7 +37,7 @@ avatar = "/static/avatar.jpg"
     [params.style]
         darkestColor = "#2d353b"
         darkColor = "#232a2e"
-        lightColor = "#bec5b2"
+        lightColor = "#e8e5d5"
         lightestColor = "#a6b0a0"
         primaryColor = "#9da9a0"
 
