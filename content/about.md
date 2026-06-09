@@ -30,7 +30,7 @@ You can view his ✨**[complete portfolio][pflink]**✨ in Confluence while cons
 
 | **Contact** |                              |
 |-------------|------------------------------|
-| Email    	  | redzhift@tuta.io             |
+| Email    	  | `redzhift@tuta.io`           |
 | LinkedIn 	  | [linkedin.com/in/redzhift][li] |
 | GitHub   	  | [github.com/redzhift][gh]    |
 
