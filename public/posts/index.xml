@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Posts on Jin</title>
+		<link>http://localhost:1313/posts/</link>
+		<description>Recent content in Posts on Jin</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 08 Jun 2026 15:39:18 -0700</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Test Post</title>
+				<link>http://localhost:1313/posts/test-post/</link>
+				<pubDate>Mon, 08 Jun 2026 15:39:18 -0700</pubDate>
+				<guid>http://localhost:1313/posts/test-post/</guid>
+				<description>&lt;p&gt;This is a test post made in Hugo.&lt;/p&gt;&#xA;&lt;p&gt;This text is &lt;strong&gt;bolded&lt;/strong&gt; and this text is &lt;em&gt;emphasized&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Check out my static &lt;a href=&#34;https://redzhift.github.io/&#34;&gt;portfolio site here&lt;/a&gt;.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

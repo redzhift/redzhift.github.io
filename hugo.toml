@@ -1,0 +1,39 @@
+baseURL = "https://redzhift.github.io/"
+locale = "en-us"
+title = "Jin"
+theme = "m10c"
+
+[pagination]
+    pagerSize = 8
+
+[menu]
+    [[menu.main]]
+        identifier = "home"
+        name = "Home"
+        url = "/"
+        weight = 1
+    [[menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about/"
+        weight = 3
+[params]
+    author = "Jin"
+    description = "Technical Writer"
+    menu_item_separator = " - "
+    [[params.social]]
+        icon = "brand-linkedin"
+        name = "LinkedIn"
+        url = "https://linkedin.com/in/redzhift"
+    [[params.social]]
+        icon = "brand-confluence"
+        name = "Confluence"
+        url = "https://redzhift.atlassian.net/wiki/spaces/~jcho/overview"
+    [[params.social]]
+        icon = "brand-github"
+        name = "GitHub"
+        url = "https://github.com/redzhift"
+
+[caches]
+    [[caches.images]]
+        dir = ":cacheDir/images"
