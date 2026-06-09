@@ -1,8 +1,10 @@
 +++
-date = '2026-06-06T16:58:36-07:00'
+date = '2026-06-08T16:58:36-07:00'
 draft = false
 title = 'Change default kernel'
 +++
+
+> Note: This guide was originally published on [GitHub][gh] and is also available in [Confluence][pf].
 
 ## Contents
 
@@ -11,13 +13,17 @@ title = 'Change default kernel'
 3. [Verify and reboot](#3-verify-and-reboot)
 4. [Additional information](#additional-information)
 
+[gh]: https://github.com/redzhift/mywiki/wiki/Change-default-kernel
+[pf]: https://redzhift.atlassian.net/wiki/spaces/~jcho/pages/10649618/Change+default+kernel+at+boot
+
 ## Overview
 
 Your system can have multiple kernels (or installations) of the same Linux distro. This is typically from having different ISO images, such as EOS Mercury, Titan, and Ganymede. The newest kernel is usually booted by default, but can be adjusted to user preference.
 
 To change the default kernel at system boot, you need to identify and adjust the kernel `ids` used in the `boot loader` config file.
 
-> NOTE: \
+> **NOTE**
+>
 > This guide is for systems using the default `systemd-boot` UEFI boot manager in Endeavour OS.
 
 ---
@@ -148,7 +154,8 @@ A list of the installed kernels can also be viewed with the `ls` command. This d
 
 4. In most cases, the `(selected)` kernel is likely the last updated file. In this case, it would be the entry accessed on `Apr 20 18:18`.
 
-> NOTE: \
+> **NOTE**
+>
 > While the `ls -l` does not provide exact details like `bootctl list`, the simplified output is useful as a quick overview of the kernels installed on your system.
 
 ---
