@@ -8,31 +8,42 @@ Jin is a technical writer with 5 years of documentation experience in a tech-sol
 - knowledge bases
 - user training and help content
 - software product guides
-- internal process workflows
+- process documentation
 
 You can view his ✨**[complete portfolio][pflink]**✨ in Confluence while construction on this site is underway. Cheers!
 
 ---
 
-**Current self-learning projects**
+### Current learning projects
 
-- ![Static TOP badge][top] - Fullstack fundamentals
+![TOP badge][top] 
+![HUGO badge][hugo] 
+![EOS badge][eos]
 
-- ![Static Hugo badge][hugo] - Docs-as-code static sites
+### Fun facts
+- Jin has practiced Taekwondo for almost two decades (~13 yrs [Kukkiwon][kukkiwon], ~6 yrs [ITF][itf]).
 
-**Contact**\
-Email: `redzhift@tuta.io` \
-LinkedIn: https://linkedin.com/in/redzhift\
-GitHub: https://github.com/redzhift
+- On rare occasions, he also plays the [bassoon][bssn].
+
+
+| **Contact** |                              |
+|-------------|------------------------------|
+| Email    	  | redzhift@tuta.io             |
+| LinkedIn 	  | [linkedin.com/in/redzhift][li] |
+| GitHub   	  | [github.com/redzhift][gh]    |
 
 ---
 
 <!-- urls-->
 [pflink]: https://redzhift.atlassian.net/wiki/spaces/~jcho/
-[top]: https://img.shields.io/badge/The%20Odin%20Project-%23A9792B?style=flat-square&logo=the%20odin%20project&logoColor=white&logoSize=auto&link=https%3A%2F%2Fwww.theodinproject.com%2F
-[hugo]: https://img.shields.io/badge/Hugo-%23FF4088?style=flat-square&logo=hugo&logoColor=white&logoSize=auto&link=https%3A%2F%2Fgohugo.io%2F
-
-
 [gh]: https://github.com/redzhift
 [li]: https://linkedin.com/in/redzhift
-[tuta]: https://img.shields.io/badge/redzhift%40tuta.io-%23850122?style=flat&logo=tuta&logoColor=white&logoSize=auto
+[kukkiwon]: https://en.wikipedia.org/wiki/Kukkiwon
+[itf]: https://en.wikipedia.org/wiki/International_Taekwon-Do_Federation
+[bssn]: https://en.wikipedia.org/wiki/Bassoon 
+
+
+<!-- badges -->
+[top]: https://img.shields.io/badge/The%20Odin%20Project-%23A9792B?style=for-the-badge&logo=the%20odin%20project&logoColor=white&logoSize=auto&link=https%3A%2F%2Fwww.theodinproject.com%2F
+[hugo]: https://img.shields.io/badge/Hugo-%23FF4088?style=for-the-badge&logo=hugo&logoColor=white&logoSize=auto&link=https%3A%2F%2Fgohugo.io%2F
+[eos]: https://img.shields.io/badge/EndeavourOS-Arch%20Linux-%237F7FFF?style=for-the-badge&logo=endeavouros&logoColor=white&logoSize=auto&labelColor=%237F7FFF&color=%231793D1
