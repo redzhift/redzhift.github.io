@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en-us">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <title>Change default kernel // Jin</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <meta charset="utf-8" />
@@ -8,26 +8,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Jin" />
     <meta name="description" content="" />
-    <link rel="stylesheet" href="/css/main.min.5b1fcc8902588589c4767187402a3c29f8b8d7a6fdef6d9f8f77045bb0d14fee.css" />
+    <link rel="stylesheet" href="/css/main.min.02260ddd95f9555a6cd08969ddbc87a334b44e0ac28bccf2328b314c9e7668c7.css" />
     
 
     
     
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:title" content="Change default kernel">
-	<meta name="twitter:description" content="Contents Find kernel id with bootctl Edit boot loader config Verify and reboot Additional information Overview Your system can have multiple kernels (or installations) of the same Linux distro. This is typically from having different ISO images, such as EOS Mercury, Titan, and Ganymede. The newest kernel is usually booted by default, but can be adjusted to user preference.
-To change the default kernel at system boot, you need to identify and adjust the kernel ids used in the boot loader config file.">
+	<meta name="twitter:description" content="Note: This guide was originally published on GitHub and is also available in Confluence.
+Contents Find kernel id with bootctl Edit boot loader config Verify and reboot Additional information Overview Your system can have multiple kernels (or installations) of the same Linux distro. This is typically from having different ISO images, such as EOS Mercury, Titan, and Ganymede. The newest kernel is usually booted by default, but can be adjusted to user preference.">
 
-    <meta property="og:url" content="http://localhost:1313/endeavour-os-guide/change-default-kernel/">
+    <meta property="og:url" content="https://redzhift.github.io/docs/change-default-kernel/">
 	<meta property="og:site_name" content="Jin">
 	<meta property="og:title" content="Change default kernel">
-	<meta property="og:description" content="Contents Find kernel id with bootctl Edit boot loader config Verify and reboot Additional information Overview Your system can have multiple kernels (or installations) of the same Linux distro. This is typically from having different ISO images, such as EOS Mercury, Titan, and Ganymede. The newest kernel is usually booted by default, but can be adjusted to user preference.
-To change the default kernel at system boot, you need to identify and adjust the kernel ids used in the boot loader config file.">
+	<meta property="og:description" content="Note: This guide was originally published on GitHub and is also available in Confluence.
+Contents Find kernel id with bootctl Edit boot loader config Verify and reboot Additional information Overview Your system can have multiple kernels (or installations) of the same Linux distro. This is typically from having different ISO images, such as EOS Mercury, Titan, and Ganymede. The newest kernel is usually booted by default, but can be adjusted to user preference.">
 	<meta property="og:locale" content="en_us">
 	<meta property="og:type" content="article">
-		<meta property="article:section" content="endeavour-os-guide">
-		<meta property="article:published_time" content="2026-06-06T16:58:36-07:00">
-		<meta property="article:modified_time" content="2026-06-06T16:58:36-07:00">
+		<meta property="article:section" content="docs">
+		<meta property="article:published_time" content="2026-06-08T16:58:36-07:00">
+		<meta property="article:modified_time" content="2026-06-08T16:58:36-07:00">
 
 
   </head>
@@ -39,12 +39,9 @@ To change the default kernel at system boot, you need to identify and adjust the
           <a class="app-header-menu-item" href="/">Home</a>
              - 
           
-          <a class="app-header-menu-item" href="/about/">About</a>
-             - 
-          
           <a class="app-header-menu-item" href="/docs/">Docs</a>
       </nav>
-      <p>Technical Writer</p>
+      <p>Technical Writer, he/him</p>
       <div class="app-header-social">
         
           <a href="https://linkedin.com/in/redzhift" target="_blank" rel="noreferrer noopener me">
@@ -69,7 +66,7 @@ To change the default kernel at system boot, you need to identify and adjust the
       <div class="post-meta">
         <div>
           <svg class="icon icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>calendar</title><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-          Jun 6, 2026
+          Jun 8, 2026
         </div>
         <div>
           <svg class="icon icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>clock</title><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
@@ -78,7 +75,10 @@ To change the default kernel at system boot, you need to identify and adjust the
       </div>
     </header>
     <div class="post-content">
-      <h2 id="contents">Contents</h2>
+      <blockquote>
+<p>Note: This guide was originally published on <a href="https://github.com/redzhift/mywiki/wiki/Change-default-kernel">GitHub</a> and is also available in <a href="https://redzhift.atlassian.net/wiki/spaces/~jcho/pages/10649618/Change+default+kernel+at+boot">Confluence</a>.</p>
+</blockquote>
+<h2 id="contents">Contents</h2>
 <ol>
 <li><a href="#1-find-kernel-id-with-bootctl">Find kernel id with <code>bootctl</code></a></li>
 <li><a href="#2-edit-boot-loader-config">Edit boot loader config</a></li>
@@ -89,8 +89,8 @@ To change the default kernel at system boot, you need to identify and adjust the
 <p>Your system can have multiple kernels (or installations) of the same Linux distro. This is typically from having different ISO images, such as EOS Mercury, Titan, and Ganymede. The newest kernel is usually booted by default, but can be adjusted to user preference.</p>
 <p>To change the default kernel at system boot, you need to identify and adjust the kernel <code>ids</code> used in the <code>boot loader</code> config file.</p>
 <blockquote>
-<p>NOTE: <br>
-This guide is for systems using the default <code>systemd-boot</code> UEFI boot manager in Endeavour OS.</p>
+<p><strong>NOTE</strong></p>
+<p>This guide is for systems using the default <code>systemd-boot</code> UEFI boot manager in Endeavour OS.</p>
 </blockquote>
 <hr>
 <h2 id="1-find-kernel-id-with-bootctl">1. Find kernel <code>id</code> with <code>bootctl</code></h2>
@@ -209,8 +209,8 @@ This guide is for systems using the default <code>systemd-boot</code> UEFI boot 
 </li>
 </ol>
 <blockquote>
-<p>NOTE: <br>
-While the <code>ls -l</code> does not provide exact details like <code>bootctl list</code>, the simplified output is useful as a quick overview of the kernels installed on your system.</p>
+<p><strong>NOTE</strong></p>
+<p>While the <code>ls -l</code> does not provide exact details like <code>bootctl list</code>, the simplified output is useful as a quick overview of the kernels installed on your system.</p>
 </blockquote>
 <hr>
 <h3 id="use-cat-to-view-boot-config">Use <code>cat</code> to view boot config</h3>
