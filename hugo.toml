@@ -2,6 +2,7 @@ baseURL = "https://redzhift.github.io/"
 locale = "en-us"
 title = "Jin"
 theme = "m10c"
+avatar = "/static/avatar.jpg"
 
 [pagination]
     pagerSize = 8
@@ -13,13 +14,13 @@ theme = "m10c"
         url = "/"
         weight = 1
     [[menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about/"
-        weight = 3
+        identifier = "docs"
+        name = "Docs"
+        url = "/docs/"
+        weight = 2
 [params]
     author = "Jin"
-    description = "Technical Writer"
+    description = "Technical Writer, he/him"
     menu_item_separator = " - "
     [[params.social]]
         icon = "brand-linkedin"
@@ -33,6 +34,13 @@ theme = "m10c"
         icon = "brand-github"
         name = "GitHub"
         url = "https://github.com/redzhift"
+    [params.style]
+        darkestColor = "#2d353b"
+        darkColor = "#232a2e"
+        lightColor = "#bec5b2"
+        lightestColor = "#a6b0a0"
+        primaryColor = "#9da9a0"
+
 
 [caches]
     [[caches.images]]
