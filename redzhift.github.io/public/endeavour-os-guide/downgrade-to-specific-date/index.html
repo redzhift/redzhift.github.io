@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en-us">
   <head>
-    <title>About // Jin</title>
+    <title>Downgrade to specific date // Jin</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <meta charset="utf-8" />
     <meta name="generator" content="Hugo 0.162.1">
@@ -14,19 +14,22 @@
     
     
 	<meta name="twitter:card" content="summary">
-	<meta name="twitter:title" content="About">
-	<meta name="twitter:description" content="Well met! 🛰️✨ My name is Jin.
-Please view my complete portfolio here while this Hugo site is being built. Cheers!">
+	<meta name="twitter:title" content="Downgrade to specific date">
+	<meta name="twitter:description" content="Downgrade to specific date The eos-shifttime application can revert system packages to their state at a specified date. This tool is useful for when recent updates cause issues with system or program functionalities.
+Open a terminal window and run eos-shifttime with root permissions.
+Select the date to revert to on the GUI window, then click Revert.">
 
-    <meta property="og:url" content="https://redzhift.github.io/about/">
+    <meta property="og:url" content="https://redzhift.github.io/endeavour-os-guide/downgrade-to-specific-date/">
 	<meta property="og:site_name" content="Jin">
-	<meta property="og:title" content="About">
-	<meta property="og:description" content="Well met! 🛰️✨ My name is Jin.
-Please view my complete portfolio here while this Hugo site is being built. Cheers!">
+	<meta property="og:title" content="Downgrade to specific date">
+	<meta property="og:description" content="Downgrade to specific date The eos-shifttime application can revert system packages to their state at a specified date. This tool is useful for when recent updates cause issues with system or program functionalities.
+Open a terminal window and run eos-shifttime with root permissions.
+Select the date to revert to on the GUI window, then click Revert.">
 	<meta property="og:locale" content="en_us">
 	<meta property="og:type" content="article">
-		<meta property="article:published_time" content="2026-06-08T16:39:54-07:00">
-		<meta property="article:modified_time" content="2026-06-08T16:39:54-07:00">
+		<meta property="article:section" content="endeavour-os-guide">
+		<meta property="article:published_time" content="2026-06-06T16:58:36-07:00">
+		<meta property="article:modified_time" content="2026-06-06T16:58:36-07:00">
 
 
   </head>
@@ -61,12 +64,39 @@ Please view my complete portfolio here while this Hugo site is being built. Chee
       
   <article class="post">
     <header class="post-header">
-      <h1 class ="post-title">About</h1>
+      <h1 class ="post-title">Downgrade to specific date</h1>
+      <div class="post-meta">
+        <div>
+          <svg class="icon icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>calendar</title><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Jun 6, 2026
+        </div>
+        <div>
+          <svg class="icon icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>clock</title><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          1 min read
+        </div>
+      </div>
     </header>
     <div class="post-content">
-      <p><strong>Well met!</strong> 🛰️✨ <br>
-My name is Jin.</p>
-<p>Please view my <strong><a href="https://redzhift.atlassian.net/wiki/spaces/~jcho/">complete portfolio here</a></strong> while this Hugo site is being built. Cheers!</p>
+      <h2 id="downgrade-to-specific-date">Downgrade to specific date</h2>
+<p>The <code>eos-shifttime</code> application can revert system packages to their state at a specified date. This tool is useful for when recent updates cause issues with system or program functionalities.</p>
+<ol>
+<li>
+<p>Open a terminal window and run <code>eos-shifttime</code> with root permissions.</p>
+</li>
+<li>
+<p>Select the date to revert to on the GUI window, then click <strong>Revert</strong>.</p>
+</li>
+</ol>
+<p><img src="../../assets/images/eos-shifttime.png" alt="A GUI window for the eos-shifttime tool displaying a monthly calendar. The selected date is January 2, 2026."></p>
+<ol start="3">
+<li><strong>Reboot</strong> to apply the changes.</li>
+</ol>
+<blockquote>
+<p>IMPORTANT: <br>
+Using <code>eos-shifttime</code> does not revert AUR packages. The downgrade only applies to official Arch packages from the archive repositories.</p>
+</blockquote>
+<p>To set up <code>eos-shifttime</code> to conveniently run from the Welcome app, follow the steps in the <a href="https://gitlab.com/endeavouros-filemirror/welcome/blob/main/Adding-own-commands.md">Adding own commands guide</a>.</p>
+<p>The full <code>eos-shifttime</code> script can also be viewed at <code>/usr/bin/eos-shifttime</code>. It was formerly known as the <a href="https://discovery.endeavouros.com/pacman/easy-downgrade-by-date/2021/06/">&ldquo;Easy Downgrade by Date&rdquo;</a> tool.</p>
 <hr>
 
     </div>

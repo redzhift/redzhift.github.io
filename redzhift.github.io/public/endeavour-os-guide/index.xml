@@ -1,25 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Jin&#39;s Portfolio on Jin</title>
-		<link>https://redzhift.github.io/</link>
-		<description>Recent content in Jin&#39;s Portfolio on Jin</description>
+		<title>Endeavour OS Guides on Jin</title>
+		<link>https://redzhift.github.io/endeavour-os-guide/</link>
+		<description>Recent content in Endeavour OS Guides on Jin</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
 		
 		
 		
 		
-			<lastBuildDate>Mon, 08 Jun 2026 16:39:54 -0700</lastBuildDate>
+			<lastBuildDate>Sat, 06 Jun 2026 16:58:36 -0700</lastBuildDate>
 		
-			<atom:link href="https://redzhift.github.io/index.xml" rel="self" type="application/rss+xml" />
-			<item>
-				<title>About</title>
-				<link>https://redzhift.github.io/about/</link>
-				<pubDate>Mon, 08 Jun 2026 16:39:54 -0700</pubDate>
-				<guid>https://redzhift.github.io/about/</guid>
-				<description>&lt;p&gt;&lt;strong&gt;Well met!&lt;/strong&gt; 🛰️✨ &lt;br&gt;&#xA;My name is Jin.&lt;/p&gt;&#xA;&lt;p&gt;Please view my &lt;strong&gt;&lt;a href=&#34;https://redzhift.atlassian.net/wiki/spaces/~jcho/&#34;&gt;complete portfolio here&lt;/a&gt;&lt;/strong&gt; while this Hugo site is being built. Cheers!&lt;/p&gt;&#xA;&lt;hr&gt;</description>
-			</item>
+			<atom:link href="https://redzhift.github.io/endeavour-os-guide/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Change default kernel</title>
 				<link>https://redzhift.github.io/endeavour-os-guide/change-default-kernel/</link>
