@@ -92,7 +92,7 @@ To change the default kernel at system boot, you need to identify and adjust the
 
 5. Press `Ctrl+X` to finish editing, then press `Y` to save the updated config.
 
-[nano-efi-loader]: ./images/nano-efi-loader-conf.png
+[nano-efi-loader]: /images/nano-efi-loader-conf.png
 
 ---
 
