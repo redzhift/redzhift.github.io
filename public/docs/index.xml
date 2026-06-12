@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Docs on Jin</title>
-		<link>https://redzhift.github.io/docs/</link>
+		<link>http://localhost:1313/docs/</link>
 		<description>Recent content in Docs on Jin</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -12,27 +12,27 @@
 		
 			<lastBuildDate>Mon, 08 Jun 2026 16:58:36 -0700</lastBuildDate>
 		
-			<atom:link href="https://redzhift.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/docs/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Change default kernel</title>
-				<link>https://redzhift.github.io/docs/change-default-kernel/</link>
+				<link>http://localhost:1313/docs/change-default-kernel/</link>
 				<pubDate>Mon, 08 Jun 2026 16:58:36 -0700</pubDate>
-				<guid>https://redzhift.github.io/docs/change-default-kernel/</guid>
+				<guid>http://localhost:1313/docs/change-default-kernel/</guid>
 				<description>&lt;blockquote&gt;&#xA;&lt;p&gt;Note: This guide was originally published on &lt;a href=&#34;https://github.com/redzhift/mywiki/wiki/Change-default-kernel&#34;&gt;GitHub&lt;/a&gt; and is also available in &lt;a href=&#34;https://redzhift.atlassian.net/wiki/spaces/~jcho/pages/10649618/Change+default+kernel+at+boot&#34;&gt;Confluence&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;contents&#34;&gt;Contents&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#1-find-kernel-id-with-bootctl&#34;&gt;Find kernel id with &lt;code&gt;bootctl&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#2-edit-boot-loader-config&#34;&gt;Edit boot loader config&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#3-verify-and-reboot&#34;&gt;Verify and reboot&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#additional-information&#34;&gt;Additional information&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Your system can have multiple kernels (or installations) of the same Linux distro. This is typically from having different ISO images, such as EOS Mercury, Titan, and Ganymede. The newest kernel is usually booted by default, but can be adjusted to user preference.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Downgrade to specific date</title>
-				<link>https://redzhift.github.io/docs/downgrade-to-specific-date/</link>
+				<link>http://localhost:1313/docs/downgrade-to-specific-date/</link>
 				<pubDate>Sat, 06 Jun 2026 16:58:36 -0700</pubDate>
-				<guid>https://redzhift.github.io/docs/downgrade-to-specific-date/</guid>
-				<description>&lt;blockquote&gt;&#xA;&lt;p&gt;Note: This guide was originally published on &lt;a href=&#34;https://github.com/redzhift/mywiki/wiki/Downgrade-to-specific-date&#34;&gt;GitHub&lt;/a&gt; and is also available in &lt;a href=&#34;https://redzhift.atlassian.net/wiki/spaces/~jcho/pages/10321937/Downgrade+package+to+specific+date&#34;&gt;Confluence&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;downgrade-packages-with-eos-shifttime&#34;&gt;Downgrade packages with &lt;code&gt;eos-shifttime&lt;/code&gt;&lt;/h2&gt;&#xA;&lt;p&gt;The &lt;code&gt;eos-shifttime&lt;/code&gt; application can revert system packages to their state at a specified date. This tool is useful for when recent updates cause issues with system or program functionalities.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Open a terminal window and run &lt;code&gt;eos-shifttime&lt;/code&gt; with root permissions.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Select the date to revert to on the GUI window, then click &lt;strong&gt;Revert&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://redzhift.github.io/images/eos-shifttime.png&#34; alt=&#34;A GUI window for the eos-shifttime tool displaying a monthly calendar. The selected date is January 2, 2026.&#34;&gt;&lt;/p&gt;</description>
+				<guid>http://localhost:1313/docs/downgrade-to-specific-date/</guid>
+				<description>&lt;blockquote&gt;&#xA;&lt;p&gt;Note: This guide was originally published on &lt;a href=&#34;https://github.com/redzhift/mywiki/wiki/Downgrade-to-specific-date&#34;&gt;GitHub&lt;/a&gt; and is also available in &lt;a href=&#34;https://redzhift.atlassian.net/wiki/spaces/~jcho/pages/10321937/Downgrade+package+to+specific+date&#34;&gt;Confluence&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;downgrade-packages-with-eos-shifttime&#34;&gt;Downgrade packages with &lt;code&gt;eos-shifttime&lt;/code&gt;&lt;/h2&gt;&#xA;&lt;p&gt;The &lt;code&gt;eos-shifttime&lt;/code&gt; application can revert system packages to their state at a specified date. This tool is useful for when recent updates cause issues with system or program functionalities.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Open a terminal window and run &lt;code&gt;eos-shifttime&lt;/code&gt; with root permissions.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Select the date to revert to on the GUI window, then click &lt;strong&gt;Revert&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/eos-shifttime.png&#34; alt=&#34;A GUI window for the eos-shifttime tool displaying a monthly calendar. The selected date is January 2, 2026.&#34;&gt;&lt;/p&gt;</description>
 			</item>
 			<item>
-				<title>README.md example</title>
-				<link>https://redzhift.github.io/docs/read-me/</link>
+				<title>README.md</title>
+				<link>http://localhost:1313/docs/readme1/</link>
 				<pubDate>Sat, 09 May 2026 16:51:03 -0700</pubDate>
-				<guid>https://redzhift.github.io/docs/read-me/</guid>
-				<description>&lt;blockquote&gt;&#xA;&lt;p&gt;This is the &lt;code&gt;README.md&lt;/code&gt; file used in my &lt;a href=&#34;https://github.com/redzhift/mywiki/&#34;&gt;EndeavourOS mini-wiki GitHub repository&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h1 id=&#34;endeavour-os-basics&#34;&gt;Endeavour OS Basics&lt;/h1&gt;&#xA;&lt;p&gt;This user guide overviews maintenance tasks for systems running &lt;strong&gt;Endeavour OS&lt;/strong&gt;, relevant terminal commands, general user tools, and links to additional resources.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://redzhift.github.io/images/endeavouros-logo-text-dark.svg&#34; alt=&#34;Endeavour OS logo and text for a dark background&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://endeavouros.com/&#34;&gt;Endeavour OS&lt;/a&gt;&lt;/strong&gt; is a resource-light and terminal-centric distro based on &lt;a href=&#34;https://archlinux.org/&#34;&gt;Arch Linux&lt;/a&gt;. Along with the classic Arch installation experience for power users, it also provides an easy installation and setup process via the Calamares tool.&lt;/p&gt;</description>
+				<guid>http://localhost:1313/docs/readme1/</guid>
+				<description>&lt;blockquote&gt;&#xA;&lt;p&gt;This is the &lt;code&gt;README.md&lt;/code&gt; used in my &lt;a href=&#34;https://github.com/redzhift/mywiki/&#34;&gt;EndeavourOS mini-wiki repo&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h1 id=&#34;endeavour-os-basics&#34;&gt;Endeavour OS Basics&lt;/h1&gt;&#xA;&lt;p&gt;This user guide overviews maintenance tasks for systems running &lt;strong&gt;Endeavour OS&lt;/strong&gt;, relevant terminal commands, general user tools, and links to additional resources.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/endeavouros-logo-text-dark.svg&#34; alt=&#34;Endeavour OS logo and text for a dark background&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://endeavouros.com/&#34;&gt;Endeavour OS&lt;/a&gt;&lt;/strong&gt; is a resource-light and terminal-centric distro based on &lt;a href=&#34;https://archlinux.org/&#34;&gt;Arch Linux&lt;/a&gt;. Along with the classic Arch installation experience for power users, it also provides an easy installation and setup process via the Calamares tool.&lt;/p&gt;</description>
 			</item>
 	</channel>
 </rss>
