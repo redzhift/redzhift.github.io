@@ -18,10 +18,21 @@ avatar = "/static/avatar.jpg"
         name = "Docs"
         url = "/docs/"
         weight = 2
+    [[menu.main]]
+        identifier = "articles"
+        name = "Articles"
+        url = "/articles/"
+        weight = 3
+    [[menu.main]]
+        identifier = "other"
+        name = "Other"
+        url = "/other/"
+        weight = 4
+
 [params]
     author = "Jin"
     description = "Technical Writer, he/him"
-    menu_item_separator = " - "
+    menu_item_separator = " / "
     [[params.social]]
         icon = "brand-linkedin"
         name = "LinkedIn"
