@@ -6,7 +6,7 @@ theme = ["hugo-embed-pdf-shortcode", "m10c"]
 enableInlineShortcodes = true
 
 [pagination]
-    pagerSize = 8
+    pagerSize = 4
 
 [menu]
     [[menu.main]]
@@ -24,6 +24,11 @@ enableInlineShortcodes = true
         name = "Articles"
         url = "/articles/"
         weight = 3
+    [[menu.main]]
+        identifier = "tags"
+        name = "Tags"
+        url = "/tags/"
+        weight = 4
 [params]
     author = "Jin"
     description = "Technical Writer, he/him"
