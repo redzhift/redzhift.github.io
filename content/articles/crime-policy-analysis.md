@@ -2,7 +2,7 @@
 date = '2026-06-12T11:48:44-07:00'
 draft = true
 title = 'Crime Policy Analysis [PDF]'
-tag = 'articles'
+tags = ["articles, crime policy, criminal justice, criminology]"
 +++
 
 The U.S. incarcerates more people per capita than any other nation in the world and is unique in its vast disparity between criminal justice practices and constitutional liberal government. 

@@ -2,7 +2,7 @@
 date = '2019-04-11T14:56:52-07:00'
 draft = false
 title = "On facial recognition software: impact on local, state, and personal levels of privacy"
-identifier = 'articles'
+tags = ["articles","facial recognition","privacy rights"]
 +++
 <!-------------------------------------------->
 <!-- image links -->
