@@ -1,8 +1,9 @@
 baseURL = "https://redzhift.github.io/"
 locale = "en-us"
 title = "Jin"
-theme = "m10c"
 avatar = "/static/avatar.jpg"
+theme = ["hugo-embed-pdf-shortcode", "m10c"]
+enableInlineShortcodes = true
 
 [pagination]
     pagerSize = 8
@@ -23,12 +24,6 @@ avatar = "/static/avatar.jpg"
         name = "Articles"
         url = "/articles/"
         weight = 3
-    [[menu.main]]
-        identifier = "other"
-        name = "Other"
-        url = "/other/"
-        weight = 4
-
 [params]
     author = "Jin"
     description = "Technical Writer, he/him"
@@ -56,3 +51,5 @@ avatar = "/static/avatar.jpg"
 [caches]
     [[caches.images]]
         dir = ":cacheDir/images"
+    [[caches.pdfs]]
+        dir = ":cacheDir/pdfs"

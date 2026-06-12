@@ -4,3 +4,9 @@
 [submodule "redzhift.github.io/themes/m10c"]
 	path = redzhift.github.io/themes/m10c
 	url = https://github.com/vaga/hugo-theme-m10c
+[submodule "layouts/shortcodes/hugo-embed-pdf"]
+	path = layouts/shortcodes/hugo-embed-pdf
+	url = https://github.com/anvithks/hugo-embed-pdf-shortcode
+[submodule "themes/hugo-embed-pdf-shortcode"]
+	path = themes/hugo-embed-pdf-shortcode
+	url = https://github.com/anvithks/hugo-embed-pdf-shortcode.git
