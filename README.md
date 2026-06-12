@@ -7,7 +7,7 @@ My [Hugo site][hugo-site] is currently under development.
 
 Cheers!
 
-💿 **Count of friends I've helped convert to Linux in 2026**: `3`
+💿 __Count of friends I've helped convert to Linux in 2026__: `4`
 
 ---
 

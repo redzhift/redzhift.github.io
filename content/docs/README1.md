@@ -1,10 +1,10 @@
 +++
 date = '2026-05-09T16:51:03-07:00'
 draft = false
-title = 'README.md example'
+title = 'README.md'
 +++
 
-> This is the `README.md` file used in my [EndeavourOS mini-wiki GitHub repository][repo].
+> This is the `README.md` used in my [EndeavourOS mini-wiki repo][repo].
 
 [repo]: https://github.com/redzhift/mywiki/
 

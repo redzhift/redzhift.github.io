@@ -1,8 +1,8 @@
 +++
 date = '2019-04-11T14:56:52-07:00'
 draft = false
-title = 'On facial recognition software: impact on local, state, and personal levels of privacy'
-identifier = 'other'
+title = "On facial recognition software: impact on local, state, and personal levels of privacy"
+identifier = 'articles'
 +++
 <!-------------------------------------------->
 <!-- image links -->
@@ -27,6 +27,8 @@ identifier = 'other'
 <!-------------------------------------------->
 
 > _Journalism article originally written in 2019, edited June 2026._
+
+ → __[PDF version available here](../facial-recognition-pdf)__ ←
 
 # Intro
 In the 1960s, the first facial recognition systems were useless on their own. They required a human touch to identify and locate the parts of a face: ears, left and right eyes, nose and mouth.
