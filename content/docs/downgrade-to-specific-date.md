@@ -3,6 +3,7 @@
 date = '2026-06-06T16:58:36-07:00'
 draft = false
 title = 'Downgrade to specific date'
+tags = ["docs","endeavourOS","downgrade","linux","linux maintenance"]
 +++
 
 > Note: This guide was originally published on [GitHub][gh] and is also available in [Confluence][pf].
@@ -13,13 +14,13 @@ The `eos-shifttime` application can revert system packages to their state at a s
 
 1. Open a terminal window and run `eos-shifttime` with root permissions.
 
-2. Select the date to revert to on the GUI window, then click **Revert**.
+2. Select the date to revert to on the GUI window, then click __Revert__.
 
 ![A GUI window for the `eos-shifttime` tool displaying a monthly calendar. The selected date is January 2, 2026.][eos-shifttime]
 
-3. **Reboot** to apply the changes.
+3. __Reboot__ to apply the changes.
 
-> **IMPORTANT**
+> __IMPORTANT__
 > 
 > Using `eos-shifttime` does not revert AUR packages. The downgrade only applies to official Arch packages from the archive repositories.
 
