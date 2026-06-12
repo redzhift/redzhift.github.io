@@ -12,7 +12,7 @@ Jin is a technical writer with 5 years of documentation experience in a tech-sol
 - software product guides
 - process documentation
 
-You can view his ✨**[complete portfolio][pflink]**✨ in Confluence while construction on this site is underway. Cheers!
+You can view his ✨__[complete portfolio][pflink]__✨ in Confluence while construction on this site is underway. Cheers!
 
 ---
 
@@ -28,7 +28,7 @@ You can view his ✨**[complete portfolio][pflink]**✨ in Confluence while cons
 - On rare occasions, he also plays the [bassoon][bssn].
 
 
-| **Contact** |                              |
+| __Contact__ |                              |
 |-------------|------------------------------|
 | Email    	  | `redzhift@tuta.io`           |
 | LinkedIn 	  | [linkedin.com/in/redzhift][li] |
