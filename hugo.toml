@@ -46,11 +46,11 @@ avatar = "/static/avatar.jpg"
         name = "GitHub"
         url = "https://github.com/redzhift"
     [params.style]
-        darkestColor = "#2d353b"
-        darkColor = "#232a2e"
-        lightColor = "#e8e5d5"
-        lightestColor = "#a6b0a0"
-        primaryColor = "#9da9a0"
+        darkestColor = "#242933"
+        darkColor = "#2e3440"
+        lightColor = "#e0e2ea"
+        lightestColor = "#9eafc9"
+        primaryColor = "#818eab"
 
 
 [caches]
