@@ -10,11 +10,12 @@ Jin is a technical writer with 5+ years experience developing:
 - Software product guides
 - Process documentation
 
-🧠 Current self-learning projects:\
+🧠 Current self-learning projects:
+
 ![HUGO badge][hugo] ![EOS badge][eos] ![TOP badge][top]
 
 > __Contact__\
->📧 ` redzhift@tuta.io`  | 👤[LinkedIn][li] | 👾[GitHub][gh] | 🔗[Confluence][confluence]
+>📧 ` redzhift@tuta.io`  | 👤 [LinkedIn][li] | 👾 [GitHub][gh] | 🔗 [Confluence][confluence]
 
 ---
 

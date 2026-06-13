@@ -58,3 +58,5 @@ enableInlineShortcodes = true
         dir = ":cacheDir/images"
     [[caches.pdfs]]
         dir = ":cacheDir/pdfs"
+    [[caches.docs]]
+        dir = ":contentDir/docs"
