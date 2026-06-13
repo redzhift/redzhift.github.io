@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Faqs on Jin</title>
-		<link>https://redzhift.github.io/tags/faqs/</link>
+		<link>http://localhost:1313/tags/faqs/</link>
 		<description>Recent content in Faqs on Jin</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -12,12 +12,12 @@
 		
 			<lastBuildDate>Thu, 12 Mar 2026 18:36:43 -0700</lastBuildDate>
 		
-			<atom:link href="https://redzhift.github.io/tags/faqs/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/tags/faqs/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>EndeavourOS Newbie FAQs</title>
-				<link>https://redzhift.github.io/docs/update-error-faqs/</link>
+				<link>http://localhost:1313/docs/update-error-faqs/</link>
 				<pubDate>Thu, 12 Mar 2026 18:36:43 -0700</pubDate>
-				<guid>https://redzhift.github.io/docs/update-error-faqs/</guid>
+				<guid>http://localhost:1313/docs/update-error-faqs/</guid>
 				<description>&lt;h2 id=&#34;why-am-i-getting-errors-when-i-try-to-update&#34;&gt;Why am I getting errors when I try to update?&lt;/h2&gt;&#xA;&lt;p&gt;Some update errors are caused by issues with mirrors and mirrorlist configurations. These issues can be fixed by re-ranking mirrors.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Important!&lt;/strong&gt;&lt;br&gt;&#xA;Outdated package databases will cause errors when &lt;code&gt;pacman&lt;/code&gt; tries to retrieve the latest package files. This can be fixed through regular mirror maintenance.&lt;/p&gt;&#xA;&lt;p&gt;See: [Update mirrors guide][Update-mirrors]&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;can-i-undo-or-revert-updates&#34;&gt;Can I undo or revert updates?&lt;/h2&gt;&#xA;&lt;p&gt;The &lt;code&gt;eos-shifttime&lt;/code&gt; tool allows users to revert system packages to versions of specified dates.&lt;/p&gt;</description>
 			</item>
 	</channel>

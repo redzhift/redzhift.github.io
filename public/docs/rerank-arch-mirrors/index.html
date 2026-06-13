@@ -18,9 +18,9 @@
 	<meta name="twitter:description" content="To rerank EndeavourOS mirrors, follow this guide.
 Overview Common issues: outdated mirrors Mirrors are servers located around the world that store copies of software packages.
 When upgrading packages, your EndeavourOS system utilizes multiple mirrors, which are noted in a mirrorlist.
-A well-maintained mirrorlist ensures the pacman package manager can access the most up-to-date package files when performing system updates. Outdated mirrors can prevent pacman from updating applications, including core packages.
+A well-maintained mirrorlist ensures the pacman package manager can access up-to-date package files when performing system updates. Outdated mirrors can prevent pacman from updating core packages.
 Important!
-It is recommended to re-rank mirrors at least every 1-2 months.">
+It is recommended to rerank mirrors at least every 1-2 months for an up-to-date mirrorlist.">
 
     <meta property="og:url" content="https://redzhift.github.io/docs/rerank-arch-mirrors/">
 	<meta property="og:site_name" content="Jin">
@@ -28,9 +28,9 @@ It is recommended to re-rank mirrors at least every 1-2 months.">
 	<meta property="og:description" content="To rerank EndeavourOS mirrors, follow this guide.
 Overview Common issues: outdated mirrors Mirrors are servers located around the world that store copies of software packages.
 When upgrading packages, your EndeavourOS system utilizes multiple mirrors, which are noted in a mirrorlist.
-A well-maintained mirrorlist ensures the pacman package manager can access the most up-to-date package files when performing system updates. Outdated mirrors can prevent pacman from updating applications, including core packages.
+A well-maintained mirrorlist ensures the pacman package manager can access up-to-date package files when performing system updates. Outdated mirrors can prevent pacman from updating core packages.
 Important!
-It is recommended to re-rank mirrors at least every 1-2 months.">
+It is recommended to rerank mirrors at least every 1-2 months for an up-to-date mirrorlist.">
 	<meta property="og:locale" content="en_us">
 	<meta property="og:type" content="article">
 		<meta property="article:section" content="docs">
@@ -89,7 +89,7 @@ It is recommended to re-rank mirrors at least every 1-2 months.">
         </div>
         <div>
           <svg class="icon icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>clock</title><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-          3 min read
+          2 min read
         </div>
         <div>
           <svg class="icon icon-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>tag</title><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
@@ -109,20 +109,19 @@ It is recommended to re-rank mirrors at least every 1-2 months.">
 </ul>
 <p><strong>Mirrors</strong> are servers located around the world that store copies of software packages.</p>
 <p>When upgrading packages, your EndeavourOS system utilizes multiple mirrors, which are noted in a <code>mirrorlist</code>.</p>
-<p>A well-maintained <code>mirrorlist</code> ensures the <code>pacman</code> package manager can access the most up-to-date package files when performing system updates. Outdated mirrors can prevent <code>pacman</code> from updating applications, including <strong>core packages</strong>.</p>
+<p>A well-maintained <code>mirrorlist</code> ensures the <code>pacman</code> package manager can access up-to-date package files when performing system updates. Outdated mirrors can prevent <code>pacman</code> from updating <strong>core packages</strong>.</p>
 <blockquote>
 <p><strong>Important!</strong><br>
-It is recommended to re-rank mirrors at least every 1-2 months.</p>
+It is recommended to rerank mirrors at least every 1-2 months for an up-to-date mirrorlist.</p>
 </blockquote>
-<h3 id="re-rank-arch-mirrors">Re-rank Arch mirrors</h3>
-<p>Arch packages are updated on a frequent and unscheduled rolling-release basis. Your Arch <code>mirrorlist</code> configuration should be updated regularly so your system can access up-to-date package databases.</p>
+<h3 id="update-mirrorlist">Update mirrorlist</h3>
 <ol>
 <li>
-<p>Update the Arch <code>mirrorlist</code> by running the command:</p>
+<p>Update the Arch <code>mirrorlist</code> by running:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ reflector-simple
 </span></span></code></pre></div></li>
 <li>
-<p>By default, <code>reflector-simple</code> selects the <strong>20 fastest</strong> mirrors based on your set location. You can adjust these preferences in the GUI tool.</p>
+<p>By default, <code>reflector-simple</code> selects the <strong>20 fastest</strong> mirrors based on your location. You can adjust these preferences in the GUI tool.</p>
 <p><img src="/images/reflector-simple-1.png" alt="A GUI Preference menu that displays after running reflector-simple, displaying settings such as region, filter by options, and amount."></p>
 </li>
 </ol>
@@ -150,41 +149,28 @@ Do not run <code>yay</code> with root permissions (<code>sudo</code>), or it may
 <h2 id="common-issues-outdated-mirrors">Common issues: outdated mirrors</h2>
 <p>When <code>pacman</code> receives a command to update packages and refresh the system, it attempts to connect to the package databases stored in mirrors. Outdated mirrors can prevent <code>pacman</code> from updating your system to the newest packages.</p>
 <p>Common error or warning messages include:</p>
-<table>
-	<thead>
-			<tr>
-					<th>Terminal message</th>
-					<th>Issue</th>
-			</tr>
-	</thead>
-	<tbody>
-			<tr>
-					<td><code>GPGME error: No data</code></td>
-					<td>Files from the package database are outdated or corrupt</td>
-			</tr>
-			<tr>
-					<td><code>failed to synchronize all databases (invalid or corrupted database (PGP signature))</code></td>
-					<td>Outdated mirrors - not in sync with package databases</td>
-			</tr>
-			<tr>
-					<td><code>failed retrieving file 'package-version.pkg' from arch.mirror.mx : The requested URL returned error: 404</code></td>
-					<td>Mirror cannot be reached, or package files are not available</td>
-			</tr>
-			<tr>
-					<td><code>failed to commit transaction (failed to retrieve some files)</code></td>
-					<td>Mirror cannot be reached, or package files are not available</td>
-			</tr>
-			<tr>
-					<td><code>warning: too many errors from arch.mirror.mx, skipping for the remainder of this transaction</code></td>
-					<td>Slow/unstable mirror connection (timed out) or network issues</td>
-			</tr>
-	</tbody>
-</table>
-<p>If <code>pacman</code> runs into these errors during a system update, be sure to <a href="#re-rank-mirrors">re-rank mirrors</a> before another update attempt.</p>
+<ul>
+<li>
+<p><code>GPGME error: No data</code> - Files from the package database are outdated or corrupt</p>
+</li>
+<li>
+<p><code>failed to synchronize all databases (invalid or corrupted database (PGP signature))</code> - Outdated mirrors - not in sync with package databases</p>
+</li>
+<li>
+<p><code>failed retrieving file 'package-version.pkg' from arch.mirror.mx : The requested URL returned error: 404</code> -  Mirror cannot be reached, or package files are not available</p>
+</li>
+<li>
+<p><code>failed to commit transaction (failed to retrieve some files)</code> - Mirror cannot be reached, or package files are not available</p>
+</li>
+<li>
+<p><code>too many errors from arch.mirror.mx, skipping for the remainder of this transaction</code> - Slow/unstable mirror connection (timed out) or network issues</p>
+</li>
+</ul>
+<p>If <code>pacman</code> runs into these errors during a system update, be sure to <a href="#update-mirrorlist">rerank mirrors</a> before another update attempt.</p>
 <blockquote>
-<p>[!WARNING]<br>
-If these errors/warnings persist despite re-reranking mirrors, this may indicate <strong>outdated AUR packages</strong> and require updating with <code>yay</code>.</p>
-<p>See: <a href="../system-maintenance/system-updates-with-pacman-and-yay.md#yay">System updates with <code>pacman</code> and <code>yay</code></a></p>
+<p><strong>Note</strong><br>
+If these errors/warnings persist despite rereranking mirrors, this may indicate <strong>outdated packages</strong> and require updating with <code>pacman</code> and <code>yay</code>.</p>
+<p>See: [Update with <code>pacman</code>][pacman]</p>
 </blockquote>
 <hr>
 
