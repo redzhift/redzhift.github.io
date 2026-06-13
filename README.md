@@ -1,9 +1,7 @@
 ## Well met! 🛰️✨ 
 
 My name is Jin. \
-You can view my ✨[complete documentation portfolio][pflink]✨ in Confluence. 
-
-My [Hugo site][hugo-site] is currently under development.
+I'm currently working on polishing up my [Hugo site][hugo-site].
 
 Cheers!
 
