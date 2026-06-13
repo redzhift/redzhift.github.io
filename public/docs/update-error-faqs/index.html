@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>EndeavourOS Newbie FAQs // Jin</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.163.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Jin" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.9269683e315c4b10a95a2d0199b9ff8afe881ab4af397c8d1b93be4c012f83a5.css" />
+    
+
+    
+    
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="EndeavourOS Newbie FAQs">
+	<meta name="twitter:description" content="Why am I getting errors when I try to update? Some update errors are caused by issues with mirrors and mirrorlist configurations. These issues can be fixed by re-ranking mirrors.
+Important!
+Outdated package databases will cause errors when pacman tries to retrieve the latest package files. This can be fixed through regular mirror maintenance.
+See: [Update mirrors guide][Update-mirrors]
+Can I undo or revert updates? The eos-shifttime tool allows users to revert system packages to versions of specified dates.">
+
+    <meta property="og:url" content="https://redzhift.github.io/docs/update-error-faqs/">
+	<meta property="og:site_name" content="Jin">
+	<meta property="og:title" content="EndeavourOS Newbie FAQs">
+	<meta property="og:description" content="Why am I getting errors when I try to update? Some update errors are caused by issues with mirrors and mirrorlist configurations. These issues can be fixed by re-ranking mirrors.
+Important!
+Outdated package databases will cause errors when pacman tries to retrieve the latest package files. This can be fixed through regular mirror maintenance.
+See: [Update mirrors guide][Update-mirrors]
+Can I undo or revert updates? The eos-shifttime tool allows users to revert system packages to versions of specified dates.">
+	<meta property="og:locale" content="en_us">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="docs">
+		<meta property="article:published_time" content="2026-03-12T18:36:43-07:00">
+		<meta property="article:modified_time" content="2026-03-12T18:36:43-07:00">
+		<meta property="article:tag" content="Docs">
+		<meta property="article:tag" content="Userguide">
+		<meta property="article:tag" content="EndeavourOS">
+		<meta property="article:tag" content="Linux">
+		<meta property="article:tag" content="Pacman">
+		<meta property="article:tag" content="Mirrors">
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="/"><img class="app-header-avatar" src="/avatar.jpg" alt="Jin" /></a>
+      <span class="app-header-title">Jin</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">Home</a>
+             / 
+          
+          <a class="app-header-menu-item" href="/docs/">Docs</a>
+             / 
+          
+          <a class="app-header-menu-item" href="/articles/">Articles</a>
+             / 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+      </nav>
+      <p>Technical Writer, he/him</p>
+      <div class="app-header-social">
+        
+          <a href="https://linkedin.com/in/redzhift" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-linkedin" viewBox="0 0 24 24" fill="currentColor"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        
+          <a href="https://redzhift.atlassian.net/wiki/spaces/~jcho/overview" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-confluence" viewBox="0 0 24 24" fill="currentColor"><title>Confluence</title><path d="M.87 18.257c-.248.382-.53.875-.763 1.245a.764.764 0 0 0 .255 1.04l4.965 3.054a.764.764 0 0 0 1.058-.26c.199-.332.454-.763.733-1.221 1.967-3.247 3.945-2.853 7.508-1.146l4.957 2.337a.764.764 0 0 0 1.028-.382l2.364-5.346a.764.764 0 0 0-.382-1 599.851 599.851 0 0 1-4.965-2.361C10.911 10.97 5.224 11.185.87 18.257zM23.131 5.743c.249-.405.531-.875.764-1.25a.764.764 0 0 0-.256-1.034L18.675.404a.764.764 0 0 0-1.058.26c-.195.335-.451.763-.734 1.225-1.966 3.246-3.945 2.85-7.508 1.146L4.437.694a.764.764 0 0 0-1.027.382L1.046 6.422a.764.764 0 0 0 .382 1c1.039.49 3.105 1.467 4.965 2.361 6.698 3.246 12.392 3.029 16.738-4.04z"/></svg>
+          </a>
+        
+          <a href="https://github.com/redzhift" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-github" viewBox="0 0 24 24" fill="currentColor"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">EndeavourOS Newbie FAQs</h1>
+      <div class="post-meta">
+        <div>
+          <svg class="icon icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>calendar</title><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Mar 12, 2026
+        </div>
+        <div>
+          <svg class="icon icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>clock</title><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          4 min read
+        </div>
+        <div>
+          <svg class="icon icon-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>tag</title><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+              <a class="tag" href="/tags/docs/">Docs</a>
+              <a class="tag" href="/tags/userguide/">Userguide</a>
+              <a class="tag" href="/tags/endeavouros/">EndeavourOS</a>
+              <a class="tag" href="/tags/linux/">Linux</a>
+              <a class="tag" href="/tags/pacman/">Pacman</a>
+              <a class="tag" href="/tags/mirrors/">Mirrors</a>
+              <a class="tag" href="/tags/faqs/">Faqs</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h2 id="why-am-i-getting-errors-when-i-try-to-update">Why am I getting errors when I try to update?</h2>
+<p>Some update errors are caused by issues with mirrors and mirrorlist configurations. These issues can be fixed by re-ranking mirrors.</p>
+<blockquote>
+<p><strong>Important!</strong><br>
+Outdated package databases will cause errors when <code>pacman</code> tries to retrieve the latest package files. This can be fixed through regular mirror maintenance.</p>
+<p>See: [Update mirrors guide][Update-mirrors]</p>
+</blockquote>
+<hr>
+<h2 id="can-i-undo-or-revert-updates">Can I undo or revert updates?</h2>
+<p>The <code>eos-shifttime</code> tool allows users to revert system packages to versions of specified dates.</p>
+<p>To learn more about using <code>eos-shifttime</code>, refer to:</p>
+<ul>
+<li><a href="/docs/downgrade-to-specific-date/">User guide: Downgrade to a specific date</a></li>
+</ul>
+<hr>
+<h2 id="error-failed-to-commit-transaction-conflicting-files">Error: failed to commit transaction (conflicting files)</h2>
+<p>Running a <code>sudo pacman -Syu</code> update may fail and display the following errors:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> error: failed to commit transaction <span style="color:#f92672">(</span>conflicting files<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span> &lt;example&gt;: /example exists in filesystem <span style="color:#f92672">(</span>owned by filesystem<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span> &lt;example&gt;: /lib/systemd/system/example.service exists in filesystem
+</span></span></code></pre></div><p>These issues can be resolved with manual intervention. Uninstall and remove the package from the system, then reinstall/update with these two commands:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> $ sudo pacman -Rdd &lt;pkg&gt;
+</span></span><span style="display:flex;"><span> $ sudo pacman -Syu &lt;pkg&gt;
+</span></span></code></pre></div><hr>
+<h2 id="what-is-the-difference-between-pacman--syu-and-pacman--syyu">What is the difference between <code>pacman -Syu</code> and <code>pacman -Syyu</code>?</h2>
+<p>The <code>-Syyu</code> option forces a refresh of all package databases, even if they appear to be up to date. This may sometimes be helpful when switching from broken to working mirrors.</p>
+<p>However, it is not necessary to use &ldquo;double&rdquo; <code>pacman</code> commands in most circumstances. In the interest of keeping mirror bandwidth free for other users, they should only be used when necessary.</p>
+<blockquote>
+<p><strong>Note</strong><br>
+See: <a href="https://wiki.archlinux.org/title/Mirrors#Force_pacman_to_refresh_the_package_lists">Force <code>pacman</code> to refresh the package lists</a></p>
+</blockquote>
+<hr>
+<h2 id="how-does-pacman-use-mirrors">How does <code>pacman</code> use mirrors?</h2>
+<p>When the user enters <code>sudo pacman -Syu</code> into a terminal, the <code>pacman</code> package manager begins the process to sync (<code>-S</code>), refresh (<code>-y</code>), and update (<code>-u</code>) the system.</p>
+<p>First, <code>pacman</code> attempts to connect and sync to Arch and EOS package databases. If successful:</p>
+<ol>
+<li>
+<p><code>pacman</code> searches for and detects new versions of packages/dependencies that are installed on your system.</p>
+</li>
+<li>
+<p>The terminal outputs a list of the updateable packages with a comparison of the old and new versions.</p>
+</li>
+<li>
+<p><code>pacman</code> waits for user permission to proceed with the update. If proceeding, user is required to enter the system&rsquo;s root password.</p>
+</li>
+<li>
+<p>After initiating the package(s) update, <code>pacman</code> retrieves new package files from the mirror.</p>
+</li>
+<li>
+<p>If <code>pacman</code> successfully retrieves package files, it installs them then deletes old versions.</p>
+</li>
+</ol>
+<hr>
+<h2 id="how-do-i-use-reflector-instead-of-reflector-simple">How do I use <code>reflector</code> instead of <code>reflector-simple</code>?</h2>
+<p>Endeavour OS uses <code>reflector-simple</code>, which provides a GUI tool for <code>reflector</code> options. The same effect can be achieved with just a terminal command.</p>
+<p>To update to and save the <strong>latest 20 mirrors</strong> sorted by <strong>speed</strong>, enter:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ reflector --latest <span style="color:#ae81ff">20</span> --sort rate --save /etc/pacman.d/mirrorlist
+</span></span></code></pre></div><p>This process will:</p>
+<ol>
+<li>
+<p>Retrieve the latest mirrorlist from the <a href="https://wiki.archlinux.org/title/Mirrors">Arch mirror status page</a>.</p>
+</li>
+<li>
+<p>Filter/rank the mirrors by speed (until it has found 20, or a user-specified amount).</p>
+</li>
+<li>
+<p>Saves and overwrites the current <code>/etc/pacman.d/mirrorlist</code> config file.</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>Note</strong><br>
+Refer to the <a href="https://man.archlinux.org/man/reflector.1"><code>reflector manpage</code></a> documentation for usage details.</p>
+</blockquote>
+<hr>
+<h2 id="are-there-mirror-management-alternatives">Are there mirror management alternatives?</h2>
+<p>Popular alternatives to mirror management are listed on the <a href="https://wiki.archlinux.org/title/Mirrors">Arch mirrors wiki</a>. Some programs can automate mirror management when configured properly.</p>
+<p>One such example is <code>ghostmirror</code>, which:</p>
+<ol>
+<li>
+<p>Checks that mirrors are <strong>synchronized</strong>.</p>
+</li>
+<li>
+<p>Performs <strong>download speed tests</strong> on top of the usual ping test.</p>
+</li>
+<li>
+<p>Automates the process via <code>systemd</code>.</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>Note</strong><br>
+See: <a href="https://aur.archlinux.org/packages/ghostmirror/"><code>ghostmirror</code> (AUR)</a>, <a href="https://wiki.archlinux.org/title/Ghostmirror"><code>ghostmirror</code> wiki</a></p>
+</blockquote>
+<hr>
+<h2 id="what-is-the-aur">What is the AUR?</h2>
+<p>The <strong>Arch User Repository</strong>, also known as <strong>AUR</strong>, is a large library of community user-produced packages for Arch Linux.</p>
+<p>Popular and well-maintained packages are voted on by the community to include in the official Arch <em>extra</em> repository.</p>
+<hr>
+<h2 id="how-do-i-download-and-install-aur-packages">How do I download and install AUR packages?</h2>
+<p>To download and install an AUR package:</p>
+<ol>
+<li>
+<p>Clone the <code>git</code> repository listed on the package&rsquo;s AUR page:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git clone https://aur.archlinux.org/&lt;pkg&gt;.git
+</span></span></code></pre></div></li>
+<li>
+<p>Change into the package directory:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cd &lt;pkg&gt;
+</span></span></code></pre></div></li>
+<li>
+<p>Build and install the package with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> makepkg -si
+</span></span><span style="display:flex;"><span> <span style="color:#75715e"># or</span>
+</span></span><span style="display:flex;"><span> pacman -U pkg-vers-1.0.1.pkg.tar.zst
+</span></span></code></pre></div></li>
+</ol>
+<blockquote>
+<p><strong>Warning!</strong><br>
+AUR packages are community-maintained and <strong>unofficial</strong>. BEFORE installation, it is highly recommended to check build files (i.e. <code>PKGBUILD</code>) for any malicious code.</p>
+<p>You may unintentionally install malware if you do not verify suspicious files or package dependencies!</p>
+</blockquote>
+<hr>
+<h3 id="what-is-gpgme">What is GPGME?</h3>
+<p><strong>GnuPG</strong> and <strong>GPGME</strong> are two tools are used to safely encrypt/decrypt the package files that <code>pacman</code> retrieves from package databases. If mirrors cannot access package databases (or are out of sync), you may see <code>GPGME</code> or <code>PGP</code> related errors.</p>
+<ul>
+<li>
+<p>The <a href="https://www.gnupg.org/software/gpgme/index.html">GPGME</a> (or GnuPG Made Easy) library provides applications easier access to GnuPG functions.</p>
+</li>
+<li>
+<p><a href="https://www.gnupg.org/documentation/index.html">GnuPG</a> is a command-line interface (CLI) tool and universal crypto engine. It is often used as the <strong>crypto backend</strong> for applications.</p>
+</li>
+</ul>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

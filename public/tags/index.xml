@@ -10,42 +10,42 @@
 		
 		
 		
-			<lastBuildDate>Fri, 12 Jun 2026 11:48:44 -0700</lastBuildDate>
+			<lastBuildDate>Fri, 12 Jun 2026 18:23:33 -0700</lastBuildDate>
 		
 			<atom:link href="https://redzhift.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
 			<item>
-				<title>Articles</title>
-				<link>https://redzhift.github.io/tags/articles/</link>
-				<pubDate>Fri, 12 Jun 2026 11:48:44 -0700</pubDate>
-				<guid>https://redzhift.github.io/tags/articles/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Crime Policy</title>
-				<link>https://redzhift.github.io/tags/crime-policy/</link>
-				<pubDate>Fri, 12 Jun 2026 11:48:44 -0700</pubDate>
-				<guid>https://redzhift.github.io/tags/crime-policy/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Criminal Justice</title>
-				<link>https://redzhift.github.io/tags/criminal-justice/</link>
-				<pubDate>Fri, 12 Jun 2026 11:48:44 -0700</pubDate>
-				<guid>https://redzhift.github.io/tags/criminal-justice/</guid>
-				<description></description>
-			</item>
-			<item>
 				<title>Docs</title>
 				<link>https://redzhift.github.io/tags/docs/</link>
-				<pubDate>Mon, 08 Jun 2026 16:58:36 -0700</pubDate>
+				<pubDate>Fri, 12 Jun 2026 18:23:33 -0700</pubDate>
 				<guid>https://redzhift.github.io/tags/docs/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>EndeavourOS</title>
 				<link>https://redzhift.github.io/tags/endeavouros/</link>
-				<pubDate>Mon, 08 Jun 2026 16:58:36 -0700</pubDate>
+				<pubDate>Fri, 12 Jun 2026 18:23:33 -0700</pubDate>
 				<guid>https://redzhift.github.io/tags/endeavouros/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Linux</title>
+				<link>https://redzhift.github.io/tags/linux/</link>
+				<pubDate>Fri, 12 Jun 2026 18:23:33 -0700</pubDate>
+				<guid>https://redzhift.github.io/tags/linux/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Mirrors</title>
+				<link>https://redzhift.github.io/tags/mirrors/</link>
+				<pubDate>Fri, 12 Jun 2026 18:23:33 -0700</pubDate>
+				<guid>https://redzhift.github.io/tags/mirrors/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Userguide</title>
+				<link>https://redzhift.github.io/tags/userguide/</link>
+				<pubDate>Fri, 12 Jun 2026 18:23:33 -0700</pubDate>
+				<guid>https://redzhift.github.io/tags/userguide/</guid>
 				<description></description>
 			</item>
 			<item>
@@ -56,10 +56,10 @@
 				<description></description>
 			</item>
 			<item>
-				<title>Linux</title>
-				<link>https://redzhift.github.io/tags/linux/</link>
+				<title>Userguides</title>
+				<link>https://redzhift.github.io/tags/userguides/</link>
 				<pubDate>Mon, 08 Jun 2026 16:58:36 -0700</pubDate>
-				<guid>https://redzhift.github.io/tags/linux/</guid>
+				<guid>https://redzhift.github.io/tags/userguides/</guid>
 				<description></description>
 			</item>
 			<item>
@@ -70,10 +70,38 @@
 				<description></description>
 			</item>
 			<item>
-				<title>Linux Maintenance</title>
-				<link>https://redzhift.github.io/tags/linux-maintenance/</link>
-				<pubDate>Sat, 06 Jun 2026 16:58:36 -0700</pubDate>
-				<guid>https://redzhift.github.io/tags/linux-maintenance/</guid>
+				<title>Pacman</title>
+				<link>https://redzhift.github.io/tags/pacman/</link>
+				<pubDate>Tue, 12 May 2026 14:09:31 -0700</pubDate>
+				<guid>https://redzhift.github.io/tags/pacman/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Faqs</title>
+				<link>https://redzhift.github.io/tags/faqs/</link>
+				<pubDate>Thu, 12 Mar 2026 18:36:43 -0700</pubDate>
+				<guid>https://redzhift.github.io/tags/faqs/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Articles</title>
+				<link>https://redzhift.github.io/tags/articles/</link>
+				<pubDate>Sun, 12 Jun 2022 11:48:44 -0700</pubDate>
+				<guid>https://redzhift.github.io/tags/articles/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Crime Policy</title>
+				<link>https://redzhift.github.io/tags/crime-policy/</link>
+				<pubDate>Sun, 12 Jun 2022 11:48:44 -0700</pubDate>
+				<guid>https://redzhift.github.io/tags/crime-policy/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Criminal Justice</title>
+				<link>https://redzhift.github.io/tags/criminal-justice/</link>
+				<pubDate>Sun, 12 Jun 2022 11:48:44 -0700</pubDate>
+				<guid>https://redzhift.github.io/tags/criminal-justice/</guid>
 				<description></description>
 			</item>
 			<item>
