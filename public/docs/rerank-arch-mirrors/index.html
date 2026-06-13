@@ -154,23 +154,23 @@ Do not run <code>yay</code> with root permissions (<code>sudo</code>), or it may
 <p><code>GPGME error: No data</code> - Files from the package database are outdated or corrupt</p>
 </li>
 <li>
-<p><code>failed to synchronize all databases (invalid or corrupted database (PGP signature))</code> - Outdated mirrors - not in sync with package databases</p>
+<p><code>failed to synchronize all databases</code> - Outdated mirrors - not in sync with package databases</p>
 </li>
 <li>
-<p><code>failed retrieving file 'package-version.pkg' from arch.mirror.mx : The requested URL returned error: 404</code> -  Mirror cannot be reached, or package files are not available</p>
+<p><code>The requested URL returned error: 404</code> -  Mirror cannot be reached</p>
 </li>
 <li>
-<p><code>failed to commit transaction (failed to retrieve some files)</code> - Mirror cannot be reached, or package files are not available</p>
+<p><code>failed to commit transaction</code> - Mirror cannot be reached, or package files are not available</p>
 </li>
 <li>
-<p><code>too many errors from arch.mirror.mx, skipping for the remainder of this transaction</code> - Slow/unstable mirror connection (timed out) or network issues</p>
+<p><code>too many errors from arch.mirror.mx</code> - Slow/unstable mirror connection (timed out) or network issues</p>
 </li>
 </ul>
 <p>If <code>pacman</code> runs into these errors during a system update, be sure to <a href="#update-mirrorlist">rerank mirrors</a> before another update attempt.</p>
 <blockquote>
 <p><strong>Note</strong><br>
 If these errors/warnings persist despite rereranking mirrors, this may indicate <strong>outdated packages</strong> and require updating with <code>pacman</code> and <code>yay</code>.</p>
-<p>See: [Update with <code>pacman</code>][pacman]</p>
+<p>See: <strong><a href="/docs/update-pacman/">Update with <code>pacman</code> guide</a></strong></p>
 </blockquote>
 <hr>
 
