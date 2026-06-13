@@ -75,13 +75,11 @@ According to [Symantec][symantec], known for their internet and computer securit
 
 > 🧠 By observing hundreds of thousands of different faces, these neural nets learn to:
 >
-> - Recognize certain areas of the face, such as the two eyes, nose and month. 
+> - Recognize certain areas of the face, such as the two eyes, ears, nose, and lips. 
 >
 > - Take the color of eyes, hair, and skin into account. 
 
-After sufficient training, the software can make judgements based on the calculations and measurements built through the learning process.
-
-These datasets, however, tend to be biased towards a largely Caucasian facial model. 
+After sufficient training, the software can make judgements based on the calculations and measurements built through the learning process. These datasets, however, tend to be biased towards a largely Caucasian facial model. 
 
 ### The result of biases
 
