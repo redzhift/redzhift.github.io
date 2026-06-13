@@ -64,13 +64,13 @@ Common error or warning messages include:
 
 - `GPGME error: No data` - Files from the package database are outdated or corrupt
 
-- `failed to synchronize all databases (invalid or corrupted database (PGP signature))` - Outdated mirrors - not in sync with package databases
+- `failed to synchronize all databases` - Outdated mirrors - not in sync with package databases
 
-- `failed retrieving file 'package-version.pkg' from arch.mirror.mx : The requested URL returned error: 404` -  Mirror cannot be reached, or package files are not available
+- `The requested URL returned error: 404` -  Mirror cannot be reached
 
-- `failed to commit transaction (failed to retrieve some files)` - Mirror cannot be reached, or package files are not available 
+- `failed to commit transaction` - Mirror cannot be reached, or package files are not available 
 
-- `too many errors from arch.mirror.mx, skipping for the remainder of this transaction` - Slow/unstable mirror connection (timed out) or network issues 
+- `too many errors from arch.mirror.mx` - Slow/unstable mirror connection (timed out) or network issues 
 
 
 If `pacman` runs into these errors during a system update, be sure to [rerank mirrors](#update-mirrorlist) before another update attempt.
@@ -78,9 +78,9 @@ If `pacman` runs into these errors during a system update, be sure to [rerank mi
 > __Note__\
 > If these errors/warnings persist despite rereranking mirrors, this may indicate __outdated packages__ and require updating with `pacman` and `yay`.
 >
-> See: [Update with `pacman`][pacman]
+> See: __[Update with `pacman` guide][pacman]__
 
-[pacman-yay]: /docs/update-pacman/
+[pacman]: /docs/update-pacman/
 
 ---
 
