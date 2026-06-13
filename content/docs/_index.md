@@ -4,7 +4,7 @@ draft = false
 title = 'Docs'
 +++
 
-Technical documentation covering system maintenance tasks, user tools, and setup guidance for users of __[Endeavour OS][eos]__, a distro based on [Arch Linux][arch].
+Technical documentation and user guides for __[Endeavour OS][eos]__, an [Arch Linux][arch]-based distro.
 
 These user guides are also available on [GitHub][gh].
 

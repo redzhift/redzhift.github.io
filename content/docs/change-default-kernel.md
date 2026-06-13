@@ -2,7 +2,7 @@
 date = '2026-06-08T16:58:36-07:00'
 draft = false
 title = 'Change default kernel'
-tags = ["docs","endeavourOS","linux","kernel"]
+tags = ["docs","userguides","endeavourOS","linux","kernel"]
 +++
 
 > Note: This guide was originally published on [GitHub][gh] and is also available in [Confluence][pf].

@@ -1,5 +1,5 @@
 +++
-date = '2026-06-12T11:48:44-07:00'
+date = '2022-06-12T11:48:44-07:00'
 draft = true
 title = 'Crime Policy Analysis [PDF]'
 tags = ["articles", "crime policy", "criminal justice"]

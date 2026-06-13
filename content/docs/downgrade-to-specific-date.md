@@ -3,7 +3,7 @@
 date = '2026-06-06T16:58:36-07:00'
 draft = false
 title = 'Downgrade to specific date'
-tags = ["docs","endeavourOS","downgrade","linux","linux maintenance"]
+tags = ["docs","userguides","endeavourOS","downgrade","linux"]
 +++
 
 > Note: This guide was originally published on [GitHub][gh] and is also available in [Confluence][pf].
