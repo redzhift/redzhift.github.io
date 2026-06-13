@@ -6,7 +6,7 @@ theme = ["hugo-embed-pdf-shortcode", "m10c"]
 enableInlineShortcodes = true
 
 [pagination]
-    pagerSize = 4
+    pagerSize = 5
 
 [menu]
     [[menu.main]]
