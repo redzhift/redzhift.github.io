@@ -26,9 +26,7 @@ __Endeavour OS__ has its own distro-unique packages, which may be slightly modif
    [rank-mirrors-1]: /images/eos-rankmirrors-1.png
    ![`eos-rankmirrors` terminal output listing timed-out mirrors and the new mirrorlist.][rank-mirrors-1]
 
-3. To confirm and save the changes, enter your system's root password.
-
-4. After confirming any mirrorlist changes, refresh the system with:
+3. Confirm and save the changes, then refresh the system with:
    
     ```sh
     $ yay -Syyu

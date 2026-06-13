@@ -31,7 +31,7 @@ tags = ["articles","facial recognition","privacy rights"]
  → __[PDF version available here](../facial-recognition-pdf)__ ←
 
 # Intro
-In the 1960s, the first facial recognition systems were useless on their own. They required a human touch to identify and locate the parts of a face: ears, left and right eyes, nose and mouth.
+The first facial recognition systems of the 1960s were useless on their own. They required a human touch to identify and locate the parts of a face: ears, left and right eyes, nose and mouth.
 
 ![Various facial recognition points used in a security camera product by Rhombus.][img-1]
 _Various facial recognition points used in a security camera product by [Rhombus][img-1-cred]._
@@ -61,7 +61,7 @@ Ewen-Campen was the main councilor to sponsor Somerville’s ban. State Police, 
 ![U.S. Map view of states by facial recognition law limits for police body camera, from techpolicy.press.][img-2]
 _U.S. Map view of states by facial recognition law limits for police body camera, from [techpolicy.press][img-2-cred]._
 
-### The progress of recognition software
+### The progress of neural nets
 
 Before 2012, facial recognition had since advanced from the 1960s. In 2006, results from the [Face Recognition Grand Challenge][recog-challenge], where science and engineers come together to improve existing algorithms, were 10 times more accurate than those used in 2002, and 100 times more accurate than those of 1995. 
 
@@ -72,7 +72,6 @@ In 2012, when the design was originally tested, Cornell University researchers A
 ### How neural nets are trained
 
 According to [Symantec][symantec], known for their internet and computer security software “Norton,” facial recognition software is generally trained on datasets of individual faces through the use of neural nets, a computational model based on the concept of a human brain. 
-brain
 
 > 🧠 By observing hundreds of thousands of different faces, these neural nets learn to:
 >
@@ -86,9 +85,9 @@ These datasets, however, tend to be biased towards a largely Caucasian facial mo
 
 ### The result of biases
 
-“Some of the algorithms for people of color, specifically women of color, have very high error rates,” said councillor Ewen-Campen, citing about a __20 to 30%__ error rate for women of color. 
+“Some of the algorithms for people of color, specifically women of color, have very high error rates,” said councilor Ewen-Campen, citing about a __20 to 30%__ error rate for women of color. 
 
-The city councillor said that while the main benefit of using the software is being able to identify and track potential criminals, there are no set regulations on the extent to which the federal and state governments can use this technology. 
+The city councilor said that while the main benefit of using the software is being able to identify and track potential criminals, there are no set regulations on the extent to which the federal and state governments can use this technology. 
 
 ---
 
@@ -126,7 +125,7 @@ If the bills are passed, they would make it __illegal__ for the state government
 
 - Obtain or use any facial surveillance or biometrics technology without first gaining permission from the legislature.
 
--  After gaining written approval, or a warrant, outline instances of use and follow approval instructions.
+- After gaining written approval, or a warrant, outline instances of use and follow approval instructions.
 
 - Use this technology to submit data evidence to the courts, such as camera footage. 
 
@@ -142,7 +141,7 @@ Since the legislative wheel can be slow to turn, activists are trying to inform 
 
 “I feel that since 9/11 in particular, Americans have become accustomed to reductions in their civil liberties in the name of fighting terrorism,” said Alex Marthews, the National Chair of __Restore the Fourth__.
 
-He is an expert on the kinds of rivacy violations happening around the nation, and is an avid advocate for the restoration of the __Fourth Amendment__.
+He is an expert on the kinds of privacy violations happening around the nation, and is an avid advocate for the restoration of the __Fourth Amendment__.
 
 > The U.S Constitution’s __Fourth Amendment__ concerns a citizen’s right to privacy and protection from unlawful searches and violations. 
 
@@ -171,7 +170,7 @@ _A visual explanation of how data leaks may occur by [Norton][img-4-cred]._
 
 ### Advice from an activist
 
-Marthews highly advises people wary of mass surveillance to adopt personal habits that minimize their digital trace. 
+Marthews advises people wary of mass surveillance to adopt personal habits that minimize their __digital trace__. 
 
 Simply adopting __end-to-end encryption__ in one’s text communications would make a large difference. One such alternative app is Signal.
 

@@ -16,25 +16,22 @@ __Mirrors__ are servers located around the world that store copies of software p
 
 When upgrading packages, your EndeavourOS system utilizes multiple mirrors, which are noted in a `mirrorlist`. 
 
-A well-maintained `mirrorlist` ensures the `pacman` package manager can access the most up-to-date package files when performing system updates. Outdated mirrors can prevent `pacman` from updating applications, including __core packages__.
+A well-maintained `mirrorlist` ensures the `pacman` package manager can access up-to-date package files when performing system updates. Outdated mirrors can prevent `pacman` from updating __core packages__.
 
 > __Important!__\
-> It is recommended to re-rank mirrors at least every 1-2 months.
+> It is recommended to rerank mirrors at least every 1-2 months for an up-to-date mirrorlist.
 
 <!---------------------------------------------------------->
 
-### Re-rank Arch mirrors
+### Update mirrorlist
 
-Arch packages are updated on a frequent and unscheduled rolling-release basis. Your Arch `mirrorlist` configuration should be updated regularly so your system can access up-to-date package databases.
-
-
-1. Update the Arch `mirrorlist` by running the command:
+1. Update the Arch `mirrorlist` by running:
 
     ```sh
     $ reflector-simple
     ```
 
-2. By default, `reflector-simple` selects the __20 fastest__ mirrors based on your set location. You can adjust these preferences in the GUI tool.
+2. By default, `reflector-simple` selects the __20 fastest__ mirrors based on your location. You can adjust these preferences in the GUI tool.
  
     [reflector-simple-1]: /images/reflector-simple-1.png
     ![A GUI Preference menu that displays after running `reflector-simple`, displaying settings such as region, filter by options, and amount.][reflector-simple-1]
@@ -65,22 +62,25 @@ When `pacman` receives a command to update packages and refresh the system, it a
 
 Common error or warning messages include:
 
-| Terminal message       | Issue                   |
-|----------------------- | ----------------------- |
-| `GPGME error: No data` | Files from the package database are outdated or corrupt | 
-| `failed to synchronize all databases (invalid or corrupted database (PGP signature))` | Outdated mirrors - not in sync with package databases |
-| `failed retrieving file 'package-version.pkg' from arch.mirror.mx : The requested URL returned error: 404` | Mirror cannot be reached, or package files are not available | 
-| `failed to commit transaction (failed to retrieve some files)` | Mirror cannot be reached, or package files are not available |
-| `warning: too many errors from arch.mirror.mx, skipping for the remainder of this transaction` | Slow/unstable mirror connection (timed out) or network issues | 
+- `GPGME error: No data` - Files from the package database are outdated or corrupt
 
-If `pacman` runs into these errors during a system update, be sure to [re-rank mirrors](#re-rank-mirrors) before another update attempt.
+- `failed to synchronize all databases (invalid or corrupted database (PGP signature))` - Outdated mirrors - not in sync with package databases
 
-> [!WARNING]\
-> If these errors/warnings persist despite re-reranking mirrors, this may indicate __outdated AUR packages__ and require updating with `yay`.
+- `failed retrieving file 'package-version.pkg' from arch.mirror.mx : The requested URL returned error: 404` -  Mirror cannot be reached, or package files are not available
+
+- `failed to commit transaction (failed to retrieve some files)` - Mirror cannot be reached, or package files are not available 
+
+- `too many errors from arch.mirror.mx, skipping for the remainder of this transaction` - Slow/unstable mirror connection (timed out) or network issues 
+
+
+If `pacman` runs into these errors during a system update, be sure to [rerank mirrors](#update-mirrorlist) before another update attempt.
+
+> __Note__\
+> If these errors/warnings persist despite rereranking mirrors, this may indicate __outdated packages__ and require updating with `pacman` and `yay`.
 >
-> See: [System updates with `pacman` and `yay`][pacman-yay]
+> See: [Update with `pacman`][pacman]
 
-[pacman-yay]: ../system-maintenance/system-updates-with-pacman-and-yay.md#yay
+[pacman-yay]: /docs/update-pacman/
 
 ---
 
