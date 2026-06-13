@@ -10,3 +10,12 @@
 [submodule "themes/hugo-embed-pdf-shortcode"]
 	path = themes/hugo-embed-pdf-shortcode
 	url = https://github.com/anvithks/hugo-embed-pdf-shortcode.git
+[submodule "themes/lotus"]
+	path = themes/lotus
+	url = https://github.com/colinwilson/lotusdocs.git
+[submodule "themes/hugo-mod-bootstrap-css"]
+	path = themes/hugo-mod-bootstrap-css
+	url = https://github.com/gohugoio/hugo-mod-bootstrap-scss.git
+[submodule "themes/lotusdocs"]
+	path = themes/lotusdocs
+	url = https://github.com/colinwilson/lotusdocs
