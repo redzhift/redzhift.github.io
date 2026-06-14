@@ -49,6 +49,11 @@
     <script>(()=>{var t=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,e=localStorage.getItem("theme");t&&e===null&&(localStorage.setItem("theme","dark"),document.documentElement.setAttribute("data-dark-mode","")),t&&e==="dark"&&document.documentElement.setAttribute("data-dark-mode",""),e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script>
     
     
+            
+                
+                <script type="text/javascript" src="https://redzhift.github.io/docs/js/flexsearch.bundle.min.f5159d5a2151ffbb653996ec17eaff7da4e04c286bd879fc41839d36a5586f3f20eaead0b6089de48f9adc669cdee771.js" integrity="sha384-9RWdWiFR/7tlOZbsF&#43;r/faTgTChr2Hn8QYOdNqVYbz8g6urQtgid5I&#43;a3Gac3udx" crossorigin="anonymous"></script>
+                
+        
     
     
     
@@ -68,19 +73,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link href="https://fonts.googleapis.com/css?family=Mozilla+Text:300,400,600,700|Fira+Code:500,700&display=block" rel="stylesheet">
 
-    <link rel="stylesheet" href="/docs/scss/style.min.c9fc0d5eb13fce654c01495a1e70ef4e4a42be5083adc9cb7e3a355f5420bbd61d16f8d70457f710966c4a1ed346a17b.css" integrity="sha384-yfwNXrE/zmVMAUlaHnDvTkpCvlCDrcnLfjo1X1Qgu9YdFvjXBFf3EJZsSh7TRqF7"crossorigin="anonymous">
+    <link rel="stylesheet" href="/docs/scss/style.min.3c73395a80492f8b2005fcd3f2932b5efde49432374ef60159b1ac7d44a0c600856d95fdd357ef7ffdec0dc234459c08.css" integrity="sha384-PHM5WoBJL4sgBfzT8pMrXv3klDI3TvYBWbGsfUSgxgCFbZX901fvf/3sDcI0RZwI"crossorigin="anonymous">
     
     
-    
-<script async src="/docs/s/js/e2f15511-354c-4165-83dc-4261fb95389d.js"></script>
-<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-<script>
-  window.plausible = window.plausible || function() { (plausible.q = plausible.q || []).push(arguments) },plausible.init = plausible.init || function(i){plausible.o=i||{}};
-  plausible.init({
-    endpoint: "/docs/s/api/event/",
-    hashBasedRouting: true,
-    })
-</script>
     </head>
 <body>
         <div class="content">
@@ -156,17 +151,12 @@
                                                         
                                                             
                                                             
-                                                                <li class=" "><a class="sidebar-nested-link" href="https://redzhift.github.io/docs/user-guides/system-maintenance/update-pacman/">Update with pacman</a></li>
+                                                                <li class=" "><a class="sidebar-nested-link" href="https://redzhift.github.io/docs/user-guides/system-maintenance/update-packages/">Update packages</a></li>
                                                             
                                                         
                                                             
                                                             
-                                                                <li class=" "><a class="sidebar-nested-link" href="https://redzhift.github.io/docs/user-guides/system-maintenance/rerank-arch-mirrors/">Re-rank Arch mirrors</a></li>
-                                                            
-                                                        
-                                                            
-                                                            
-                                                                <li class=" "><a class="sidebar-nested-link" href="https://redzhift.github.io/docs/user-guides/system-maintenance/rerank-endeavouros-mirrors/">Re-rank EndeavourOS mirrors</a></li>
+                                                                <li class=" "><a class="sidebar-nested-link" href="https://redzhift.github.io/docs/user-guides/system-maintenance/rerank-mirrors/">Re-rank mirrors</a></li>
                                                             
                                                         
                                                     </ul>
@@ -295,9 +285,24 @@
             <button id="close-sidebar" class="btn btn-icon btn-soft">
                 <span class="material-icons size-20 menu-icon align-middle">menu</span>
             </button>
-            <span><div id="docsearch"></div></span>
             
             
+                    
+                    <button id="flexsearch-button" class="ms-3 btn btn-soft" data-bs-toggle="collapse" data-bs-target="#FlexSearchCollapse" aria-expanded="false" aria-controls="FlexSearchCollapse">
+                        <span class="material-icons size-20 menu-icon align-middle">search</span>
+                        <span class="flexsearch-button-placeholder ms-1 me-2 d-none d-sm-block">Search</span>
+                        <div class="d-none d-sm-block">
+                            <span class="flexsearch-button-keys">
+                                <kbd class="flexsearch-button-cmd-key">
+                                    <svg width="44" height="15"><path d="M2.118,11.5A1.519,1.519,0,0,1,1,11.042,1.583,1.583,0,0,1,1,8.815a1.519,1.519,0,0,1,1.113-.458h.715V6.643H2.118A1.519,1.519,0,0,1,1,6.185,1.519,1.519,0,0,1,.547,5.071,1.519,1.519,0,0,1,1,3.958,1.519,1.519,0,0,1,2.118,3.5a1.519,1.519,0,0,1,1.114.458A1.519,1.519,0,0,1,3.69,5.071v.715H5.4V5.071A1.564,1.564,0,0,1,6.976,3.5,1.564,1.564,0,0,1,8.547,5.071,1.564,1.564,0,0,1,6.976,6.643H6.261V8.357h.715a1.575,1.575,0,0,1,1.113,2.685,1.583,1.583,0,0,1-2.227,0A1.519,1.519,0,0,1,5.4,9.929V9.214H3.69v.715a1.519,1.519,0,0,1-.458,1.113A1.519,1.519,0,0,1,2.118,11.5Zm0-.857a.714.714,0,0,0,.715-.714V9.214H2.118a.715.715,0,1,0,0,1.429Zm4.858,0a.715.715,0,1,0,0-1.429H6.261v.715a.714.714,0,0,0,.715.714ZM3.69,8.357H5.4V6.643H3.69ZM2.118,5.786h.715V5.071a.714.714,0,0,0-.715-.714.715.715,0,0,0-.5,1.22A.686.686,0,0,0,2.118,5.786Zm4.143,0h.715a.715.715,0,0,0,.5-1.22.715.715,0,0,0-1.22.5Z" fill="currentColor"></path><path d="M12.4,11.475H11.344l3.879-7.95h1.056Z" fill="currentColor"></path><path d="M25.073,5.384l-.864.576a2.121,2.121,0,0,0-1.786-.923,2.207,2.207,0,0,0-2.266,2.326,2.206,2.206,0,0,0,2.266,2.325,2.1,2.1,0,0,0,1.782-.918l.84.617a3.108,3.108,0,0,1-2.622,1.293,3.217,3.217,0,0,1-3.349-3.317,3.217,3.217,0,0,1,3.349-3.317A3.046,3.046,0,0,1,25.073,5.384Z" fill="currentColor"></path><path d="M30.993,5.142h-2.07v5.419H27.891V5.142h-2.07V4.164h5.172Z" fill="currentColor"></path><path d="M34.67,4.164c1.471,0,2.266.658,2.266,1.851,0,1.087-.832,1.809-2.134,1.855l2.107,2.691h-1.28L33.591,7.87H33.07v2.691H32.038v-6.4Zm-1.6.969v1.8h1.572c.832,0,1.22-.3,1.22-.918s-.411-.882-1.22-.882Z" fill="currentColor"></path><path d="M42.883,10.561H38.31v-6.4h1.033V9.583h3.54Z" fill="currentColor"></path></svg>
+                                </kbd>
+                                <kbd class="flexsearch-button-key">
+                                    <svg width="15" height="15"><path d="M5.926,12.279H4.41L9.073,2.721H10.59Z" fill="currentColor"/></svg>
+                                </kbd>
+                            </span>
+                        </div>
+                    </button>
+                
             </div>
 
         <div class="d-flex align-items-center">
@@ -347,6 +352,35 @@
     </div>
     
     
+            <div class="collapse" id="FlexSearchCollapse">
+                <div class="flexsearch-container">
+                    <div class="flexsearch-keymap">
+                        <li>
+                            <kbd class="flexsearch-button-cmd-key"><svg width="15" height="15" aria-label="Arrow down" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M7.5 3.5v8M10.5 8.5l-3 3-3-3"></path></g></svg></kbd>
+                            <kbd class="flexsearch-button-cmd-key"><svg width="15" height="15" aria-label="Arrow up" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M7.5 11.5v-8M10.5 6.5l-3-3-3 3"></path></g></svg></kbd>
+                            <span class="flexsearch-key-label">to navigate</span>
+                        </li>
+                        <li>
+                            <kbd class="flexsearch-button-cmd-key"><svg width="15" height="15" aria-label="Enter key" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M12 3.53088v3c0 1-1 2-2 2H4M7 11.53088l-3-3 3-3"></path></g></svg></kbd>
+                            <span class="flexsearch-key-label">to select</span>
+                        </li>
+                        <li>
+                            <kbd class="flexsearch-button-cmd-key"><svg width="15" height="15" aria-label="Escape key" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M13.6167 8.936c-.1065.3583-.6883.962-1.4875.962-.7993 0-1.653-.9165-1.653-2.1258v-.5678c0-1.2548.7896-2.1016 1.653-2.1016.8634 0 1.3601.4778 1.4875 1.0724M9 6c-.1352-.4735-.7506-.9219-1.46-.8972-.7092.0246-1.344.57-1.344 1.2166s.4198.8812 1.3445.9805C8.465 7.3992 8.968 7.9337 9 8.5c.032.5663-.454 1.398-1.4595 1.398C6.6593 9.898 6 9 5.963 8.4851m-1.4748.5368c-.2635.5941-.8099.876-1.5443.876s-1.7073-.6248-1.7073-2.204v-.4603c0-1.0416.721-2.131 1.7073-2.131.9864 0 1.6425 1.031 1.5443 2.2492h-2.956"></path></g></svg></kbd>
+                            <span class="flexsearch-key-label">to close</span>
+                        </li>
+                    </div>
+                    <form class="flexsearch position-relative flex-grow-1 ms-2 me-2">
+                        <div class="d-flex flex-row">
+                            <input id="flexsearch" class="form-control" type="search" placeholder="Search" aria-label="Search" autocomplete="off">
+                            <button id="hideFlexsearch" type="button" class="ms-2 btn btn-soft">
+                                cancel
+                            </button>
+                        </div>
+                        <div id="suggestions" class="shadow rounded-1 d-none"></div>
+                    </form>
+                </div>
+            </div>
+        
     
     
 </div>
@@ -496,7 +530,6 @@
         
 
 
-    
 
 
     
@@ -515,29 +548,502 @@
     <script src="/docs/js/bootstrap.9830259bc28edf5a45a3c7aa85d782bb2b8ac9a68e8ff3e14e4ad92a0aaf7882b8c20ea2ba1c4fc65f4415a3046aca9a.js" integrity="sha384-mDAlm8KO31pFo8eqhdeCuyuKyaaOj/PhTkrZKgqveIK4wg6iuhxPxl9EFaMEasqa"defer></script>
 
 
-    <script type="text/javascript" src="https://redzhift.github.io/docs/js/bundle.min.b3cde2e4b0e7a6dc283ed2646fe77b3fc462b9b47d9a969da61eac9dd8a80f99a2bec47481887351145678b5900e705c.js" integrity="sha384-s83i5LDnptwoPtJkb&#43;d7P8RiubR9mpadph6sndioD5mivsR0gYhzURRWeLWQDnBc" crossorigin="anonymous" defer></script>
+    <script type="text/javascript" src="https://redzhift.github.io/docs/js/bundle.min.9029b317bad50384f93f53c7e3914014bba286eec260a7bd023d98cf57943df7d03259e4cd8785f087631752e24ae7a5.js" integrity="sha384-kCmzF7rVA4T5P1PH45FAFLuihu7CYKe9Aj2Yz1eUPffQMlnkzYeF8IdjF1LiSuel" crossorigin="anonymous" defer></script>
 
-        <script>
-    window.addEventListener('DOMContentLoaded', function() {
         
-        docsearch({
-            container: '#docsearch',
-            appId: 'O2QIOCBDAK',
-            apiKey: 'fdc60eee76a72a35d739b54521498b77',
-            indexName: 'dev_lotusdocs.dev',
-            placeholder: 'Search Documentation',
-            translations: {
-                button: {
-                    buttonText: 'Search',
-                    buttonAriaLabel: 'Search',
-                }
-            }
+
+        
+        <script type="module">
+    var suggestions = document.getElementById('suggestions');
+    var search = document.getElementById('flexsearch');
+
+    const flexsearchContainer = document.getElementById('FlexSearchCollapse');
+
+    const hideFlexsearchBtn = document.getElementById('hideFlexsearch');
+
+    const configObject = { toggle: false }
+    const flexsearchContainerCollapse = new Collapse(flexsearchContainer, configObject) 
+
+    if (search !== null) {
+        document.addEventListener('keydown', inputFocus);
+        flexsearchContainer.addEventListener('shown.bs.collapse', function () {
+            search.focus();
         });
+        
+        var topHeader = document.getElementById("top-header");
+        document.addEventListener('click', function(elem) {
+            if (!flexsearchContainer.contains(elem.target) && !topHeader.contains(elem.target))
+                flexsearchContainerCollapse.hide();
+        });
+    }
+
+    hideFlexsearchBtn.addEventListener('click', () =>{
+        flexsearchContainerCollapse.hide()
+    })
+
+    function inputFocus(e) {
+        if (e.ctrlKey && e.key === '/') {
+            e.preventDefault();
+            flexsearchContainerCollapse.toggle();
+        }
+        if (e.key === 'Escape' ) {
+            search.blur();
+            
+            flexsearchContainerCollapse.hide();
+        }
+    };
+
+    document.addEventListener('click', function(event) {
+
+    var isClickInsideElement = suggestions.contains(event.target);
+
+    if (!isClickInsideElement) {
+        suggestions.classList.add('d-none');
+    }
+
     });
-</script>
+
+    
+
+
+    document.addEventListener('keydown',suggestionFocus);
+
+    function suggestionFocus(e) {
+    const suggestionsHidden = suggestions.classList.contains('d-none');
+    if (suggestionsHidden) return;
+
+    const focusableSuggestions= [...suggestions.querySelectorAll('a')];
+    if (focusableSuggestions.length === 0) return;
+
+    const index = focusableSuggestions.indexOf(document.activeElement);
+
+    if (e.key === "ArrowUp") {
+        e.preventDefault();
+        const nextIndex = index > 0 ? index - 1 : 0;
+        focusableSuggestions[nextIndex].focus();
+    }
+    else if (e.key === "ArrowDown") {
+        e.preventDefault();
+        const nextIndex= index + 1 < focusableSuggestions.length ? index + 1 : index;
+        focusableSuggestions[nextIndex].focus();
+    }
+
+    }
+
+    
+
+
+    (function(){
+
+    var index = new FlexSearch.Document({
+        
+        tokenize: "forward",
+        minlength:  0 ,
+        cache:  100 ,
+        optimize:  true ,
+        document: {
+        id: 'id',
+        store: [
+            "href", "title", "description"
+        ],
+        index: ["title", "description", "content"]
+        }
+    });
+
+
+    
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+
+    
+
+    index.add(
+            {
+                id:  0 ,
+                href: "\/docs\/",
+                title: "Documentation",
+                description: "Jin's documentation and writing examples.",
+                content: "Docs structure content/docs/\nabout.md _index.md user-guides/ user-config/ system-maintenance/ faqs/ research/ articles/ "
+            }
+        );
+    index.add(
+            {
+                id:  1 ,
+                href: "\/docs\/about\/",
+                title: "About",
+                description: "Well met, and welcome to my portfolio! 🛰️✨\nI’m Jin, a technical writer with 5+ years experience developing:\nKnowledge bases User guides and training Software product manuals Process documentation Contact: redzhift@tuta.io\nWork examples My sites Currently learning... docs User guides\n",
+                content: "Well met, and welcome to my portfolio! 🛰️✨\nI’m Jin, a technical writer with 5+ years experience developing:\nKnowledge bases User guides and training Software product manuals Process documentation Contact: redzhift@tuta.io\nWork examples My sites Currently learning... docs User guides\nHow to maintain your Endeavour OS system in the Linux CLI.\ndocument_search Research\nMixed-methods game psychology publication and a policy analysis report.\nnewsmode Journalism articles\nOn modern-day challenges of digital privacy and affordable housing.\nperson LinkedIn\nConnect with me on LinkedIn.\ncode GitHub\nTake a look at my projects on GitHub.\nlink Confluence\nView my portfolio in Atlassian Confluence.\nHUGOHUGO ENDEAVOUR OSENDEAVOUR OS CONFLUENCECONFLUENCE THE ODIN PROJECTTHE ODIN PROJECT "
+            }
+        );
+    index.add(
+            {
+                id:  2 ,
+                href: "\/docs\/user-guides\/",
+                title: "User guides",
+                description: "Guides on maintaining your EndeavourOS system through Linux CLI commands.",
+                content: ""
+            }
+        );
+    index.add(
+            {
+                id:  3 ,
+                href: "\/docs\/user-guides\/user-config\/",
+                title: "User tools \u0026 settings",
+                description: "Useful tools and settings to customize your EndeavourOS experience.",
+                content: ""
+            }
+        );
+    index.add(
+            {
+                id:  4 ,
+                href: "\/docs\/user-guides\/user-config\/downgrade-to-specific-date\/",
+                title: "Downgrade with eos-shifttime",
+                description: "Downgrade your Arch packages by using the eos-shifttime utility tool.",
+                content: "The eos-shifttime application can revert system packages to their state at a specified date.\nThis tool is useful for when recent updates cause issues with system or program functionalities.\nOpen a terminal window and run eos-shifttime with root permissions.\nSelect the date to revert to on the GUI window, then click Revert.\nReboot to apply the changes.\nwarning Using eos-shifttime does not revert AUR packages. The downgrade only applies to official Arch packages from the archive repositories. Set up a downgrade shortcut\nTo set up eos-shifttime to conveniently run from the Welcome app, follow the steps in the Adding own commands guide.\nThe full eos-shifttime script can also be viewed at /usr/bin/eos-shifttime. It was formerly known as the “Easy Downgrade by Date” tool.\n"
+            }
+        );
+    index.add(
+            {
+                id:  5 ,
+                href: "\/docs\/user-guides\/user-config\/change-default-kernel\/",
+                title: "Change default kernel",
+                description: "How to change which kernel your Linux system boots up by default.",
+                content: " info Note: This guide is for systems using the default systemd-boot UEFI boot manager in Endeavour OS. Your system can have multiple kernels (or versions) of Linux. The default kernel is usually set to the newest one, but can be adjusted to user preference.\nFirst, you need to identify and adjust the kernel ids used in the boot loader config file.\nFind the kernel id link Use `bootctl` Use `cat` Find kernel id with bootctl link Change to the root user with sudo -s and enter your password.\nCheck which kernel is currently set as default with:\n$ bootctl list The terminal will display installed kernel information, indicating which kernel was (selected) at boot, and which one is set as (default).\n# kernel currently booted and set as default type: Boot Loader Specification Type 1 (.conf) title: EndeavourOS (0.0.0-arch0-0) (default) (selected) # current id: -0.0.0-arch0-0\u003e.conf source: ... sort-key: endeavouros-0.0.0-arch0.0 version: 0.0.0-arch0.0 machine-id: # current default id linux: ... # kernel to set as default at boot type: Boot Loader Specification Type 1 (.conf) title: EndeavourOS (0.0.0-arch0-0) id: --arch\u003c#.#\u003e.conf source: ... sort-key: endeavouros-0.0.0-arch0-0 version: 0.0.0-arch0.0 machine-id: # id to set as default ``` Copy the machine-id of the kernel you want to set as the default.\nUse cat to view boot config linkYou can use cat to view the boot loader config file with a simpler output.\nEnter sudo cat /efi/loader/loader.conf to display the boot loader config.\n$ sudo cat /efi/loader/loader.conf default * # kernel id timeout 20 console-mode auto reboot-for-bitlocker 1 Edit boot loader config link Enter nano /efi/loader/loader.conf in the terminal to edit the boot loader config.\nOn the line containing default, replace the old machine-id with the updated id.\nAdd a wildcard/asterisk after the id (no space in between). This ensures the same kernel is booted regardless of release version, which can change after system updates.\ndefault * # add wildcard * timeout 20 # wait time (sec) before system boots default console-mode auto reboot-for-bitlocker 1 Double check the kernel id you entered is an exact match with the one from bootctl list.\nPress Ctrl+X to finish editing, then press Y to save the updated config.\nVerify and reboot link Run bootctl list again to verify the desired kernel has (default) by the kernel title.\ntype: Boot Loader Specification Type 1 (.conf) title: EndeavourOS (0.0.0-arch0-0) (default) # new default id: -0.0.0-arch0-0.conf source: ... Reboot the system to check that the correct kernel boots by default.\nUseful resources\nEOS Boot Configuration wiki Arch Linux kernels "
+            }
+        );
+    index.add(
+            {
+                id:  6 ,
+                href: "\/docs\/user-guides\/system-maintenance\/",
+                title: "System maintenance",
+                description: "How to keep your EndeavourOS system up to date.",
+                content: ""
+            }
+        );
+    index.add(
+            {
+                id:  7 ,
+                href: "\/docs\/user-guides\/system-maintenance\/update-packages\/",
+                title: "Update packages",
+                description: "Update your system packages with `pacman` and `yay`.",
+                content: "There are 3 commands used to update Endeavour OS systems:\npacman -Syu yay eos-update pacman is the package manager used to install and update programs in Arch Linux.\nTo perform a full system update and refresh, run:\n$ sudo pacman -Syu info Some commands require prepending sudo to them as they require super user (or root) permissions to run. Example terminal output\n[user@computer ~] $ sudo pacman -Syu [sudo password for user]: * :: Synchronizing package databases... endeavouros 17.0 KiB 3.17 KiB/s 00:05 [--------------] 100% core 117.4 KiB 23.3 KiB/s 00:05 [--------------] 100% extra 8.0 MiB 1447 KiB/s 00:06 [--------------] 100% multilib 125.4 KiB 416 KiB/s 00:00 [--------------] 100% :: Starting full system upgrade... resolving dependencies... looking for conflicting packages... Package (2) Old Version New Version Net Change Download Size endeavouros/package-1 25.11-1 25.11.1-1 0.00 MiB 0.02 MiB endeavouros/package-2 12.5.2-2 12.5.3-1 0.02 MiB 3.20 MiB Total Download Size: 3.21 MiB Total Installed Size: 9.42 MiB Net Upgrade Size: 0.02 MiB # enter Y to confirm :: Proceed with installation? [Y/n] # n to cancel Other pacman options\nCommand Description -S Installs the specific package. -Rs Removes a package and also its dependencies to prevent orphan dependencies. -Ss Searches for a specified package on the system. -Qi Retrieve a list of the dependencies a package needs to run. See: pacman manpage, pacman wiki\nyay, or “yet another yogurt”, is an AUR helper.\nTo update the system’s native and AUR packages, run:\n$ yay Like pacman, yay performs package manager tasks to download, install, update, or remove AUR packages.\nIt is recommended to run this command every 1 to 2 weeks. Keep an eye out for any AUR-related news to make certain of package statuses. The terminal lists packages available to upgrade and may ask for the user to select. Select the options for each one, or hit ENTER to apply default options:\nWhich package provider should be used (where to download files from) If any packages should be excluded from the upgrade If the Make dependencies should also be removed Etc. info The Arch User Repository, also known as AUR, is a large library of community user-produced packages for Arch Linux. See: yay (AUR), yay commands list, Arch User Repository (AUR), AUR helpers\nEndeavourOS provides an update script that utilizes pacman and yay to run updates with additional options.\n$ eos-update In practice, eos-update --aur and eos-update perform the same tasks as yay and pacman -Syu, but provide an added layer of options. Some options may require more advanced setup.\nNotably, running eos-update may be more helpful for users just needing a quick fix to the system, and/or for users who do not update the system frequently.\neos-update --help output\n$ eos-update --help eos-update is a package updater for EndeavourOS and Arch. eos-update is implemented as a wrapper around commands pacman and optionally yay/paru. Essentially runs commands 'pacman -Syu' and optionally 'yay -Sua' or 'paru -Sua'. eos-update includes (by default) special help in the following situations: - A dangling pacman db lock file (/var/lib/pacman/db.lck). - Disk space availability for updates (with a configurable minimum space). - Keyring package updating before updating other packages. - Running the 'sync' command after update. Optional help: - Can clear package databases in case of constant problems with them. - Can reset keyrings in case of constant problems with them. - Can check the validity of the locally configured lists of mirrors. - Updates AUR packages (with option --helper, see Usage below). - Ad hoc check for Nvidia GPU driver vs. kernel updates (non-dkms only). "
+            }
+        );
+    index.add(
+            {
+                id:  8 ,
+                href: "\/docs\/user-guides\/system-maintenance\/rerank-mirrors\/",
+                title: "Re-rank mirrors",
+                description: "Re-rank mirrors every 1-2 months to keep your mirrorlist up to date.",
+                content: "Mirrors are servers located around the world that store copies of software packages. When upgrading packages, your EndeavourOS system utilizes multiple mirrors, which are noted in a mirrorlist.\nA well-maintained mirrorlist ensures the pacman package manager can access up-to-date package files when performing system updates. Outdated mirrors can prevent pacman from updating core packages.\nRe-rank Arch mirrors Re-rank EndeavourOS mirrors Common issues Update the Arch mirrorlist by running:\n$ reflector-simple Adjust your preferences in the reflector-simple GUI tool. You can choose the number of mirrors to store in your mirrorlist, the country of origin, and ranks based on speed or age.\nBy default, reflector-simple selects the 20 fastest mirrors based on your location. Hit OK to confirm the selection and run the process. It is normal to see warnings as reflector tests various mirrors for connectivity speed and age.\nThe system will notify you once the new Arch mirrorlist has been generated. Save to apply the configuration changes.\nRefresh the system to sync the newly obtained mirrors with the Arch package databases:\n$ yay -Syyu Endeavour OS has its own distro-unique packages, which may be slightly modified versions of Arch packages.\nUpdate the Endeavour OS mirrorlist with:\n$ eos-rankmirrors The terminal may display errors/warnings as the system tests various mirrors for connectivity and speed. It may take a few minutes to find the requisite amount of mirrors.\nBy default, the new mirrorlist lists 20 fastest mirrors, comparing them with the original list. Confirm and save the changes, then refresh the system with:\n$ yay -Syyu If you do NOT wish to make the mirrorlist changes, stop the terminal process. By default, this shortcut is bound to Ctrl+C in the terminal.\ninfo The eos-rankmirrors process only shows terminal output (no GUI tool). Common issues: outdated mirrors\nWhen pacman receives a command to update packages and refresh the system, it attempts to connect to the package databases stored in mirrors. Outdated mirrors can prevent pacman from updating your system to the newest packages.\nError message Probable cause GPGME error: No data Files from the package database are outdated or corrupt failed to synchronize all databases Outdated mirrors - not in sync with the most recent package databases The requested URL returned error: 404 Mirror cannot be reached - most likely outdated and expired. failed to commit transaction Mirror cannot be reached, or package files are not available . too many errors from arch.mirror.mx Slow/unstable mirror connection (timed out) or network issues. If pacman runs into these errors during a system update, be sure to rerank mirrors before another update attempt.\nIf these errors/warnings persist despite re-ranking mirrors, this may indicate outdated packages and require updating with pacman and yay.\nSee: Update with pacman guide\nreport Do not run yay with root permissions (sudo), or it may cause accidental (and potentially fatal) system changes. AUR helpers do not require root permissions to manage packages. "
+            }
+        );
+    index.add(
+            {
+                id:  9 ,
+                href: "\/docs\/user-guides\/faqs\/",
+                title: "FAQs",
+                description: "Common errors and warnings that may occur during `pacman` updates.",
+                content: ""
+            }
+        );
+    index.add(
+            {
+                id:  10 ,
+                href: "\/docs\/user-guides\/faqs\/getting-update-errors\/",
+                title: "Why do I get errors when I try to update?",
+                description: "Outdated package databases will cause errors when pacman tries to retrieve the latest package files.\nThis can be prevented through regular mirror maintenance.\nSee: Update mirrors guide\nError: failed to commit transaction (conflicting files):\nRunning a sudo pacman -Syu update may fail and display the following errors:\nerror: failed to commit transaction (conflicting files) : /example exists in filesystem (owned by filesystem) : /lib/systemd/system/example.service exists in filesystem These issues can be resolved with manual intervention. Uninstall and remove the package from the system, then reinstall/update with these two commands:\n",
+                content: "Outdated package databases will cause errors when pacman tries to retrieve the latest package files.\nThis can be prevented through regular mirror maintenance.\nSee: Update mirrors guide\nError: failed to commit transaction (conflicting files):\nRunning a sudo pacman -Syu update may fail and display the following errors:\nerror: failed to commit transaction (conflicting files) : /example exists in filesystem (owned by filesystem) : /lib/systemd/system/example.service exists in filesystem These issues can be resolved with manual intervention. Uninstall and remove the package from the system, then reinstall/update with these two commands:\n$ sudo pacman -Rdd $ sudo pacman -Syu "
+            }
+        );
+    index.add(
+            {
+                id:  11 ,
+                href: "\/docs\/user-guides\/faqs\/mirror-alternatives\/",
+                title: "Are there mirror management alternatives?",
+                description: "Popular alternatives to mirror management are listed on the Arch mirrors wiki. Some programs can automate mirror management when configured properly.\nOne such example is ghostmirror, which:\n",
+                content: "Popular alternatives to mirror management are listed on the Arch mirrors wiki. Some programs can automate mirror management when configured properly.\nOne such example is ghostmirror, which:\nChecks that mirrors are synchronized.\nPerforms download speed tests on top of the usual ping test.\nAutomates the process via systemd.\nSee: ghostmirror (AUR), ghostmirror wiki\n"
+            }
+        );
+    index.add(
+            {
+                id:  12 ,
+                href: "\/docs\/user-guides\/faqs\/what-is-aur\/",
+                title: "What is the AUR?",
+                description: "The Arch User Repository (known as AUR) is a large library of community user-produced packages for Arch Linux.\nPopular and well-maintained packages are voted on by the community to include in the official Arch extra repository.\nTo download and install AUR packages:\nClone the git repository listed on the package’s AUR page:\ngit clone https://aur.archlinux.org/.git Change into the package directory:\ncd Build and install the package with:\n",
+                content: "The Arch User Repository (known as AUR) is a large library of community user-produced packages for Arch Linux.\nPopular and well-maintained packages are voted on by the community to include in the official Arch extra repository.\nTo download and install AUR packages:\nClone the git repository listed on the package’s AUR page:\ngit clone https://aur.archlinux.org/.git Change into the package directory:\ncd Build and install the package with:\nmakepkg -si # or pacman -U pkg-vers-1.0.1.pkg.tar.zst report Warning! AUR packages are community-maintained and unofficial. Check for any suspicious package dependencies, and check build files (i.e. PKGBUILD) for any malicious code BEFORE installation. "
+            }
+        );
+    index.add(
+            {
+                id:  13 ,
+                href: "\/docs\/research\/",
+                title: "Research",
+                description: "Mixed-methods game psychology research and crime policy analysis.",
+                content: ""
+            }
+        );
+    index.add(
+            {
+                id:  14 ,
+                href: "\/docs\/research\/game-psychology-research\/",
+                title: "Game Psychology Research [PDF]",
+                description: "Mixed-methods based research on how narrative gameplay elements can influence player decisions.",
+                content: " info Have issues viewing the PDF? Click the download button on the top right corner of the viewer. This will open it in a separate browser tab. Previous Next / [pdf] View the PDF file here. "
+            }
+        );
+    index.add(
+            {
+                id:  15 ,
+                href: "\/docs\/research\/crime-policy-analysis\/",
+                title: "Crime policy analysis [PDF]",
+                description: "Policy analysis and case study on mass incarceration in the U.S. and how it developed over three eras of crime policies.",
+                content: " info Have issues viewing the PDF? Click the download button on the top right corner of the viewer. This will open it in a separate browser tab. Previous Next / [pdf] View the PDF file here. "
+            }
+        );
+    index.add(
+            {
+                id:  16 ,
+                href: "\/docs\/articles\/",
+                title: "Articles",
+                description: "Non-documentation examples of my writing, including research and policy analysis.",
+                content: ""
+            }
+        );
+    index.add(
+            {
+                id:  17 ,
+                href: "\/docs\/articles\/facial-recognition\/",
+                title: "Facial recognition software",
+                description: "The impact on 3 levels of privacy: local, state, and personal.",
+                content: " Journalism article originally written in 2019 → edited June 2026.\nIntroduction linkThe first facial recognition systems of the 1960s were useless on their own. They required a human touch to identify and locate the parts of a face: ears, left and right eyes, nose and mouth.\nVarious facial recognition points used in a security camera product by Rhombus.\nNow, software has advanced enough that registered faces act as keys to smartphones and computers. Cameras can track specific faces from a crowd and all the associated details.\nAnd they are always watching…\nAt the local level | At the state level | At the personal level\nAt the local level link“There’s something about your face that you can’t hide,” said Ben Ewen-Campen, Somerville’s recently re-elected city councilor for ward three. “We know too much about the biases and the inaccuracies [of facial recognition software]. It’s dangerous to be used currently.”\nThe Massachusetts government made it known to the public that it has been using facial surveillance technology without any legislative permission or restrictions since 2006, but did not elaborate on any deeper schemes.\nCity responses linkOn June 27, 2020 Somerville was the second city in the United States to ban the use of facial surveillance software in public spaces, shortly after San Francisco’s ban passed on May 14. Since then, two other cities in California have followed suit in the wake of surveillance technology expansion, and cities within the state such as Cambridge are also working on passing local bills to ban the technology.\nEwen-Campen was the main councilor to sponsor Somerville’s ban. State Police, while long having had access to data of criminal suspects, now are able to pull regular civilians’ data into their database. Due to the normalization of this invasion of privacy, he believes it is important for communities to take a more critical look at local and federal government surveillance in general.\n“We don’t want to be using technologies that the community doesn’t support,” said Ewen-Campen. “Huge tech companies … have incredibly detailed, invasive personal details. We really need state action for this [movement] to have any teeth.”\nU.S. Map view of states by facial recognition law limits for police body camera, from techpolicy.press.\nThe progress of neural nets linkBefore 2012, facial recognition had since advanced from the 1960s. In 2006, results from the Face Recognition Grand Challenge, where science and engineers come together to improve existing algorithms, were 10 times more accurate than those used in 2002, and 100 times more accurate than those of 1995.\nEven with these improvements, however, most technology was still largely unreliable. It was the development of neural nets that allowed the technology to advance sufficiently.\nIn 2012, when the design was originally tested, Cornell University researchers Andrew Ng and Jeff Dean created a system that could recognize cats from unlabeled images. This breakthrough allowed others to create databases for different forms of image identification and was published in their article about machine learning, “Building high-level features using large scale unsupervised learning.”\nHow neural nets are trained linkAccording to Symantec, known for their internet and computer security software “Norton,” facial recognition software is generally trained on datasets of individual faces through the use of neural nets, a computational model based on the concept of a human brain.\n🧠 By observing hundreds of thousands of different faces, these neural nets learn to:\nRecognize certain areas of the face, such as the two eyes, ears, nose, and lips.\nTake the color of eyes, hair, and skin into account.\nAfter sufficient training, the software can make judgements based on the calculations and measurements built through the learning process. These datasets, however, tend to be biased towards a largely Caucasian facial model.\nThe result of biases link“Some of the algorithms for people of color, specifically women of color, have very high error rates,” said councilor Ewen-Campen, citing about a 20 to 30% error rate for women of color.\nThe city councilor said that while the main benefit of using the software is being able to identify and track potential criminals, there are no set regulations on the extent to which the federal and state governments can use this technology.\nAt the state level linkEmiliano Falcón, the technology and civil liberties counselor of the American Civil Liberties Union of Massachusetts (ACLUM), described privacy as the “control that we have over our personal information.”\nAs an immigrant native to Argentina, Falcón said that identities similar to his would immediately make them a potential target, even if they did not have any criminal history.\n“Surveillance generally is directed towards minorities, religious dissidents, religious minorities like Muslims, like immigrants,” he said, further stating though technology should be developed for liberty, it is often “directed towards these communities which are overpoliced.”\nActivist groups call for a pause linkCurrently, the non-profit organization is pushing the state government for a moratorium, a temporary prohibition, which would “press pause” on the usage of statewide technology throughout Massachusetts.\nThe ACLUM’s campaign is officially called “Press Pause on Facial Surveillance.”\nPress Pause campaign poster from the ACLUM.\n“Press Pause” is based around on two legislative bills:\nBill S.1385\nFocuses on establishing a moratorium on face recognition and other remote biometric surveillance systems. Petitioned by State Sen. Cynthia Creem, a Democrat overseeing the first districts of Middlesex and Norfolk counties. Bill H.1538\nWorks with Bill S.1385, following the goal of establishing regulations on the facial and biometric surveillance technologies. Presented by Rep. David Rogers, a Democrat who oversees the 24th Middlesex district. What the bills would do linkIf the bills are passed, they would make it illegal for the state government and state officials to:\nObtain or use any facial surveillance or biometrics technology without first gaining permission from the legislature.\nAfter gaining written approval, or a warrant, outline instances of use and follow approval instructions.\nUse this technology to submit data evidence to the courts, such as camera footage.\nActivists such as Falcón hope that the moratorium will be implemented within the ACLUM’s current session. Until it is passed, however, the people of the Commonwealth are still exposed to privacy risks.\nAt the personal level linkSince the legislative wheel can be slow to turn, activists are trying to inform the public that there are plenty of actions to be taken at the personal level as well.\nHow did surveillance get this far? link“I feel that since 9/11 in particular, Americans have become accustomed to reductions in their civil liberties in the name of fighting terrorism,” said Alex Marthews, the National Chair of Restore the Fourth.\nHe is an expert on the kinds of privacy violations happening around the nation, and is an avid advocate for the restoration of the Fourth Amendment.\nThe U.S Constitution’s Fourth Amendment concerns a citizen’s right to privacy and protection from unlawful searches and violations.\nMarthews works with his non-profit organization to restrain facial surveillance and push for surveillance oversight ordinances, both at the statewide and national level, while also advocating for small personal actions.\nHe describes the proliferation of technology and access to information as an “endless feast of digital communication” for police in particular.\nWhere the security vulnerabilities lie linkMarthews explained that a possible, probable way that an individual’s information could be compromised was through the use of a smart fridge. For example:\nManufacturers might not take the effort to design products to encrypt their data strongly.\nThe unencrypted (or weakly encrypted) data is shared with the manufacturer.\nIf the manufacturer is compromised, this data is now a possible venue for privacy invasion.\nBut smart fridges are not the only convenient product that could be potential hotpots of personal data.\nProducts such as the Google Home and Amazon Alexa are equipped with microphones that are constantly listening and relatively easy to access. Cameras that are installed as an additional measure of security may very well serve the opposite purpose.\nA visual explanation of how data leaks may occur by Norton.\n“It shows that we can easily and thoughtlessly walk into a zone where there’s no zone of privacy left,” said Marthews. His concerns lie with privacy as a whole, and he believes that establishing boundaries for facial recognition software is only a start to the actions that the community needs to take.\nAdvice from an activist linkMarthews advises people wary of mass surveillance to adopt personal habits that minimize their digital trace.\nSimply adopting end-to-end encryption in one’s text communications would make a large difference. One such alternative app is Signal.\nEnd-to-end encryption, or e2e encryption, is where the data within the messages are only decipherable to the communicating users’ devices.\nNote: iPhone iMessages are already end-to-end encrypted, but the Signal app is a messaging platform alternative to those concerned about privacy.\nMarthews also recommended the State of Surveillance website, an excellent “getting started” resource for digital privacy. On the website, there are guides for:\nChanging browser privacy settings\nWhich email services offer strong privacy protections\nHow to use VPNs\nAnd more\n“The more sand we can throw in the gears of what they’re trying to do,” said Marthews, “the harder it will be for them to implement a statewide surveillance system.”\n“But even if we fail,” he said, well aware that he could be a target for those he is working to hold accountable. “We don’t want to go down without a fight.”\n"
+            }
+        );
+    index.add(
+            {
+                id:  18 ,
+                href: "\/docs\/articles\/facial-recognition-pdf\/",
+                title: "Facial recognition software [PDF]",
+                description: "The impact on 3 levels of privacy: local, state, and personal.",
+                content: " info Have issues viewing the PDF? Click the download button on the top right corner of the viewer. This will open it in a separate browser tab. Previous Next / [pdf] View the PDF file here. "
+            }
+        );
+    index.add(
+            {
+                id:  19 ,
+                href: "\/docs\/articles\/affordable-housing-crisis\/",
+                title: "Boston's affordable housing crisis, 2020 [PDF]",
+                description: "How corporate short-stays like Airbnb worsened the affordable housing crisis in Boston.",
+                content: " info Have issues viewing the PDF? Click the download button on the top right corner of the viewer. This will open it in a separate browser tab. Previous Next / [pdf] View the PDF file here. "
+            }
+        );
+    search.addEventListener('input', show_results, true);
+
+    function show_results(){
+        const maxResult =  5 ;
+        const minlength =  0 ;
+        var searchQuery = sanitizeHTML(this.value);
+        var results = index.search(searchQuery, {limit: maxResult, enrich: true});
 
         
+        const flatResults = new Map(); 
+        for (const result of results.flatMap(r => r.result)) {
+        if (flatResults.has(result.doc.href)) continue;
+        flatResults.set(result.doc.href, result.doc);
+        }
+
+        suggestions.innerHTML = "";
+        suggestions.classList.remove('d-none');
+
         
+        if (searchQuery.length < minlength) {
+            const minCharMessage = document.createElement('div')
+            minCharMessage.innerHTML = `Please type at least <strong>${minlength}</strong> characters`
+            minCharMessage.classList.add("suggestion__no-results");
+            suggestions.appendChild(minCharMessage);
+            return;
+        } else {
+            
+            if (flatResults.size === 0 && searchQuery) {
+                const noResultsMessage = document.createElement('div')
+                noResultsMessage.innerHTML = "No results for" + ` "<strong>${searchQuery}</strong>"`
+                noResultsMessage.classList.add("suggestion__no-results");
+                suggestions.appendChild(noResultsMessage);
+                return;
+            }
+        }
+
+        
+        for(const [href, doc] of flatResults) {
+            const entry = document.createElement('div');
+            suggestions.appendChild(entry);
+
+            const a = document.createElement('a');
+            a.href = href;
+            entry.appendChild(a);
+
+            const title = document.createElement('span');
+            title.textContent = doc.title;
+            title.classList.add("suggestion__title");
+            a.appendChild(title);
+
+            const description = document.createElement('span');
+            description.textContent = doc.description;
+            description.classList.add("suggestion__description");
+            a.appendChild(description);
+
+            suggestions.appendChild(entry);
+
+            if(suggestions.childElementCount == maxResult) break;
+        }
+    }
+    }());
+</script>
         
     </body>
 </html>

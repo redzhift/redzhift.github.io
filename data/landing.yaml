@@ -14,7 +14,7 @@ hero:
     text: v1.0.1
     color: primary # primary, secondary, success, danger, warning, info, light, dark
     pill: false # boolean
-    soft: true # boolean
+    soft: false # boolean
 
   titleLogo:
     path: "images/logos"
@@ -28,7 +28,9 @@ hero:
   ctaButton:
     icon: auto_awesome
     btnText: "About me"
+    btnColor: danger
     url: "/docs/about"
+    color: danger
   cta2Button:
     icon: person
     btnText: "LinkedIn"
@@ -82,8 +84,8 @@ imageText:
   weight: 20
   template: image text
     
-  title: Developing...
-  subtitle: 
+  title: I create...
+  subtitle:
 
   list:
   - text: Knowledge bases
@@ -100,11 +102,11 @@ imageText:
 
   ctaButton:
     text: See the docs
-    url: "/docs/"
+    url: "/docs/user-guides/"
 
   image:
-    path: "images/templates/single"
-    filename: ""
+    path: "images/logos"
+    filename: #"title_logo.png"
     alt: "" # Optional but recommended
 
   imgOrder:
