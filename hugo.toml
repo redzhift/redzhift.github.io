@@ -54,20 +54,20 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
 
         pathName        = "docs"                            # path for documentation site | default "docs"
 
-        themeColor      = "cyan"                            # (optional) - Set theme accent colour. Options include: blue (default), green, red, yellow, emerald, cardinal, magenta, cyan
+        themeColor      = "red"                            # (optional) - Set theme accent colour. Options include: blue (default), green, red, yellow, emerald, cardinal, magenta, cyan
 
         darkMode        = true                                # enable dark mode option? default false
 
         prism           = true                                # enable syntax highlighting via Prism
 
-        prismTheme      = "lucario"                         # (optional) - Set theme for PrismJS. Options include: lotusdocs (default), solarized-light, twilight, lucario
+        prismTheme      = "twilight"                         # (optional) - Set theme for PrismJS. Options include: lotusdocs (default), solarized-light, twilight, lucario
 
         # gitinfo
         repoURL         = "https://github.com/redzhift/"  # Git repository URL for your site [support for GitHub, GitLab, and BitBucket]
         repoBranch      = ""                           # Name of your Git repository branch
-        editPage        = true                                # enable 'Edit this page' feature - default false
+        editPage        = false                                # enable 'Edit this page' feature - default false
         lastMod         = true                                # enable 'Last modified' date on pages - default false
-        lastModRelative = true                                # format 'Last modified' time as relative - default true
+        lastModRelative = false                                # format 'Last modified' time as relative - default true
 
         # ToC
         toc             = true                                # enable table of contents? default is true
@@ -90,7 +90,7 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
         descriptions    = true                                # enable front matter descriptions under content title?
 
         # Link behaviour
-        intLinkTooltip  = true                                # Enable a tooltip for internal links that displays info about the destination? default false
+        intLinkTooltip  = false                                # Enable a tooltip for internal links that displays info about the destination? default false
         # extLinkNewTab   = false                             # Open external links in a new Tab? default true
         logoLinkURL     = "/"                                 # Set a custom URL destination for the top header logo link.
 
@@ -102,45 +102,6 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
         # minQueryChar        = 3 # default is 0 (disabled)
         # maxResult           = 8 # default is 5
         # searchSectionsIndex = []
-
-    [params.docsearch] # Parameters for DocSearch
-        appID     = "O2QIOCBDAK"                       # Algolia Application ID (or set env variable HUGO_PARAM_DOCSEARCH_appID)
-        apiKey    = "fdc60eee76a72a35d739b54521498b77" # Algolia Search-Only API (Public) Key (or set env variable HUGO_PARAM_DOCSEARCH_apiKey)
-        indexName = "dev_lotusdocs.dev"               # Index Name to perform search on (or set env variable HUGO_PARAM_DOCSEARCH_indexName)
-
-    [params.plausible] # Parameters for Plausible Analytics
-        # dataDomain = "lotusdocs.dev" # (or set via env variable HUGO_PARAMS_PLAUSIBLE_dataDomain)
-        # scriptURL  = "/docs/s/js/e2f15511-354c-4165-83dc-4261fb95389d"       # (or set via env variable HUGO_PARAMS_PLAUSIBLE_scriptURL)
-        # src        = "https://plausible.lotuslabs.co.uk/js/pa-o2IXj18GiC1kn1tlnOePK.js" # (or set via env variable HUGO_PARAMS_PLAUSIBLE_src)
-        scriptPath = "/docs/s/js/e2f15511-354c-4165-83dc-4261fb95389d.js"       # (or set via env variable HUGO_PARAMS_PLAUSIBLE_scriptPath)
-        eventAPI   = "/docs/s/api/event/"       # optional - (or set via env variable HUGO_PARAMS_PLAUSIBLE_eventAPI)
-        hashBasedRouting = true # optional (default: false) - (or set via env variable HUGO_PARAMS_PLAUSIBLE_hashBasedRouting)
-        # captureOnLocalhost = true # optional (default: false) - (or set via env variable HUGO_PARAMS_PLAUSIBLE_captureOnLocalhost)
-
-    [params.feedback]
-        enabled = false
-        emoticonTpl = false
-        eventDest = ["plausible","google"]
-        emoticonEventName = "Feedback"
-        positiveEventName = "Positive Feedback"
-        negativeEventName = "Negative Feedback"
-        positiveFormTitle = "What did you like?"
-        negativeFormTitle = "What went wrong?"
-        successMsg = "Thank you for helping to improve Lotus Docs' documentation!"
-        errorMsg = "Sorry! There was an error while attempting to submit your feedback!"
-        positiveForm = [
-          ["Accurate", "Accurately describes the feature or option."],
-          ["Solved my problem", "Helped me resolve an issue."],
-          ["Easy to understand", "Easy to follow and comprehend."],
-          ["Something else"]
-        ]
-        negativeForm = [
-          ["Inaccurate", "Doesn't accurately describe the feature or option."],
-          ["Couldn't find what I was looking for", "Missing important information."],
-          ["Hard to understand", "Too complicated or unclear."],
-          ["Code sample errors", "One or more code samples are incorrect."],
-          ["Something else"]
-        ]
 
 [menu]
 [[menu.primary]]
