@@ -1,5 +1,5 @@
 baseURL = "https://redzhift.github.io/"
-languageCode = "en-US"
+locale = "en-US"
 title = "Jin Y.C"
 # theme = "lotusdocs"
 contentDir = "content"

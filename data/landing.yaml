@@ -105,8 +105,10 @@ imageText:
   image:
     path: "images/templates/single"
     filename: ""
-    alt: "Google LightHouse 100% Illustration" # Optional but recommended
+    alt: "" # Optional but recommended
 
   imgOrder:
         desktop: 2
         mobile: 1
+
+        
