@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Kernel on Jin</title>
+		<title>Kernel on Jin Y.C</title>
 		<link>https://redzhift.github.io/tags/kernel/</link>
-		<description>Recent content in Kernel on Jin</description>
+		<description>Recent content in Kernel on Jin Y.C</description>
 		<generator>Hugo</generator>
-		<language>en-us</language>
+		<language>en-US</language>
 		
 		
 		
 		
-			<lastBuildDate>Mon, 08 Jun 2026 16:58:36 -0700</lastBuildDate>
+			<lastBuildDate>Tue, 22 Nov 2022 12:36:15 +0000</lastBuildDate>
 		
 			<atom:link href="https://redzhift.github.io/tags/kernel/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Change default kernel</title>
-				<link>https://redzhift.github.io/docs/change-default-kernel/</link>
+				<link>https://redzhift.github.io/docs/user-guides/user-config/change-default-kernel/</link>
 				<pubDate>Mon, 08 Jun 2026 16:58:36 -0700</pubDate>
-				<guid>https://redzhift.github.io/docs/change-default-kernel/</guid>
-				<description>&lt;blockquote&gt;&#xA;&lt;p&gt;Note: This guide was originally published on &lt;a href=&#34;https://github.com/redzhift/mywiki/wiki/Change-default-kernel&#34;&gt;GitHub&lt;/a&gt; and is also available in &lt;a href=&#34;https://redzhift.atlassian.net/wiki/spaces/~jcho/pages/10649618/Change+default+kernel+at+boot&#34;&gt;Confluence&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;contents&#34;&gt;Contents&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#1-find-kernel-id-with-bootctl&#34;&gt;Find kernel id with &lt;code&gt;bootctl&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#2-edit-boot-loader-config&#34;&gt;Edit boot loader config&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#3-verify-and-reboot&#34;&gt;Verify and reboot&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#additional-information&#34;&gt;Additional information&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Your system can have multiple kernels (or installations) of the same Linux distro. This is typically from having different ISO images, such as EOS Mercury, Titan, and Ganymede. The newest kernel is usually booted by default, but can be adjusted to user preference.&lt;/p&gt;</description>
+				<guid>https://redzhift.github.io/docs/user-guides/user-config/change-default-kernel/</guid>
+				<description>&lt;p&gt;&lt;em&gt;Note: This guide was originally published on &lt;a href=&#34;https://github.com/redzhift/mywiki/wiki/Change-default-kernel&#34; rel=&#34;external&#34; target=&#34;_blank&#34;&gt;GitHub&lt;svg width=&#34;16&#34; height=&#34;16&#34; viewBox=&#34;0 0 24 24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path fill=&#34;currentColor&#34; d=&#34;M14 5c-.552 0-1-.448-1-1s.448-1 1-1h6c.552 0 1 .448 1 1v6c0 .552-.448 1-1 1s-1-.448-1-1v-3.586l-7.293 7.293c-.391.39-1.024.39-1.414 0-.391-.391-.391-1.024 0-1.414l7.293-7.293h-3.586zm-9 2c-.552 0-1 .448-1 1v11c0 .552.448 1 1 1h11c.552 0 1-.448 1-1v-4.563c0-.552.448-1 1-1s1 .448 1 1v4.563c0 1.657-1.343 3-3 3h-11c-1.657 0-3-1.343-3-3v-11c0-1.657 1.343-3 3-3h4.563c.552 0 1 .448 1 1s-.448 1-1 1h-4.563z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt; and is also available in &lt;a href=&#34;https://redzhift.atlassian.net/wiki/spaces/~jcho/pages/10649618/Change+default+kernel+at+boot&#34; rel=&#34;external&#34; target=&#34;_blank&#34;&gt;Confluence&lt;svg width=&#34;16&#34; height=&#34;16&#34; viewBox=&#34;0 0 24 24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path fill=&#34;currentColor&#34; d=&#34;M14 5c-.552 0-1-.448-1-1s.448-1 1-1h6c.552 0 1 .448 1 1v6c0 .552-.448 1-1 1s-1-.448-1-1v-3.586l-7.293 7.293c-.391.39-1.024.39-1.414 0-.391-.391-.391-1.024 0-1.414l7.293-7.293h-3.586zm-9 2c-.552 0-1 .448-1 1v11c0 .552.448 1 1 1h11c.552 0 1-.448 1-1v-4.563c0-.552.448-1 1-1s1 .448 1 1v4.563c0 1.657-1.343 3-3 3h-11c-1.657 0-3-1.343-3-3v-11c0-1.657 1.343-3 3-3h4.563c.552 0 1 .448 1 1s-.448 1-1 1h-4.563z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;</description>
 			</item>
 	</channel>
 </rss>

@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+
+
+
+
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+<html lang="en-US"><head>
+    <meta charset="utf-8" />
+    <title>Why do I get errors when I try to update? | Docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Documentation, Hugo, Hugo Theme, Bootstrap" />
+    <meta name="author" content="Colin Wilson - Lotus Labs" />
+    <meta name="email" content="support@aigis.uk" />
+    <meta name="website" content="https://lotusdocs.dev" />
+    <meta name="Version" content="v0.1.0" />
+    
+    <link rel="icon" href="https://redzhift.github.io/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="https://redzhift.github.io/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="https://redzhift.github.io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://redzhift.github.io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://redzhift.github.io/favicon-16x16.png">
+<link rel="manifest" crossorigin="use-credentials" href="https://redzhift.github.io/site.webmanifest">
+<meta property="og:title" content="Why do I get errors when I try to update?" />
+<meta property="og:description" content="Some update errors are caused by issues with mirrors and mirrorlist configurations.
+These issues can usually be fixed by re-ranking mirrors.
+
+See: Update mirrors guide
+
+Outdated package databases will cause errors when pacman tries to retrieve the latest package files. This can be prevented through regular mirror maintenance.
+
+Error: failed to commit transaction (conflicting files) linkRunning a sudo pacman -Syu update may fail and display the following errors:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://redzhift.github.io/docs/user-guides/faqs/getting-update-errors/" /><meta property="og:image" content="https://redzhift.github.io/opengraph/card-base-2_hu_be0f8f86b48096b1.png"/><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2026-06-12T18:00:22-07:00" />
+<meta property="article:modified_time" content="2026-06-12T18:00:22-07:00" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://redzhift.github.io/opengraph/card-base-2_hu_be0f8f86b48096b1.png"/>
+<meta name="twitter:title" content="Why do I get errors when I try to update?"/>
+<meta name="twitter:description" content="Some update errors are caused by issues with mirrors and mirrorlist configurations.
+These issues can usually be fixed by re-ranking mirrors.
+
+See: Update mirrors guide
+
+Outdated package databases will cause errors when pacman tries to retrieve the latest package files. This can be prevented through regular mirror maintenance.
+
+Error: failed to commit transaction (conflicting files) linkRunning a sudo pacman -Syu update may fail and display the following errors:"/>
+
+    
+        <link rel="alternate" type="application/atom+xml" title="Atom feed for Jin Y.C" href="/index.xml" />
+    
+    <script>(()=>{var t=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,e=localStorage.getItem("theme");t&&e===null&&(localStorage.setItem("theme","dark"),document.documentElement.setAttribute("data-dark-mode","")),t&&e==="dark"&&document.documentElement.setAttribute("data-dark-mode",""),e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script>
+    
+    
+    
+    
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css?family=Mozilla+Text:300,400,600,700|Fira+Code:500,700&display=block" rel="stylesheet">
+
+    <link rel="stylesheet" href="/docs/scss/style.min.c9fc0d5eb13fce654c01495a1e70ef4e4a42be5083adc9cb7e3a355f5420bbd61d16f8d70457f710966c4a1ed346a17b.css" integrity="sha384-yfwNXrE/zmVMAUlaHnDvTkpCvlCDrcnLfjo1X1Qgu9YdFvjXBFf3EJZsSh7TRqF7"crossorigin="anonymous">
+    
+    
+    
+<script async src="/docs/s/js/e2f15511-354c-4165-83dc-4261fb95389d.js"></script>
+<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+<script>
+  window.plausible = window.plausible || function() { (plausible.q = plausible.q || []).push(arguments) },plausible.init = plausible.init || function(i){plausible.o=i||{}};
+  plausible.init({
+    endpoint: "/docs/s/api/event/",
+    hashBasedRouting: true,
+    })
+</script>
+    </head>
+<body>
+        <div class="content">
+            <div class="page-wrapper toggled">
+<nav id="sidebar" class="sidebar-wrapper">
+    <div class="sidebar-brand">
+        <a href='/' aria-label="HomePage" alt="HomePage">
+            
+                <?xml version="1.0" encoding="UTF-8"?><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250"><path d="m143,39.5c-18,0-18,18-18,18,0,0,0-18-18-18H22c-2.76,0-5,2.24-5,5v143c0,2.76,2.24,5,5,5h76c7.2,0,8.64,11.52,8.93,16.13.07,1.05.95,1.87,2,1.87h32.14c1.06,0,1.94-.82,2-1.87.29-4.61,1.73-16.13,8.93-16.13h76c2.76,0,5-2.24,5-5V44.5c0-2.76-2.24-5-5-5h-85Zm63,123.5c0,1.38-1.12,2.5-2.5,2.5h-60.5c-18,0-18,18-18,18,0,0,0-18-18-18h-60.5c-1.38,0-2.5-1.12-2.5-2.5v-94c0-1.38,1.12-2.5,2.5-2.5h51.5c7.2,0,8.64,11.52,8.93,16.13.07,1.05.95,1.87,2,1.87h32.14c1.06,0,1.94-.82,2-1.87.29-4.61,1.73-16.13,8.93-16.13h51.5c1.38,0,2.5,1.12,2.5,2.5v94Z" style="fill:#06f;"/></svg>
+            
+        </a>
+    </div>
+    <div class="sidebar-content" style="height: calc(100% - 131px);">
+        <ul class="sidebar-menu">
+            
+                
+                
+                    
+                        
+                        <li class="">
+                            <a class="sidebar-root-link" href="https://redzhift.github.io/docs/about/">
+                                <i class="material-icons me-2">auto_awesome</i>
+                                
+                                About
+                            </a>
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="sidebar-dropdown  current active">
+                            <button class="btn">
+                                <i class="material-icons me-2">menu_book</i>
+                                User guides
+                            </button>
+                            <div class="sidebar-submenu d-block">
+                                <ul>
+                                    
+                                        
+                                        
+                                            <li class="sidebar-dropdown nested  ">
+                                                <button class="btn">
+                                                    
+                                                    User tools &amp; settings
+                                                </button>
+                                                <div class="sidebar-submenu ">
+                                                    <ul>
+                                                        
+                                                            
+                                                            
+                                                                <li class=" "><a class="sidebar-nested-link" href="https://redzhift.github.io/docs/user-guides/user-config/downgrade-to-specific-date/">Downgrade with eos-shifttime</a></li>
+                                                            
+                                                        
+                                                            
+                                                            
+                                                                <li class=" "><a class="sidebar-nested-link" href="https://redzhift.github.io/docs/user-guides/user-config/change-default-kernel/">Change default kernel</a></li>
+                                                            
+                                                        
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class="sidebar-dropdown nested  ">
+                                                <button class="btn">
+                                                    
+                                                    System maintenance
+                                                </button>
+                                                <div class="sidebar-submenu ">
+                                                    <ul>
+                                                        
+                                                            
+                                                            
+                                                                <li class=" "><a class="sidebar-nested-link" href="https://redzhift.github.io/docs/user-guides/system-maintenance/update-pacman/">Update with pacman</a></li>
+                                                            
+                                                        
+                                                            
+                                                            
+                                                                <li class=" "><a class="sidebar-nested-link" href="https://redzhift.github.io/docs/user-guides/system-maintenance/rerank-arch-mirrors/">Re-rank Arch mirrors</a></li>
+                                                            
+                                                        
+                                                            
+                                                            
+                                                                <li class=" "><a class="sidebar-nested-link" href="https://redzhift.github.io/docs/user-guides/system-maintenance/rerank-endeavouros-mirrors/">Re-rank EndeavourOS mirrors</a></li>
+                                                            
+                                                        
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class="sidebar-dropdown nested  current active">
+                                                <button class="btn">
+                                                    
+                                                    FAQs
+                                                </button>
+                                                <div class="sidebar-submenu d-block">
+                                                    <ul>
+                                                        
+                                                            
+                                                            
+                                                                <li class="current "><a class="sidebar-nested-link" href="https://redzhift.github.io/docs/user-guides/faqs/getting-update-errors/">Why do I get errors when I try to update?</a></li>
+                                                            
+                                                        
+                                                            
+                                                            
+                                                                <li class=" "><a class="sidebar-nested-link" href="https://redzhift.github.io/docs/user-guides/faqs/mirror-alternatives/">Are there mirror management alternatives?</a></li>
+                                                            
+                                                        
+                                                            
+                                                            
+                                                                <li class=" "><a class="sidebar-nested-link" href="https://redzhift.github.io/docs/user-guides/faqs/what-is-aur/">What is the AUR?</a></li>
+                                                            
+                                                        
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="sidebar-dropdown  ">
+                            <button class="btn">
+                                <i class="material-icons me-2">quick_reference_all</i>
+                                Research
+                            </button>
+                            <div class="sidebar-submenu ">
+                                <ul>
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="https://redzhift.github.io/docs/research/game-psychology-research/">Game Psychology Research [PDF]</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="https://redzhift.github.io/docs/research/crime-policy-analysis/">Crime policy analysis [PDF]</a></li>
+                                        
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="sidebar-dropdown  ">
+                            <button class="btn">
+                                <i class="material-icons me-2">newsmode</i>
+                                Articles
+                            </button>
+                            <div class="sidebar-submenu ">
+                                <ul>
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="https://redzhift.github.io/docs/articles/facial-recognition/">Facial recognition software</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="https://redzhift.github.io/docs/articles/facial-recognition-pdf/">Facial recognition software [PDF]</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="https://redzhift.github.io/docs/articles/affordable-housing-crisis/">Boston&#39;s affordable housing crisis, 2020 [PDF]</a></li>
+                                        
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    
+                
+            
+        </ul>
+        
+    </div>
+    
+        <ul class="sidebar-footer list-unstyled mb-0">
+            
+        </ul>
+    
+</nav>
+
+                    <main class="page-content bg-transparent">
+                        
+<div id="top-header" class="top-header d-print-none">
+    <div class="header-bar d-flex justify-content-between">
+        <div class="d-flex align-items-center">
+            <a href='/' class="logo-icon me-3" aria-label="HomePage" alt="HomePage">
+                <div class="small">
+                    
+                            <?xml version="1.0" encoding="UTF-8"?><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250"><path d="m143,39.5c-18,0-18,18-18,18,0,0,0-18-18-18H22c-2.76,0-5,2.24-5,5v143c0,2.76,2.24,5,5,5h76c7.2,0,8.64,11.52,8.93,16.13.07,1.05.95,1.87,2,1.87h32.14c1.06,0,1.94-.82,2-1.87.29-4.61,1.73-16.13,8.93-16.13h76c2.76,0,5-2.24,5-5V44.5c0-2.76-2.24-5-5-5h-85Zm63,123.5c0,1.38-1.12,2.5-2.5,2.5h-60.5c-18,0-18,18-18,18,0,0,0-18-18-18h-60.5c-1.38,0-2.5-1.12-2.5-2.5v-94c0-1.38,1.12-2.5,2.5-2.5h51.5c7.2,0,8.64,11.52,8.93,16.13.07,1.05.95,1.87,2,1.87h32.14c1.06,0,1.94-.82,2-1.87.29-4.61,1.73-16.13,8.93-16.13h51.5c1.38,0,2.5,1.12,2.5,2.5v94Z" style="fill:#06f;"/></svg>
+                    
+                </div>
+                <div class="big">
+                    
+                            <?xml version="1.0" encoding="UTF-8"?><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250"><path d="m143,39.5c-18,0-18,18-18,18,0,0,0-18-18-18H22c-2.76,0-5,2.24-5,5v143c0,2.76,2.24,5,5,5h76c7.2,0,8.64,11.52,8.93,16.13.07,1.05.95,1.87,2,1.87h32.14c1.06,0,1.94-.82,2-1.87.29-4.61,1.73-16.13,8.93-16.13h76c2.76,0,5-2.24,5-5V44.5c0-2.76-2.24-5-5-5h-85Zm63,123.5c0,1.38-1.12,2.5-2.5,2.5h-60.5c-18,0-18,18-18,18,0,0,0-18-18-18h-60.5c-1.38,0-2.5-1.12-2.5-2.5v-94c0-1.38,1.12-2.5,2.5-2.5h51.5c7.2,0,8.64,11.52,8.93,16.13.07,1.05.95,1.87,2,1.87h32.14c1.06,0,1.94-.82,2-1.87.29-4.61,1.73-16.13,8.93-16.13h51.5c1.38,0,2.5,1.12,2.5,2.5v94Z" style="fill:#06f;"/></svg>
+                    
+                </div>
+            </a>
+            <button id="close-sidebar" class="btn btn-icon btn-soft">
+                <span class="material-icons size-20 menu-icon align-middle">menu</span>
+            </button>
+            <span><div id="docsearch"></div></span>
+            
+            
+            </div>
+
+        <div class="d-flex align-items-center">
+            <ul class="list-unstyled mb-0">
+                
+                
+                    
+                    <li class="list-inline-item mb-0">
+                        <a href=" https://github.com/redzhift " alt="github" rel="noopener noreferrer" target="_blank">
+                            <div class="btn btn-icon btn-default border-0">
+                                
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                
+                            </div>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item mb-0">
+                        <a href=" https://redzhift.github.io/index.xml " alt="rss" rel="noopener noreferrer" target="_blank">
+                            <div class="btn btn-icon btn-default border-0">
+                                
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>RSS</title><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
+                                
+                            </div>
+                        </a>
+                    </li>
+                    
+                
+            </ul>
+            <button id="mode" class="btn btn-icon btn-default ms-2" type="button" aria-label="Toggle user interface mode">
+                <span class="toggle-dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 48 48" fill="currentColor">
+                        <title>Enable dark mode</title>
+                        <path d="M24 42q-7.5 0-12.75-5.25T6 24q0-7.5 5.25-12.75T24 6q.4 0 .85.025.45.025 1.15.075-1.8 1.6-2.8 3.95-1 2.35-1 4.95 0 4.5 3.15 7.65Q28.5 25.8 33 25.8q2.6 0 4.95-.925T41.9 22.3q.05.6.075.975Q42 23.65 42 24q0 7.5-5.25 12.75T24 42Zm0-3q5.45 0 9.5-3.375t5.05-7.925q-1.25.55-2.675.825Q34.45 28.8 33 28.8q-5.75 0-9.775-4.025T19.2 15q0-1.2.25-2.575.25-1.375.9-3.125-4.9 1.35-8.125 5.475Q9 18.9 9 24q0 6.25 4.375 10.625T24 39Zm-.2-14.85Z"/>
+                    </svg>
+                </span>
+                <span class="toggle-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 48 48" fill="currentColor">
+                        <title>Enable light mode</title>
+                        <path d="M24 31q2.9 0 4.95-2.05Q31 26.9 31 24q0-2.9-2.05-4.95Q26.9 17 24 17q-2.9 0-4.95 2.05Q17 21.1 17 24q0 2.9 2.05 4.95Q21.1 31 24 31Zm0 3q-4.15 0-7.075-2.925T14 24q0-4.15 2.925-7.075T24 14q4.15 0 7.075 2.925T34 24q0 4.15-2.925 7.075T24 34ZM3.5 25.5q-.65 0-1.075-.425Q2 24.65 2 24q0-.65.425-1.075Q2.85 22.5 3.5 22.5h5q.65 0 1.075.425Q10 23.35 10 24q0 .65-.425 1.075-.425.425-1.075.425Zm36 0q-.65 0-1.075-.425Q38 24.65 38 24q0-.65.425-1.075.425-.425 1.075-.425h5q.65 0 1.075.425Q46 23.35 46 24q0 .65-.425 1.075-.425.425-1.075.425ZM24 10q-.65 0-1.075-.425Q22.5 9.15 22.5 8.5v-5q0-.65.425-1.075Q23.35 2 24 2q.65 0 1.075.425.425.425.425 1.075v5q0 .65-.425 1.075Q24.65 10 24 10Zm0 36q-.65 0-1.075-.425-.425-.425-.425-1.075v-5q0-.65.425-1.075Q23.35 38 24 38q.65 0 1.075.425.425.425.425 1.075v5q0 .65-.425 1.075Q24.65 46 24 46ZM12 14.1l-2.85-2.8q-.45-.45-.425-1.075.025-.625.425-1.075.45-.45 1.075-.45t1.075.45L14.1 12q.4.45.4 1.05 0 .6-.4 1-.4.45-1.025.45-.625 0-1.075-.4Zm24.7 24.75L33.9 36q-.4-.45-.4-1.075t.45-1.025q.4-.45 1-.45t1.05.45l2.85 2.8q.45.45.425 1.075-.025.625-.425 1.075-.45.45-1.075.45t-1.075-.45ZM33.9 14.1q-.45-.45-.45-1.05 0-.6.45-1.05l2.8-2.85q.45-.45 1.075-.425.625.025 1.075.425.45.45.45 1.075t-.45 1.075L36 14.1q-.4.4-1.025.4-.625 0-1.075-.4ZM9.15 38.85q-.45-.45-.45-1.075t.45-1.075L12 33.9q.45-.45 1.05-.45.6 0 1.05.45.45.45.45 1.05 0 .6-.45 1.05l-2.8 2.85q-.45.45-1.075.425-.625-.025-1.075-.425ZM24 24Z"/>
+                    </svg>
+                </span>
+            </button>
+            
+        </div>
+    </div>
+    
+    
+    
+    
+</div>
+
+
+                            <div class="container-fluid">
+                                <div class="layout-spacing">
+                                    
+                                        <div class="d-md-flex justify-content-between align-items-center"><nav aria-label="breadcrumb" class="d-inline-block pb-2 mt-1 mt-sm-0">
+    <ul id="breadcrumbs" class="breadcrumb bg-transparent mb-0" itemscope itemtype="https://schema.org/BreadcrumbList">
+        
+            
+                <li class="breadcrumb-item text-capitalize active" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="/docs/">
+                        <i class="material-icons size-20 align-text-bottom" itemprop="name">Home</i>
+                    </a>
+                    <meta itemprop="position" content='1' />
+                </li>
+            
+            
+                <li class="breadcrumb-item text-capitalize" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="/docs/user-guides/">
+                        <span itemprop="name">User guides</span>
+                    </a>
+                    <meta itemprop="position" content='2' />
+                </li>
+            
+            
+                <li class="breadcrumb-item text-capitalize" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="/docs/user-guides/faqs/">
+                        <span itemprop="name">FAQs</span>
+                    </a>
+                    <meta itemprop="position" content='3' />
+                </li>
+            
+        
+            <li class="breadcrumb-item text-capitalize active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <span itemprop="name">Why do I get errors when I try to update?</span>
+                <meta itemprop="position" content='4' />
+            </li>
+        
+    </ul>
+</nav></div>
+                                    
+                                    <div class="row flex-xl-nowrap">
+                                        
+                                        <div class="docs-toc col-xl-3    d-xl-block"><toc>
+    <div class="fw-bold text-uppercase mb-2">On this page</div>
+    <nav id="toc">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#error-failed-to-commit-transaction-conflicting-files">Error: failed to commit transaction (conflicting files)</a></li>
+            <li><a href="#can-i-undo-or-revert-updates">Can I undo or revert updates?</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </toc></div>
+                                        
+                                        
+                                        <div class="docs-toc-mobile    d-print-none d-xl-none">
+                                            <button id="toc-dropdown-btn" class="btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-offset="0,0" aria-expanded="false">
+                                                Table of Contents
+                                            </button>
+<nav id="toc-mobile">
+  <ul class="dropdown-menu">
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#error-failed-to-commit-transaction-conflicting-files">Error: failed to commit transaction (conflicting files)</a></li>
+            <li><a href="#can-i-undo-or-revert-updates">Can I undo or revert updates?</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+                                        <div class="docs-content col-12 col-xl-9 mt-0">
+                                            <div class="mb-0 d-flex">
+                                                
+                                                <i class="material-icons title-icon me-2">menu_book</i>
+                                                
+                                                <h1 class="content-title mb-0">
+                                                    Why do I get errors when I try to update?
+                                                    
+                                                </h1>
+                                            </div>
+                                            
+                                                <p class="lead mb-3"></p>
+                                            
+                                            <div id="content" class="main-content" data-bs-spy="scroll" data-bs-root-margin="0px 0px -65%" data-bs-target="#toc-mobile">
+                                                
+    
+    <div data-prismjs-copy="" data-prismjs-copy-success="" data-prismjs-copy-error="">
+        <p>Some update errors are caused by issues with mirrors and mirrorlist configurations.</p>
+<p>These issues can usually be fixed by re-ranking mirrors.</p>
+<ul>
+<li>See: <a data-bs-delay="{&#34;hide&#34;:300,&#34;show&#34;:550}" data-bs-html="true" data-bs-title="<a href='/docs/user-guides/system-maintenance/rerank-arch-mirrors/'><p>SYSTEM MAINTENANCE</p><strong>Re-rank Arch mirrors</strong><br>Keep your Arch mirrorlist up-to-date by re-ranking mirrors.</a>" data-bs-toggle="tooltip" href="/docs/user-guides/system-maintenance/rerank-arch-mirrors/">Update mirrors guide</a></li>
+</ul>
+<p>Outdated package databases will cause errors when <code>pacman</code> tries to retrieve the latest package files. This can be prevented through regular mirror maintenance.</p>
+<hr>
+<h3 id="error-failed-to-commit-transaction-conflicting-files">Error: failed to commit transaction (conflicting files) <a href="#error-failed-to-commit-transaction-conflicting-files" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>Running a <code>sudo pacman -Syu</code> update may fail and display the following errors:</p>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="2af6cbd" class="language-sh ">
+  <code> error: failed to commit transaction (conflicting files)
+ &lt;example&gt;: /example exists in filesystem (owned by filesystem)
+ &lt;example&gt;: /lib/systemd/system/example.service exists in filesystem</code>
+  </pre>
+  </div>
+<p>These issues can be resolved with manual intervention. Uninstall and remove the package from the system, then reinstall/update with these two commands:</p>
+
+
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+
+  <div class="prism-codeblock ">
+  <pre id="1414856" class="language-sh ">
+  <code> $ sudo pacman -Rdd &lt;pkg&gt;
+ $ sudo pacman -Syu &lt;pkg&gt;</code>
+  </pre>
+  </div>
+<hr>
+<h3 id="can-i-undo-or-revert-updates">Can I undo or revert updates? <a href="#can-i-undo-or-revert-updates" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>The <code>eos-shifttime</code> tool allows users to revert system packages to versions of specified dates.</p>
+<p>To learn more about using <code>eos-shifttime</code>, refer to:</p>
+<ul>
+<li><a href="/docs/downgrade-to-specific-date/">User guide: Downgrade to a specific date</a></li>
+</ul>
+<hr>
+
+    </div>
+
+    
+
+    
+                                            </div>
+                                            <div><hr class="doc-hr">
+<div id="doc-nav" class="d-print-none">
+
+	<div class="row flex-xl-nowrap ">
+	<div class="col-sm-6 pt-2 doc-next">
+		<a href="/docs/user-guides/system-maintenance/rerank-endeavouros-mirrors/">
+			<div class="card h-100 my-1">
+				<div class="card-body py-2">
+                    <p class="card-title fs-5 fw-semibold lh-base mb-0"><i class="material-icons align-middle">navigate_before</i> Re-rank EndeavourOS mirrors</p>
+					<p class="card-text ms-2">Keep your EndeavourOS …</p>
+					
+				</div>
+			</div>
+		</a>
+        </div>
+	<div class="col-sm-6 pt-2 doc-prev">
+		<a class="ms-auto" href="/docs/user-guides/faqs/mirror-alternatives/">
+			<div class="card h-100 my-1 text-end">
+				<div class="card-body py-2">
+                    <p class="card-title fs-5 fw-semibold lh-base mb-0">Are there mirror management alternatives? <i class="material-icons align-middle">navigate_next</i></p>
+					<p class="card-text me-2"></p>
+					
+				</div>
+			</div>
+		</a>
+        </div>
+	</div>
+</div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+<footer class="shadow py-3 d-print-none">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col">
+                <div class="text-sm-start text-center mx-md-2">
+                    <p class="mb-0">
+                        
+                        © 2026 Jin Y.C. | <code>redzhift@tuta.io</code>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</main>
+            </div>
+        </div>
+
+        
+        
+        <button onclick="topFunction()" id="back-to-top" aria-label="Back to Top Button" class="back-to-top fs-5"><svg width="24" height="24"><path d="M12,10.224l-6.3,6.3L4.32,15.152,12,7.472l7.68,7.68L18.3,16.528Z" style="fill:#fff"/></svg></button>
+        
+        
+
+        
+        
+            <script>(()=>{var e=document.getElementById("mode");e!==null&&(window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",e=>{e.matches?(localStorage.setItem("theme","dark"),document.documentElement.setAttribute("data-dark-mode","")):(localStorage.setItem("theme","light"),document.documentElement.removeAttribute("data-dark-mode"))}),e.addEventListener("click",()=>{document.documentElement.toggleAttribute("data-dark-mode"),localStorage.setItem("theme",document.documentElement.hasAttribute("data-dark-mode")?"dark":"light")}),localStorage.getItem("theme")==="dark"?document.documentElement.setAttribute("data-dark-mode",""):document.documentElement.removeAttribute("data-dark-mode"))})()</script>
+        
+
+
+    
+
+
+    
+        
+        
+    
+    
+
+
+
+
+
+
+    
+
+    <script src="/docs/js/bootstrap.9830259bc28edf5a45a3c7aa85d782bb2b8ac9a68e8ff3e14e4ad92a0aaf7882b8c20ea2ba1c4fc65f4415a3046aca9a.js" integrity="sha384-mDAlm8KO31pFo8eqhdeCuyuKyaaOj/PhTkrZKgqveIK4wg6iuhxPxl9EFaMEasqa"defer></script>
+
+
+    <script type="text/javascript" src="https://redzhift.github.io/docs/js/bundle.min.b3cde2e4b0e7a6dc283ed2646fe77b3fc462b9b47d9a969da61eac9dd8a80f99a2bec47481887351145678b5900e705c.js" integrity="sha384-s83i5LDnptwoPtJkb&#43;d7P8RiubR9mpadph6sndioD5mivsR0gYhzURRWeLWQDnBc" crossorigin="anonymous" defer></script>
+
+        <script>
+    window.addEventListener('DOMContentLoaded', function() {
+        
+        docsearch({
+            container: '#docsearch',
+            appId: 'O2QIOCBDAK',
+            apiKey: 'fdc60eee76a72a35d739b54521498b77',
+            indexName: 'dev_lotusdocs.dev',
+            placeholder: 'Search Documentation',
+            translations: {
+                button: {
+                    buttonText: 'Search',
+                    buttonAriaLabel: 'Search',
+                }
+            }
+        });
+    });
+</script>
+
+        
+        
+        
+    </body>
+</html>

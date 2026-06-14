@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Pacman on Jin</title>
+		<title>Pacman on Jin Y.C</title>
 		<link>https://redzhift.github.io/tags/pacman/</link>
-		<description>Recent content in Pacman on Jin</description>
+		<description>Recent content in Pacman on Jin Y.C</description>
 		<generator>Hugo</generator>
-		<language>en-us</language>
+		<language>en-US</language>
 		
 		
 		
@@ -15,10 +15,10 @@
 			<atom:link href="https://redzhift.github.io/tags/pacman/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Update with pacman</title>
-				<link>https://redzhift.github.io/docs/update-pacman/</link>
+				<link>https://redzhift.github.io/docs/user-guides/system-maintenance/update-pacman/</link>
 				<pubDate>Tue, 12 May 2026 14:09:31 -0700</pubDate>
-				<guid>https://redzhift.github.io/docs/update-pacman/</guid>
-				<description>&lt;p&gt;Arch systems should be updated daily to weekly. There are 3 commands used to Endeavour OS: &lt;code&gt;pacman -Syu&lt;/code&gt;, &lt;code&gt;yay&lt;/code&gt;, and &lt;code&gt;eos-update&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#sudo-pacman--syu&#34;&gt;&lt;code&gt;pacman -Syu&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#yay&#34;&gt;&lt;code&gt;yay&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#eos-update&#34;&gt;&lt;code&gt;eos-update&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;pacman--syu&#34;&gt;&lt;code&gt;pacman -Syu&lt;/code&gt;&lt;/h2&gt;&#xA;&lt;p&gt;To perform a full system update and refresh, run:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ sudo pacman -Syu&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;pacman&lt;/code&gt; is the package manager used to install and update programs in Arch Linux.&lt;/p&gt;&#xA;&lt;p&gt;Some commands require appending &lt;code&gt;sudo&lt;/code&gt; to them - this is because they require &lt;strong&gt;root permissions&lt;/strong&gt;. These elevated permissions allows the &lt;code&gt;su&lt;/code&gt;peruser to &lt;code&gt;do&lt;/code&gt; system-related tasks, such as updating the computer.&lt;/p&gt;</description>
+				<guid>https://redzhift.github.io/docs/user-guides/system-maintenance/update-pacman/</guid>
+				<description>&lt;p&gt;There are 3 commands used to update &lt;strong&gt;Endeavour OS&lt;/strong&gt; systems:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://redzhift.github.io/docs/user-guides/system-maintenance/update-pacman/#sudo-pacman--syu&#34;&gt;&lt;code&gt;pacman -Syu&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://redzhift.github.io/docs/user-guides/system-maintenance/update-pacman/#yay&#34;&gt;&lt;code&gt;yay&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://redzhift.github.io/docs/user-guides/system-maintenance/update-pacman/#eos-update&#34;&gt;&lt;code&gt;eos-update&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;pacman--syu&#34;&gt;&lt;code&gt;pacman -Syu&lt;/code&gt; &lt;a href=&#34;#pacman--syu&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;To perform a full system update and refresh, run:&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;  &#xA;  &#xA;  &#xA;&#xA;  &#xA;  &#xA;  &#xA;  &#xA;&#xA;  &#xA;&#xA;  &lt;div class=&#34;prism-codeblock &#34;&gt;&#xA;  &lt;pre id=&#34;902b365&#34; class=&#34;language-sh &#34;&gt;&#xA;  &lt;code&gt;$ sudo pacman -Syu&lt;/code&gt;&#xA;  &lt;/pre&gt;&#xA;  &lt;/div&gt;&#xA;&lt;p&gt;&lt;code&gt;pacman&lt;/code&gt; is the package manager used to install and update programs in Arch Linux.&lt;/p&gt;&#xA;&#xA;&lt;div class=&#34;alert alert-info d-flex&#34; role=&#34;alert&#34;&gt;&#xA;  &lt;div class=&#34;flex-shrink-1 alert-icon&#34;&gt;&#xA;  &#xA;  &lt;span class=&#34;material-icons size-20 me-2&#34;&gt;&#xA;  info&#xA;  &lt;/span&gt;&lt;/div&gt;&#xA;  &#xA;  &lt;div class=&#34;w-100&#34;&gt;Some commands require prepending &lt;code&gt;sudo&lt;/code&gt; to them as they require &lt;code&gt;super user&lt;/code&gt; (or root) permissions to run.&lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;&lt;p&gt;&lt;strong&gt;Example terminal output&lt;/strong&gt;&lt;/p&gt;</description>
 			</item>
 	</channel>
 </rss>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>System maintenance on Jin Y.C</title>
+		<link>https://redzhift.github.io/docs/user-guides/system-maintenance/</link>
+		<description>Recent content in System maintenance on Jin Y.C</description>
+		<generator>Hugo</generator>
+		<language>en-US</language>
+		
+		
+		
+		
+			<lastBuildDate>Fri, 12 Jun 2026 18:00:22 -0700</lastBuildDate>
+		
+			<atom:link href="https://redzhift.github.io/docs/user-guides/system-maintenance/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Update with pacman</title>
+				<link>https://redzhift.github.io/docs/user-guides/system-maintenance/update-pacman/</link>
+				<pubDate>Tue, 12 May 2026 14:09:31 -0700</pubDate>
+				<guid>https://redzhift.github.io/docs/user-guides/system-maintenance/update-pacman/</guid>
+				<description>&lt;p&gt;There are 3 commands used to update &lt;strong&gt;Endeavour OS&lt;/strong&gt; systems:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://redzhift.github.io/docs/user-guides/system-maintenance/update-pacman/#sudo-pacman--syu&#34;&gt;&lt;code&gt;pacman -Syu&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://redzhift.github.io/docs/user-guides/system-maintenance/update-pacman/#yay&#34;&gt;&lt;code&gt;yay&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://redzhift.github.io/docs/user-guides/system-maintenance/update-pacman/#eos-update&#34;&gt;&lt;code&gt;eos-update&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;pacman--syu&#34;&gt;&lt;code&gt;pacman -Syu&lt;/code&gt; &lt;a href=&#34;#pacman--syu&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;To perform a full system update and refresh, run:&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;  &#xA;  &#xA;  &#xA;&#xA;  &#xA;  &#xA;  &#xA;  &#xA;&#xA;  &#xA;&#xA;  &lt;div class=&#34;prism-codeblock &#34;&gt;&#xA;  &lt;pre id=&#34;902b365&#34; class=&#34;language-sh &#34;&gt;&#xA;  &lt;code&gt;$ sudo pacman -Syu&lt;/code&gt;&#xA;  &lt;/pre&gt;&#xA;  &lt;/div&gt;&#xA;&lt;p&gt;&lt;code&gt;pacman&lt;/code&gt; is the package manager used to install and update programs in Arch Linux.&lt;/p&gt;&#xA;&#xA;&lt;div class=&#34;alert alert-info d-flex&#34; role=&#34;alert&#34;&gt;&#xA;  &lt;div class=&#34;flex-shrink-1 alert-icon&#34;&gt;&#xA;  &#xA;  &lt;span class=&#34;material-icons size-20 me-2&#34;&gt;&#xA;  info&#xA;  &lt;/span&gt;&lt;/div&gt;&#xA;  &#xA;  &lt;div class=&#34;w-100&#34;&gt;Some commands require prepending &lt;code&gt;sudo&lt;/code&gt; to them as they require &lt;code&gt;super user&lt;/code&gt; (or root) permissions to run.&lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;&lt;p&gt;&lt;strong&gt;Example terminal output&lt;/strong&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Re-rank Arch mirrors</title>
+				<link>https://redzhift.github.io/docs/user-guides/system-maintenance/rerank-arch-mirrors/</link>
+				<pubDate>Fri, 12 Jun 2026 18:00:22 -0700</pubDate>
+				<guid>https://redzhift.github.io/docs/user-guides/system-maintenance/rerank-arch-mirrors/</guid>
+				<description>&lt;p&gt;&lt;em&gt;To re-rank EndeavourOS mirrors, follow &lt;a href=&#34;https://redzhift.github.io/docs/user-guides/rerank-endeavouros-mirrors/&#34;&gt;this guide&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview &lt;a href=&#34;#overview&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Mirrors&lt;/strong&gt; are servers located around the world that store copies of software packages. When upgrading packages, your EndeavourOS system utilizes multiple mirrors, which are noted in a &lt;code&gt;mirrorlist&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;A well-maintained &lt;code&gt;mirrorlist&lt;/code&gt; ensures the &lt;code&gt;pacman&lt;/code&gt; package manager can access up-to-date package files when performing system updates. Outdated mirrors can prevent &lt;code&gt;pacman&lt;/code&gt; from updating &lt;strong&gt;core packages&lt;/strong&gt;.&lt;/p&gt;&#xA;&#xA;&lt;div class=&#34;alert alert-warning d-flex&#34; role=&#34;alert&#34;&gt;&#xA;  &lt;div class=&#34;flex-shrink-1 alert-icon&#34;&gt;&#xA;  &#xA;  &lt;span class=&#34;material-icons size-20 me-2&#34;&gt;&#xA;  warning&#xA;  &lt;/span&gt;&lt;/div&gt;&#xA;  &#xA;  &lt;div class=&#34;w-100&#34;&gt;It is recommended to re-rank mirrors at least every 1-2 months to maintain an up-to-date mirrorlist.&lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;update-mirrorlist&#34;&gt;Update mirrorlist &lt;a href=&#34;#update-mirrorlist&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Update the Arch &lt;code&gt;mirrorlist&lt;/code&gt; by running:&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Re-rank EndeavourOS mirrors</title>
+				<link>https://redzhift.github.io/docs/user-guides/system-maintenance/rerank-endeavouros-mirrors/</link>
+				<pubDate>Fri, 12 Jun 2026 18:00:22 -0700</pubDate>
+				<guid>https://redzhift.github.io/docs/user-guides/system-maintenance/rerank-endeavouros-mirrors/</guid>
+				<description>&lt;p&gt;&lt;em&gt;To rerank Arch mirrors, follow &lt;a href=&#34;https://redzhift.github.io/docs/rerank-arch-mirrors/&#34;&gt;this guide&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Endeavour OS&lt;/strong&gt; has its own distro-unique packages, which may be slightly modified versions of Arch packages.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Update the Endeavour OS &lt;code&gt;mirrorlist&lt;/code&gt; with:&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;  &#xA;  &#xA;  &#xA;&#xA;  &#xA;  &#xA;  &#xA;  &#xA;&#xA;  &#xA;&#xA;  &lt;div class=&#34;prism-codeblock &#34;&gt;&#xA;  &lt;pre id=&#34;63dedcc&#34; class=&#34;language-sh &#34;&gt;&#xA;  &lt;code&gt;$ eos-rankmirrors&lt;/code&gt;&#xA;  &lt;/pre&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&#xA;&lt;div class=&#34;alert alert-info d-flex&#34; role=&#34;alert&#34;&gt;&#xA;  &lt;div class=&#34;flex-shrink-1 alert-icon&#34;&gt;&#xA;  &#xA;  &lt;span class=&#34;material-icons size-20 me-2&#34;&gt;&#xA;  info&#xA;  &lt;/span&gt;&lt;/div&gt;&#xA;  &#xA;  &lt;div class=&#34;w-100&#34;&gt;The &lt;code&gt;eos-rankmirrors&lt;/code&gt; process only shows terminal output (no GUI tool).&lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;The terminal may display errors/warnings as the system tests various mirrors for connectivity and speed. It may take a few minutes to find the requisite amount of mirrors.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

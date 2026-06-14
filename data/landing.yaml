@@ -1,0 +1,112 @@
+# Hero
+hero:
+  enable: true
+  weight: 10
+  template: hero
+
+  backgroundImage:
+    path: "images/"
+    filename:
+      desktop: "gradient-desktop-2.webp"
+      mobile: "gradient-desktop-2.webp"
+
+  badge:
+    text: v1.0.1
+    color: primary # primary, secondary, success, danger, warning, info, light, dark
+    pill: false # boolean
+    soft: true # boolean
+
+  titleLogo:
+    path: "images/logos"
+    filename: "title_logo.png"
+    alt: "Lotus Docs Logo"
+    height: 80px
+
+  title: "Jin Y.C"
+  subtitle: Technical Writer
+
+  ctaButton:
+    icon: auto_awesome
+    btnText: "About me"
+    url: "/docs/about"
+  cta2Button:
+    icon: person
+    btnText: "LinkedIn"
+    url: "https://linkedin.com/in/redzhift"
+
+  info: ""
+
+# Feature Grid
+featureGrid:
+  enable: false
+  weight: 30
+  template: feature grid
+
+  title: 
+  subtitle: 
+
+  items:
+    - title: Knowledge bases
+      icon: book_5
+      description:
+
+    - title: User guides
+      icon: article_person
+      description:
+
+    - title: Software product manuals
+      icon: quick_reference
+      description: 
+
+    - title: Process documentation
+      icon: flowchart
+      description: 
+
+    - title: Standard operating procedures
+      icon: process_chart
+      description: 
+
+    - title: Documentation workflows
+      icon: cycle
+      description: 
+
+
+# imageCompare:
+imageCompare:
+  enable: false
+  weight: 30
+
+# Image text
+imageText:
+  enable: true
+  weight: 20
+  template: image text
+    
+  title: Developing...
+  subtitle: 
+
+  list:
+  - text: Knowledge bases
+    icon: book_5
+
+  - text: User guides
+    icon: article_person
+
+  - text: Software product manuals
+    icon: quick_reference
+
+  - text: Documentation workflows
+    icon: cycle
+
+  ctaButton:
+    text: See the docs
+    url: "/docs/"
+
+  image:
+    path: "images/templates/single"
+    filename: ""
+    alt: "Google LightHouse 100% Illustration" # Optional but recommended
+
+  imgOrder:
+        desktop: 2
+        mobile: 1

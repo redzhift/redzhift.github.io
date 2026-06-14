@@ -1,51 +1,65 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Tags on Jin</title>
+		<title>Tags on Jin Y.C</title>
 		<link>https://redzhift.github.io/tags/</link>
-		<description>Recent content in Tags on Jin</description>
+		<description>Recent content in Tags on Jin Y.C</description>
 		<generator>Hugo</generator>
-		<language>en-us</language>
+		<language>en-US</language>
 		
 		
 		
 		
-			<lastBuildDate>Fri, 12 Jun 2026 18:23:33 -0700</lastBuildDate>
+			<lastBuildDate>Fri, 12 Jun 2026 18:00:22 -0700</lastBuildDate>
 		
 			<atom:link href="https://redzhift.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Docs</title>
 				<link>https://redzhift.github.io/tags/docs/</link>
-				<pubDate>Fri, 12 Jun 2026 18:23:33 -0700</pubDate>
+				<pubDate>Fri, 12 Jun 2026 18:00:22 -0700</pubDate>
 				<guid>https://redzhift.github.io/tags/docs/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>EndeavourOS</title>
 				<link>https://redzhift.github.io/tags/endeavouros/</link>
-				<pubDate>Fri, 12 Jun 2026 18:23:33 -0700</pubDate>
+				<pubDate>Fri, 12 Jun 2026 18:00:22 -0700</pubDate>
 				<guid>https://redzhift.github.io/tags/endeavouros/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Eos-Rankmirrors</title>
+				<link>https://redzhift.github.io/tags/eos-rankmirrors/</link>
+				<pubDate>Fri, 12 Jun 2026 18:00:22 -0700</pubDate>
+				<guid>https://redzhift.github.io/tags/eos-rankmirrors/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Faqs</title>
+				<link>https://redzhift.github.io/tags/faqs/</link>
+				<pubDate>Fri, 12 Jun 2026 18:00:22 -0700</pubDate>
+				<guid>https://redzhift.github.io/tags/faqs/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Linux</title>
 				<link>https://redzhift.github.io/tags/linux/</link>
-				<pubDate>Fri, 12 Jun 2026 18:23:33 -0700</pubDate>
+				<pubDate>Fri, 12 Jun 2026 18:00:22 -0700</pubDate>
 				<guid>https://redzhift.github.io/tags/linux/</guid>
 				<description></description>
 			</item>
 			<item>
-				<title>Mirrors</title>
-				<link>https://redzhift.github.io/tags/mirrors/</link>
-				<pubDate>Fri, 12 Jun 2026 18:23:33 -0700</pubDate>
-				<guid>https://redzhift.github.io/tags/mirrors/</guid>
+				<title>Reflector</title>
+				<link>https://redzhift.github.io/tags/reflector/</link>
+				<pubDate>Fri, 12 Jun 2026 18:00:22 -0700</pubDate>
+				<guid>https://redzhift.github.io/tags/reflector/</guid>
 				<description></description>
 			</item>
 			<item>
-				<title>Userguide</title>
-				<link>https://redzhift.github.io/tags/userguide/</link>
-				<pubDate>Fri, 12 Jun 2026 18:23:33 -0700</pubDate>
-				<guid>https://redzhift.github.io/tags/userguide/</guid>
+				<title>Userguides</title>
+				<link>https://redzhift.github.io/tags/userguides/</link>
+				<pubDate>Fri, 12 Jun 2026 18:00:22 -0700</pubDate>
+				<guid>https://redzhift.github.io/tags/userguides/</guid>
 				<description></description>
 			</item>
 			<item>
@@ -56,17 +70,10 @@
 				<description></description>
 			</item>
 			<item>
-				<title>Userguides</title>
-				<link>https://redzhift.github.io/tags/userguides/</link>
-				<pubDate>Mon, 08 Jun 2026 16:58:36 -0700</pubDate>
-				<guid>https://redzhift.github.io/tags/userguides/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Downgrade</title>
-				<link>https://redzhift.github.io/tags/downgrade/</link>
-				<pubDate>Sat, 06 Jun 2026 16:58:36 -0700</pubDate>
-				<guid>https://redzhift.github.io/tags/downgrade/</guid>
+				<title>Eos-Shifttime</title>
+				<link>https://redzhift.github.io/tags/eos-shifttime/</link>
+				<pubDate>Wed, 13 May 2026 14:09:31 -0700</pubDate>
+				<guid>https://redzhift.github.io/tags/eos-shifttime/</guid>
 				<description></description>
 			</item>
 			<item>
@@ -77,38 +84,10 @@
 				<description></description>
 			</item>
 			<item>
-				<title>Affordable Housing</title>
-				<link>https://redzhift.github.io/tags/affordable-housing/</link>
-				<pubDate>Sun, 12 Apr 2020 11:48:20 -0700</pubDate>
-				<guid>https://redzhift.github.io/tags/affordable-housing/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Articles</title>
-				<link>https://redzhift.github.io/tags/articles/</link>
-				<pubDate>Sun, 12 Apr 2020 11:48:20 -0700</pubDate>
-				<guid>https://redzhift.github.io/tags/articles/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Boston</title>
-				<link>https://redzhift.github.io/tags/boston/</link>
-				<pubDate>Sun, 12 Apr 2020 11:48:20 -0700</pubDate>
-				<guid>https://redzhift.github.io/tags/boston/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Facial Recognition</title>
-				<link>https://redzhift.github.io/tags/facial-recognition/</link>
-				<pubDate>Wed, 12 Jun 2019 11:48:05 -0700</pubDate>
-				<guid>https://redzhift.github.io/tags/facial-recognition/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Privacy Rights</title>
-				<link>https://redzhift.github.io/tags/privacy-rights/</link>
-				<pubDate>Wed, 12 Jun 2019 11:48:05 -0700</pubDate>
-				<guid>https://redzhift.github.io/tags/privacy-rights/</guid>
+				<title>About</title>
+				<link>https://redzhift.github.io/tags/about/</link>
+				<pubDate>Fri, 30 Sep 2022 05:33:22 +0100</pubDate>
+				<guid>https://redzhift.github.io/tags/about/</guid>
 				<description></description>
 			</item>
 	</channel>
