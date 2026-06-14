@@ -1,8 +1,8 @@
 ---
 weight: 210
-title: "Update with pacman"
-description: "Update your Arch system daily to weekly with the `pacman` package manager."
-icon: menu_book
+title: "Update packages"
+description: "Update your system packages with `pacman` and `yay`."
+icon: update
 date: 2026-05-12T14:09:31-07:00
 lastmod: 2026-05-12T14:09:31-07:00
 draft: false
@@ -12,19 +12,16 @@ images: []
 
 There are 3 commands used to update __Endeavour OS__ systems:
 
-- [`pacman -Syu`](#sudo-pacman--syu)
-- [`yay`](#yay)
-- [`eos-update`](#eos-update)
+{{< tabs tabTotal="3">}}
+{{% tab tabName="pacman -Syu" %}}
 
----
+`pacman` is the package manager used to install and update programs in Arch Linux. 
 
-## `pacman -Syu`
 To perform a full system update and refresh, run:
 
 ```sh
 $ sudo pacman -Syu
 ```
-`pacman` is the package manager used to install and update programs in Arch Linux. 
 
 {{< alert context="info" text="Some commands require prepending `sudo` to them as they require `super user` (or root) permissions to run." />}}
 
@@ -58,7 +55,8 @@ __Example terminal output__
 
 ---
 
-### Other `pacman` options
+__Other `pacman` options__
+
 | Command            | Description           | 
 | ------------------ | --------------------- |
 | `-S <pkg>`  | Installs the specific package. |
@@ -72,11 +70,8 @@ See: [`pacman manpage`][pacman], [`pacman` wiki][pacman-wiki]
 [pacman-wiki]: https://wiki.archlinux.org/title/Pacman
 [yay]: https://aur.archlinux.org/packages/yay
 
----
-
-{{< alert context="info" text="The __Arch User Repository__, also known as __AUR__, is a large library of community user-produced packages for Arch Linux." />}}
-
-## `yay`
+{{% /tab %}}
+{{% tab tabName="yay" %}}
 
 `yay`, or "yet another yogurt", is an __AUR helper__. 
 
@@ -89,6 +84,8 @@ Like `pacman`, `yay` performs package manager tasks to download, install, update
 - It is recommended to run this command every 1 to 2 weeks.
 - Keep an eye out for any AUR-related news to make certain of package statuses.
 
+---
+
 The terminal lists packages available to upgrade and may ask for the user to select. Select the options for each one, or hit `ENTER` to apply default options:
 
   1. Which package provider should be used (where to download files from)
@@ -96,8 +93,7 @@ The terminal lists packages available to upgrade and may ask for the user to sel
   3. If the Make dependencies should also be removed
   4. Etc.
 
-
-{{< alert context="danger" text="Do not run `yay` with root permissions, as it may cause accidental (and potentially fatal) system changes. AUR helpers do not require root permissions to manage packages." />}}
+{{< alert context="info" text="The __Arch User Repository__, also known as __AUR__, is a large library of community user-produced packages for Arch Linux." />}}
 
 
 See: `yay` [(AUR)][aur], [`yay` commands list][yay-commands], [Arch User Repository (AUR)][aur], [AUR helpers][aur-helpers]
@@ -106,22 +102,22 @@ See: `yay` [(AUR)][aur], [`yay` commands list][yay-commands], [Arch User Reposit
 [aur]: https://aur.archlinux.org/
 [aur-helpers]: https://wiki.archlinux.org/title/AUR_helpers
 
-<!----------------------------------------->
+{{% /tab %}}
+{{% tab tabName="eos-update" %}}
 
----
-
-## `eos-update`
-
-__EndeavourOS__ provides an update script that utilizes `pacman` and `yay` to run system updates with additional options.
+__EndeavourOS__ provides an update script that utilizes `pacman` and `yay` to run updates with additional options.
 
 ```sh
 $ eos-update
 ```
 
-Depending on user preference, `eos-update` can be used in place of `yay` or `sudo pacman -Syu`. In practice, `eos-update --aur` and `eos-update` perform the same tasks as `yay` and `pacman -Syu`, but provide an added layer of options. Some options may require more advanced setup.
+In practice, `eos-update --aur` and `eos-update` perform the same tasks as `yay` and `pacman -Syu`, but provide an added layer of options. Some options may require more advanced setup.
 
 Notably, running `eos-update` may be more helpful for users just needing a quick fix to the system, and/or for users who do not update the system frequently.
 
+---
+
+__`eos-update --help` output__
 ```sh
 $ eos-update --help
   eos-update is a package updater for EndeavourOS and Arch.
@@ -142,6 +138,10 @@ $ eos-update --help
   - Updates AUR packages (with option --helper, see Usage below).
   - Ad hoc check for Nvidia GPU driver vs. kernel updates (non-dkms only).
  ```
+
+{{% /tab %}}
+{{< /tabs >}}
+
 
 ---
 

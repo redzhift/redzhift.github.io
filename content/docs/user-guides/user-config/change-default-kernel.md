@@ -2,7 +2,7 @@
 weight: 160
 title: "Change default kernel"
 description: "How to change which kernel your Linux system boots up by default."
-icon: menu_book
+icon: install_desktop
 date: 2026-06-08T16:58:36-07:00
 lastmod: 2022-11-22T12:36:15+00:00
 draft: false
@@ -10,22 +10,20 @@ tags: ["docs","userguides","endeavourOS","linux","kernel"]
 images: []
 ---
 
-_Note: This guide was originally published on [GitHub][gh] and is also available in [Confluence][pf]._
-
-## Overview
-
-[gh]: https://github.com/redzhift/mywiki/wiki/Change-default-kernel
-[pf]: https://redzhift.atlassian.net/wiki/spaces/~jcho/pages/10649618/Change+default+kernel+at+boot
-
-Your system can have multiple kernels (or installations) of the same Linux distro. This is typically from having different ISO images, such as EOS Mercury, Titan, and Ganymede. The newest kernel is usually booted by default, but can be adjusted to user preference.
-
-To change the default kernel at system boot, you need to identify and adjust the kernel `ids` used in the `boot loader` config file.
-
 {{< alert context="info" text="__Note__: This guide is for systems using the default `systemd-boot` UEFI boot manager in Endeavour OS." />}}
+
+Your system can have multiple kernels (or versions) of Linux. The default kernel is usually set to the newest one, but can be adjusted to user preference.
+
+First, you need to identify and adjust the kernel `ids` used in the `boot loader` config file.
 
 ---
 
-### Find kernel `id` with `bootctl`
+### Find the kernel `id`
+
+{{< tabs tabTotal="2">}}
+{{% tab tabName="Use `bootctl`" %}}
+
+#### Find kernel `id` with `bootctl`
 
 1. Change to the root user with `sudo -s` and enter your password.
 
@@ -61,14 +59,33 @@ To change the default kernel at system boot, you need to identify and adjust the
        ```
 
 4. Copy the `machine-id` of the kernel you want to set as the default.
+{{% /tab %}}
+
+{{% tab tabName="Use `cat`" %}}
+
+#### Use `cat` to view boot config
+
+You can use `cat` to view the boot loader config file with a simpler output.
+
+1. Enter `sudo cat /efi/loader/loader.conf` to display the boot loader config.
+
+      ```sh
+       $ sudo cat /efi/loader/loader.conf
+       default <your-machine-id>*  # kernel id
+       timeout 20
+       console-mode auto
+       reboot-for-bitlocker 1
+
+{{% /tab %}}
+{{< /tabs >}}
 
 ---
 
 ### Edit boot loader config
 
-1. Enter `nano /efi/loader/loader.conf` in the terminal to edit the boot loader config.
-
 ![Terminal window showing the loader.conf file being edited with GNU nano editor][nano-efi-loader]
+
+1. Enter `nano /efi/loader/loader.conf` in the terminal to edit the boot loader config.
 
 2. On the line containing `default`, replace the old `machine-id` with the updated `id`.
 
@@ -104,8 +121,6 @@ To change the default kernel at system boot, you need to identify and adjust the
 
 ---
 
-## Additional information
-
 __Useful resources__
 - [EOS Boot Configuration wiki][bootconfig]
 - [Arch Linux kernels][archkernel]
@@ -114,20 +129,3 @@ __Useful resources__
 [archkernel]: https://wiki.archlinux.org/title/Kernel
 
 ---
-
-### Use `cat` to view boot config
-
-While `bootctl list` provides detailed information on installed kernels, you can use `cat` to view the boot loader config file.
-
-1. Enter `sudo cat /efi/loader/loader.conf` to display the boot loader config.
-
-      ```sh
-       $ sudo cat /efi/loader/loader.conf
-       default <your-machine-id>*  # kernel id
-       timeout 20
-       console-mode auto
-       reboot-for-bitlocker 1
-      ```
----
-
-<!-- EOF -->

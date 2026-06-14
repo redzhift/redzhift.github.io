@@ -17,15 +17,17 @@ Well met, and welcome to my portfolio! 🛰️✨
 I'm __Jin__, a technical writer with 5+ years experience developing:
 
 - Knowledge bases
-- User training and help content
-- Software product guides
+- User guides and training
+- Software product manuals
 - Process documentation
 
 `Contact:  redzhift@tuta.io`
 
 ---
 
-#### Examples of my work
+{{< tabs tabTotal="3">}}
+{{% tab tabName="Work examples" %}}
+
 <div class="row flex-xl-wrap pb-4">
 
 <div id="list-item" class="col-md-4 col-12 py-2">
@@ -71,10 +73,12 @@ I'm __Jin__, a technical writer with 5+ years experience developing:
 </div>
 </div>
 
-#### Connect with me here
+{{% /tab %}}
+{{% tab tabName="My sites" %}}
+
 <div class="row flex-xl-wrap pb-4">
 <div id="list-item" class="col-md-4 col-12 py-2">
-  <a class="text-decoration-none text-reset" href="https://www.linkedin.com/in/redzhift/">
+  <a class="text-decoration-none text-reset" href="https://linkedin.com/in/redzhift/">
     <div class="card h-100 features feature-full-bg rounded p-4 position-relative overflow-hidden border-1">
       <span class="h1 icon-color">
         <i class="material-icons align-middle">person</i>
@@ -116,12 +120,23 @@ I'm __Jin__, a technical writer with 5+ years experience developing:
 </div>
 </div>
 
+{{% /tab %}}
+
+{{% tab tabName="Currently learning..." %}}
+
+![Hugo badge](https://img.shields.io/badge/Hugo-%23FF4088?style=for-the-badge&logo=hugo&logoColor=white&logoSize=auto&link=https://gohugo.io)
+![Endeavour OS badge](https://img.shields.io/badge/Endeavour%20OS-%237F7FFF?style=for-the-badge&logo=endeavouros&logoColor=white&logoSize=auto&link=https%3A%2F%2Fendeavouros.com%2F)
+![Confluence badge](https://img.shields.io/badge/Confluence-%23172B4D?style=for-the-badge&logo=confluence&logoColor=white&logoSize=auto&link=https%3A%2F%2Fredzhift.atlassian.net%2Fwiki%2Fspaces%2F~jcho%2Foverview%2F)
+![TOP badge](https://img.shields.io/badge/The%20Odin%20Project-%23A9792B?style=for-the-badge&logo=the%20odin%20project&logoColor=white&logoSize=auto&link=https://www.theodinproject.com)
 
 
-Currently learning... ![Hugo badge](https://img.shields.io/badge/Hugo-%23FF4088?style=flat-square&logo=hugo&logoColor=white&logoSize=auto&link=https://gohugo.io)
-![Endeavour OS badge](https://img.shields.io/badge/Endeavour%20OS-%237F7FFF?style=flat-square&logo=endeavouros&logoColor=white&logoSize=auto&link=https%3A%2F%2Fendeavouros.com%2F)
-![Confluence badge](https://img.shields.io/badge/Confluence-%23172B4D?style=flat-square&logo=confluence&logoColor=white&logoSize=auto&link=https%3A%2F%2Fredzhift.atlassian.net%2Fwiki%2Fspaces%2F~jcho%2Foverview%2F)
-![TOP badge](https://img.shields.io/badge/The%20Odin%20Project-%23A9792B?style=flat-square&logo=the%20odin%20project&logoColor=white&logoSize=auto&link=https://www.theodinproject.com)
+{{% /tab %}}
+
+{{< /tabs >}}
+
+
+
+
 
 <!-- urls-->
 [confluence]: https://redzhift.atlassian.net/wiki/spaces/~jcho/overview/
