@@ -1,0 +1,11 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "Jin Y.C"
+license = "MIT"
+licenselink = "https://github.com/colinwilson/lotusdocs/release/LICENSE"
+description = "Documentation portfolio"
+homepage = "https://redzhift.github.io"
+demosite = "https://redzhift.github.io"
+tags = []
+min_version = "0.140.0"
