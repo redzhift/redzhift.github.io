@@ -48,27 +48,27 @@ featureGrid:
   subtitle: 
 
   items:
-    - title: Knowledge bases
+    - title: 
       icon: book_5
       description:
 
-    - title: User guides
+    - title: 
       icon: article_person
       description:
 
-    - title: Software product manuals
+    - title: 
       icon: quick_reference
       description: 
 
-    - title: Process documentation
+    - title: 
       icon: flowchart
       description: 
 
-    - title: Standard operating procedures
+    - title:
       icon: process_chart
       description: 
 
-    - title: Documentation workflows
+    - title:
       icon: cycle
       description: 
 
@@ -84,21 +84,25 @@ imageText:
   weight: 20
   template: image text
     
-  title: I create...
+  title: I develop...
   subtitle:
 
   list:
   - text: Knowledge bases
     icon: book_5
 
-  - text: User guides
-    icon: article_person
+  - text: Documentation plans
+    icon: strategy
 
-  - text: Software product manuals
+  - text: User and software guides
     icon: quick_reference
 
-  - text: Documentation workflows
+  - text: Onboarding manuals
+    icon: article_person
+
+  - text: Process documentation
     icon: cycle
+
 
   ctaButton:
     text: See the docs
