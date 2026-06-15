@@ -1,5 +1,5 @@
 ---
-weight: 155
+weight: 160
 title: "Downgrade with eos-shifttime"
 description: "Downgrade your Arch packages by using the eos-shifttime utility tool."
 icon: clock_arrow_down
@@ -10,9 +10,11 @@ tags: ["docs","userguides","endeavourOS","linux","eos-shifttime"]
 images: []
 ---
 
-The `eos-shifttime` application can revert system packages to their state at a specified date. 
+---
 
-This tool is useful for when recent updates cause issues with system or program functionalities.
+{{< alert context="warning" text="Using `eos-shifttime` does not revert AUR packages. The downgrade only applies to official Arch packages from the archive repositories." />}}
+
+The `eos-shifttime` application can revert system packages to their state at a specified date. 
 
 1. Open a terminal window and run `eos-shifttime` with root permissions.
 
@@ -21,9 +23,6 @@ This tool is useful for when recent updates cause issues with system or program 
 3. __Reboot__ to apply the changes.
 
 ![A GUI window for the `eos-shifttime` tool displaying a monthly calendar. The selected date is January 2, 2026.][eos-shifttime]
-
-{{< alert context="warning" text="Using `eos-shifttime` does not revert AUR packages. The downgrade only applies to official Arch packages from the archive repositories." />}}
-
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-weight: 160
+weight: 155
 title: "Change default kernel"
 description: "How to change which kernel your Linux system boots up by default."
 icon: install_desktop
@@ -8,6 +8,8 @@ lastmod: 2022-11-22T12:36:15+00:00
 draft: false
 tags: ["docs","userguides","endeavourOS","linux","kernel"]
 images: []
+---
+
 ---
 
 {{< alert context="info" text="__Note__: This guide is for systems using the default `systemd-boot` UEFI boot manager in Endeavour OS." />}}
