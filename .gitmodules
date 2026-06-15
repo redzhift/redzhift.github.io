@@ -1,18 +1,6 @@
-[submodule "redzhift.github.io/themes/xmin"]
-	path = redzhift.github.io/themes/xmin
-	url = https://github.com/yihui/hugo-xmin.git
-[submodule "redzhift.github.io/themes/m10c"]
-	path = redzhift.github.io/themes/m10c
-	url = https://github.com/vaga/hugo-theme-m10c
-[submodule "layouts/shortcodes/hugo-embed-pdf"]
-	path = layouts/shortcodes/hugo-embed-pdf
-	url = https://github.com/anvithks/hugo-embed-pdf-shortcode
 [submodule "themes/hugo-embed-pdf-shortcode"]
 	path = themes/hugo-embed-pdf-shortcode
 	url = https://github.com/anvithks/hugo-embed-pdf-shortcode.git
-[submodule "themes/lotus"]
-	path = themes/lotus
-	url = https://github.com/colinwilson/lotusdocs.git
 [submodule "themes/hugo-mod-bootstrap-css"]
 	path = themes/hugo-mod-bootstrap-css
 	url = https://github.com/gohugoio/hugo-mod-bootstrap-scss.git
