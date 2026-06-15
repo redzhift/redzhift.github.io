@@ -16,10 +16,9 @@ Well met, and welcome to my portfolio! 🛰️✨
 
 I'm __Jin__, a technical writer with 5+ years experience developing:
 
+- Documentation strategy
 - Knowledge bases
-- Documentation plans
 - User and software guides
-- Onboarding manuals
 - Process documentation
 
 `Contact:  redzhift@tuta.io`

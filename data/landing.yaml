@@ -88,21 +88,18 @@ imageText:
   subtitle:
 
   list:
+
+  - text: Documentation strategy
+    icon: strategy
+
   - text: Knowledge bases
     icon: book_5
-
-  - text: Documentation plans
-    icon: strategy
 
   - text: User and software guides
     icon: quick_reference
 
-  - text: Onboarding manuals
-    icon: article_person
-
   - text: Process documentation
     icon: cycle
-
 
   ctaButton:
     text: See the docs
