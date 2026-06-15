@@ -21,7 +21,7 @@ First, you need to identify and adjust the kernel `ids` used in the `boot loader
 ### Find the kernel `id`
 
 {{< tabs tabTotal="2">}}
-{{% tab tabName="Use `bootctl`" %}}
+{{% tab tabName="Use `bootctl` to view kernel info" %}}
 
 #### Find kernel `id` with `bootctl`
 
@@ -61,9 +61,9 @@ First, you need to identify and adjust the kernel `ids` used in the `boot loader
 4. Copy the `machine-id` of the kernel you want to set as the default.
 {{% /tab %}}
 
-{{% tab tabName="Use `cat`" %}}
+{{% tab tabName="Use `cat` to view current default" %}}
 
-#### Use `cat` to view boot config
+#### Use `cat` to view current boot config
 
 You can use `cat` to view the boot loader config file with a simpler output.
 
@@ -75,6 +75,8 @@ You can use `cat` to view the boot loader config file with a simpler output.
        timeout 20
        console-mode auto
        reboot-for-bitlocker 1
+
+2. Your current default `machine-id` is displayed. 
 
 {{% /tab %}}
 {{< /tabs >}}

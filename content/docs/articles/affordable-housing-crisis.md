@@ -9,6 +9,6 @@ draft: false
 images: []
 ---
 
-{{< alert context="info" text="__Have issues viewing the PDF?__ Click the download button on the top right corner of the viewer. This will open it in a separate browser tab." />}}
+{{< alert context="info" text="__Issues viewing the PDF?__ Click the download button to open the document in a separate browser tab." />}}
 
 {{< embed-pdf url="/pdfs/2020_affordable-housing-crisis.pdf" >}}

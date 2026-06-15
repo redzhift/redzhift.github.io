@@ -1,8 +1,8 @@
 ---
 weight: 400
 title: "FAQs"
-description: "Common errors and warnings that may occur during `pacman` updates."
-icon: menu_book
+description: "Common questions for users new to Linux."
+icon: help
 date: 2022-11-22T12:36:15+00:00
 lastmod: 2022-11-22T12:36:15+00:00
 draft: false

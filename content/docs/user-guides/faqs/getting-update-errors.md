@@ -38,5 +38,5 @@ These issues can be resolved with manual intervention. Uninstall and remove the 
 
 ---
 
-[mirrors]: /docs/user-guides/system-maintenance/rerank-arch-mirrors/
+[mirrors]: /docs/user-guides/system-maintenance/rerank-mirrors
 [downgrade]: /docs/downgrade-to-specific-date/
