@@ -1,7 +1,8 @@
 baseURL = "https://redzhift.github.io/"
 locale = "en-US"
 title = "Jin Y.C"
-# theme = "lotusdocs"
+description= "Documentation and writing portfolio site"
+theme = "lotusdocs"
 contentDir = "content"
 enableEmoji = true
 enableGitInfo = true # N.B. .GitInfo does not currently function with submodule content directories
@@ -10,6 +11,7 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
   noJSConfigInAssets = true
 
 [module]
+    replacements = "github.com/colinwilson/lotusdocs -> lotusdocs"
     [[module.imports]]
         path = "github.com/colinwilson/lotusdocs"
         disable = false
@@ -32,7 +34,7 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
 
   # Google Fonts
   google_fonts = [
-    ["Mozilla Text", "300, 400, 600, 700"],
+    ["Mozilla Text", "325, 400, 600, 700"],
     ["Fira Code", "500, 700"]
   ]
 
@@ -54,7 +56,7 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
 
         pathName        = "docs"                            # path for documentation site | default "docs"
 
-        themeColor      = "red"                            # (optional) - Set theme accent colour. Options include: blue (default), green, red, yellow, emerald, cardinal, magenta, cyan
+        themeColor      = "red"                            # (optional) - Set theme accent colour. Options include: blue (default), indigo (custom), green, red, yellow, emerald, cardinal, magenta, cyan
 
         darkMode        = true                                # enable dark mode option? default false
 
