@@ -98,9 +98,9 @@ If `pacman` runs into these errors during a system update, be sure to [rerank mi
 
 If these errors/warnings persist despite re-ranking mirrors, this may indicate __outdated packages__ and require updating with `pacman` and `yay`.
 
-See: __[Update with `pacman` guide][pacman]__
+See: __[Update packages guide][update-packages]__
 
-[pacman]: /docs/user-guides/system-maintenance/update-pacman
+[update-packages]: /docs/user-guides/system-maintenance/update-packages
 
 ---
 
