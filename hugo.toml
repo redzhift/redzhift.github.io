@@ -1,7 +1,7 @@
 baseURL = "https://redzhift.github.io/"
 locale = "en-US"
 title = "Jin Y.C"
-description= "Documentation and writing portfolio site"
+description = "Documentation and writing portfolio site"
 theme = "lotusdocs"
 contentDir = "content"
 enableEmoji = true
