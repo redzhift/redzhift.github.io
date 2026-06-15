@@ -10,7 +10,7 @@
 		
 		
 		
-			<lastBuildDate>Sat, 13 Jun 2026 22:38:51 -0700</lastBuildDate>
+			<lastBuildDate>Sun, 14 Jun 2026 03:19:32 -0700</lastBuildDate>
 		
 			<atom:link href="https://redzhift.github.io/docs/user-guides/faqs/index.xml" rel="self" type="application/rss+xml" />
 			<item>
@@ -18,7 +18,7 @@
 				<link>https://redzhift.github.io/docs/user-guides/faqs/getting-update-errors/</link>
 				<pubDate>Fri, 12 Jun 2026 18:00:22 -0700</pubDate>
 				<guid>https://redzhift.github.io/docs/user-guides/faqs/getting-update-errors/</guid>
-				<description>&lt;p&gt;Outdated package databases will cause errors when &lt;code&gt;pacman&lt;/code&gt; tries to retrieve the latest package files.&lt;/p&gt;&#xA;&lt;p&gt;This can be prevented through regular mirror maintenance.&lt;/p&gt;&#xA;&lt;p&gt;See: &lt;a href=&#34;https://redzhift.github.io/docs/user-guides/system-maintenance/rerank-arch-mirrors/&#34;&gt;Update mirrors guide&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Error: failed to commit transaction (conflicting files)&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;p&gt;Running a &lt;code&gt;sudo pacman -Syu&lt;/code&gt; update may fail and display the following errors:&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;  &#xA;  &#xA;  &#xA;&#xA;  &#xA;  &#xA;  &#xA;  &#xA;&#xA;  &#xA;&#xA;  &lt;div class=&#34;prism-codeblock &#34;&gt;&#xA;  &lt;pre id=&#34;2af6cbd&#34; class=&#34;language-sh &#34;&gt;&#xA;  &lt;code&gt; error: failed to commit transaction (conflicting files)&#xA; &amp;lt;example&amp;gt;: /example exists in filesystem (owned by filesystem)&#xA; &amp;lt;example&amp;gt;: /lib/systemd/system/example.service exists in filesystem&lt;/code&gt;&#xA;  &lt;/pre&gt;&#xA;  &lt;/div&gt;&#xA;&lt;p&gt;These issues can be resolved with manual intervention. Uninstall and remove the package from the system, then reinstall/update with these two commands:&lt;/p&gt;</description>
+				<description>&lt;p&gt;Outdated package databases will cause errors when &lt;code&gt;pacman&lt;/code&gt; tries to retrieve the latest package files.&lt;/p&gt;&#xA;&lt;p&gt;This can be prevented through regular mirror maintenance.&lt;/p&gt;&#xA;&lt;p&gt;See: &lt;a href=&#34;https://redzhift.github.io/docs/user-guides/system-maintenance/rerank-mirrors/&#34;&gt;Update mirrors guide&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Error: failed to commit transaction (conflicting files)&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;p&gt;Running a &lt;code&gt;sudo pacman -Syu&lt;/code&gt; update may fail and display the following errors:&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;  &#xA;  &#xA;  &#xA;&#xA;  &#xA;  &#xA;  &#xA;  &#xA;&#xA;  &#xA;&#xA;  &lt;div class=&#34;prism-codeblock &#34;&gt;&#xA;  &lt;pre id=&#34;2af6cbd&#34; class=&#34;language-sh &#34;&gt;&#xA;  &lt;code&gt; error: failed to commit transaction (conflicting files)&#xA; &amp;lt;example&amp;gt;: /example exists in filesystem (owned by filesystem)&#xA; &amp;lt;example&amp;gt;: /lib/systemd/system/example.service exists in filesystem&lt;/code&gt;&#xA;  &lt;/pre&gt;&#xA;  &lt;/div&gt;&#xA;&lt;p&gt;These issues can be resolved with manual intervention. Uninstall and remove the package from the system, then reinstall/update with these two commands:&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Are there mirror management alternatives?</title>
