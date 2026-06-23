@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://redzhift.github.io/</loc>
+    <lastmod>2026-06-13T22:38:51-07:00</lastmod>
+  </url><url>
     <loc>https://redzhift.github.io/docs/</loc>
     <lastmod>2026-06-13T22:38:51-07:00</lastmod>
   </url><url>
@@ -70,9 +73,6 @@
   </url><url>
     <loc>https://redzhift.github.io/tags/faqs/</loc>
     <lastmod>2026-06-15T02:43:19-07:00</lastmod>
-  </url><url>
-    <loc>https://redzhift.github.io/</loc>
-    <lastmod>2026-06-15T09:49:40-07:00</lastmod>
   </url><url>
     <loc>https://redzhift.github.io/tags/linux/</loc>
     <lastmod>2026-06-15T09:47:34-07:00</lastmod>
