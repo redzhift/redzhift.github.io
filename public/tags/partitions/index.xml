@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Partitions on Jin Y.C</title>
+		<link>https://redzhift.github.io/tags/partitions/</link>
+		<description>Recent content in Partitions on Jin Y.C</description>
+		<generator>Hugo</generator>
+		<language>en-US</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 23 Jun 2026 16:11:03 -0700</lastBuildDate>
+		
+			<atom:link href="https://redzhift.github.io/tags/partitions/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Run Installation</title>
+				<link>https://redzhift.github.io/docs/user-guides/install-linux-mint/run-install/</link>
+				<pubDate>Tue, 23 Jun 2026 16:11:03 -0700</pubDate>
+				<guid>https://redzhift.github.io/docs/user-guides/install-linux-mint/run-install/</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>

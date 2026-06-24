@@ -1,27 +1,25 @@
 ---
-weight: 100
+weight: 20
 date: "2022-09-30T05:33:22+01:00"
 draft: false
 author: "Jin"
 title: "About"
 icon: "auto_awesome"
 toc: true
-description: ""
+description: "Well met, and welcome to my portfolio! 🛰️✨ "
 publishdate: "2022-09-30T05:33:22+01:00"
 tags: ["about"]
 categories: [""]
 ---
 
-Well met, and welcome to my portfolio! 🛰️✨ 
-
-I'm __Jin__, a technical writer with 5+ years experience developing:
+I'm __Jin__, a technical writer and trainer with 5+ years experience developing:
 
 - Documentation strategy
 - Knowledge bases
 - User and software guides
 - Process documentation
 
-`Contact:  redzhift@tuta.io`
+`Contact:  redzhift@tuta.io`  
 
 ---
 

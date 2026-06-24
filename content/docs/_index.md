@@ -13,18 +13,21 @@ images: []
 Docs structure
 content/docs/
 
-    about.md
+    about.md - 10
     _index.md
 
-    user-guides/
-        user-config/
+    user-guides/ - 50
 
-        system-maintenance/
+        install-linux-mint/ 100
 
-        faqs/
+        user-config/ 200
 
-    research/
+        system-maintenance/ 300
 
-    articles/
+        faqs/ 400
+
+    research/ 600
+
+    articles/ 800
 
     

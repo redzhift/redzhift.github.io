@@ -1,5 +1,5 @@
 ---
-weight: 210
+weight: 310
 title: "Update packages"
 description: "Update your system packages with `pacman` and `yay`."
 icon: update

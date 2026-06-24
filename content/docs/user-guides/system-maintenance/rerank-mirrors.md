@@ -1,5 +1,5 @@
 ---
-weight: 220
+weight: 320
 title: "Re-rank mirrors"
 description: "Re-rank mirrors every 1-2 months to keep your mirrorlist up to date."
 icon: cloud_sync

@@ -1,5 +1,5 @@
 ---
-weight: 500
+weight: 600
 title: "Research"
 description: "Mixed-methods game psychology research and crime policy analysis."
 icon: quick_reference_all

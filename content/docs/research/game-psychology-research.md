@@ -1,5 +1,5 @@
 ---
-weight: 510
+weight: 610
 title: "Game Psychology Research [PDF]"
 description: "Mixed-methods based research on how narrative gameplay elements can influence player decisions."
 lead: ""

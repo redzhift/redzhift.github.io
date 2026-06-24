@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Usb on Jin Y.C</title>
+		<link>https://redzhift.github.io/tags/usb/</link>
+		<description>Recent content in Usb on Jin Y.C</description>
+		<generator>Hugo</generator>
+		<language>en-US</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 23 Jun 2026 16:10:55 -0700</lastBuildDate>
+		
+			<atom:link href="https://redzhift.github.io/tags/usb/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Create Ventoy Liveboot</title>
+				<link>https://redzhift.github.io/docs/user-guides/install-linux-mint/create-ventoy-liveboot/</link>
+				<pubDate>Tue, 23 Jun 2026 16:10:55 -0700</pubDate>
+				<guid>https://redzhift.github.io/docs/user-guides/install-linux-mint/create-ventoy-liveboot/</guid>
+				<description>&lt;p&gt;&lt;br&gt;&#xA;In this guide, Ventoy software is used for a more streamlined liveboot experience.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview &lt;a href=&#34;#overview&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;div class=&#34;alert alert-success d-flex&#34; role=&#34;alert&#34;&gt;&#xA;  &lt;div class=&#34;flex-shrink-1 alert-icon&#34;&gt;&#xA;  &#xA;  &lt;span class=&#34;material-icons size-20 me-2&#34;&gt;&#xA;  check_circle&#xA;  &lt;/span&gt;&lt;/div&gt;&#xA;  &#xA;  &lt;div class=&#34;w-100&#34;&gt;A &lt;strong&gt;liveboot USB&lt;/strong&gt; contains a full operating system that allows you to log into a &amp;rsquo;live session&amp;rsquo; without having it installed. A &lt;strong&gt;live session&lt;/strong&gt; is required to safely install Linux Mint.&lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;&lt;h2 id=&#34;verify-ventoy-zip-file&#34;&gt;Verify Ventoy &lt;code&gt;.zip&lt;/code&gt; file &lt;a href=&#34;#verify-ventoy-zip-file&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id=&#34;run-ventoy2diskexe&#34;&gt;Run &lt;code&gt;Ventoy2Disk.exe&lt;/code&gt; &lt;a href=&#34;#run-ventoy2diskexe&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id=&#34;copy-iso-to-usb-device&#34;&gt;Copy .&lt;code&gt;iso&lt;/code&gt; to USB device &lt;a href=&#34;#copy-iso-to-usb-device&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;</description>
+			</item>
+	</channel>
+</rss>

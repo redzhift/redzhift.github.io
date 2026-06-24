@@ -1,5 +1,5 @@
 ---
-weight: 520
+weight: 620
 title: "Crime policy analysis [PDF]"
 description: "Policy analysis and case study on mass incarceration in the U.S. and how it developed over three eras of crime policies."
 lead: ""

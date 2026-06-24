@@ -3,6 +3,7 @@ locale = "en-US"
 title = "Jin Y.C"
 description = "Documentation and writing portfolio site"
 theme = "lotusdocs"
+author = "Jin Y.C"
 contentDir = "content"
 enableEmoji = true
 enableGitInfo = true # N.B. .GitInfo does not currently function with submodule content directories
@@ -42,8 +43,9 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
   secondary_font  = "Mozilla Text"     # Default is System font
   mono_font       = "Fira Code" # Default is System font
 
+
     [params.footer]
-        copyright = "© :YEAR: Jin Y.C. | `redzhift@tuta.io`"
+        copyright = "© 2020 - :YEAR: Jin Y.C. → Contact: `redzhift@tuta.io`"
         version   = true # include git commit info in footer
 
     [params.social]
@@ -56,7 +58,7 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
 
         pathName        = "docs"                            # path for documentation site | default "docs"
 
-        themeColor      = "red"                            # (optional) - Set theme accent colour. Options include: blue (default), indigo (custom), green, red, yellow, emerald, cardinal, magenta, cyan
+        themeColor      = "blue"                            # (optional) - Set theme accent colour. Options include: blue (default), indigo (custom), green, red, yellow, emerald, cardinal, magenta, cyan
 
         darkMode        = true                                # enable dark mode option? default false
 
@@ -83,9 +85,9 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
         # content navigation
         breadcrumbs     = true                                # default is true
         navDesc         = true                                # include front matter descriptions in Prev/Next navigation cards
-        navDescTrunc    = 30                                  # Number of characters by which to truncate the Prev/Next descriptions
+        navDescTrunc    = 50                                  # Number of characters by which to truncate the Prev/Next descriptions
 
-        listDescTrunc   = 100                                 # Number of characters by which to truncate the list card description
+        listDescTrunc   = 150                                 # Number of characters by which to truncate the list card description
         backToTop       = true                                # enable back-to-top button? default true
 
         # front matter
@@ -93,7 +95,7 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
 
         # Link behaviour
         intLinkTooltip  = false                                # Enable a tooltip for internal links that displays info about the destination? default false
-        # extLinkNewTab   = false                             # Open external links in a new Tab? default true
+        # extLinkNewTab   = true                           # Open external links in a new Tab? default true
         logoLinkURL     = "/"                                 # Set a custom URL destination for the top header logo link.
 
     [params.flexsearch] # Parameters for FlexSearch

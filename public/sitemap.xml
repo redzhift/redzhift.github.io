@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://redzhift.github.io/</loc>
-    <lastmod>2026-06-13T22:38:51-07:00</lastmod>
+    <lastmod>2026-06-22T21:31:56-07:00</lastmod>
   </url><url>
     <loc>https://redzhift.github.io/docs/</loc>
     <lastmod>2026-06-13T22:38:51-07:00</lastmod>
@@ -11,8 +11,29 @@
     <loc>https://redzhift.github.io/docs/about/</loc>
     <lastmod>2026-06-15T02:49:09-07:00</lastmod>
   </url><url>
+    <loc>https://redzhift.github.io/docs/install-linux-mint/</loc>
+    <lastmod>2026-06-23T16:44:12-07:00</lastmod>
+  </url><url>
     <loc>https://redzhift.github.io/docs/user-guides/</loc>
     <lastmod>2026-06-15T02:43:19-07:00</lastmod>
+  </url><url>
+    <loc>https://redzhift.github.io/docs/user-guides/install-linux-mint/</loc>
+    <lastmod>2026-06-23T15:54:19-07:00</lastmod>
+  </url><url>
+    <loc>https://redzhift.github.io/docs/user-guides/install-linux-mint/overview/</loc>
+    <lastmod>2026-06-24T12:30:11-07:00</lastmod>
+  </url><url>
+    <loc>https://redzhift.github.io/docs/user-guides/install-linux-mint/initial-prep/</loc>
+    <lastmod>2026-06-23T15:58:58-07:00</lastmod>
+  </url><url>
+    <loc>https://redzhift.github.io/docs/user-guides/install-linux-mint/verify-iso/</loc>
+    <lastmod>2026-06-23T16:10:36-07:00</lastmod>
+  </url><url>
+    <loc>https://redzhift.github.io/docs/user-guides/install-linux-mint/create-ventoy-liveboot/</loc>
+    <lastmod>2026-06-23T16:10:55-07:00</lastmod>
+  </url><url>
+    <loc>https://redzhift.github.io/docs/user-guides/install-linux-mint/run-install/</loc>
+    <lastmod>2026-06-23T16:11:03-07:00</lastmod>
   </url><url>
     <loc>https://redzhift.github.io/docs/user-guides/user-config/</loc>
     <lastmod>2026-06-15T09:49:40-07:00</lastmod>
@@ -65,6 +86,30 @@
     <loc>https://redzhift.github.io/docs/articles/affordable-housing-crisis/</loc>
     <lastmod>2026-06-15T02:43:19-07:00</lastmod>
   </url><url>
+    <loc>https://redzhift.github.io/tags/installation/</loc>
+    <lastmod>2026-06-23T16:44:12-07:00</lastmod>
+  </url><url>
+    <loc>https://redzhift.github.io/tags/linux/</loc>
+    <lastmod>2026-06-23T16:44:12-07:00</lastmod>
+  </url><url>
+    <loc>https://redzhift.github.io/tags/linux-mint/</loc>
+    <lastmod>2026-06-23T16:44:12-07:00</lastmod>
+  </url><url>
+    <loc>https://redzhift.github.io/tags/</loc>
+    <lastmod>2026-06-23T16:44:12-07:00</lastmod>
+  </url><url>
+    <loc>https://redzhift.github.io/tags/verification/</loc>
+    <lastmod>2026-06-23T16:44:12-07:00</lastmod>
+  </url><url>
+    <loc>https://redzhift.github.io/tags/liveboot/</loc>
+    <lastmod>2026-06-23T16:11:03-07:00</lastmod>
+  </url><url>
+    <loc>https://redzhift.github.io/tags/partitions/</loc>
+    <lastmod>2026-06-23T16:11:03-07:00</lastmod>
+  </url><url>
+    <loc>https://redzhift.github.io/tags/usb/</loc>
+    <lastmod>2026-06-23T16:10:55-07:00</lastmod>
+  </url><url>
     <loc>https://redzhift.github.io/tags/docs/</loc>
     <lastmod>2026-06-15T09:47:34-07:00</lastmod>
   </url><url>
@@ -74,14 +119,8 @@
     <loc>https://redzhift.github.io/tags/faqs/</loc>
     <lastmod>2026-06-15T02:43:19-07:00</lastmod>
   </url><url>
-    <loc>https://redzhift.github.io/tags/linux/</loc>
-    <lastmod>2026-06-15T09:47:34-07:00</lastmod>
-  </url><url>
     <loc>https://redzhift.github.io/tags/reflector/</loc>
     <lastmod>2026-06-15T02:43:28-07:00</lastmod>
-  </url><url>
-    <loc>https://redzhift.github.io/tags/</loc>
-    <lastmod>2026-06-15T09:47:34-07:00</lastmod>
   </url><url>
     <loc>https://redzhift.github.io/tags/userguides/</loc>
     <lastmod>2026-06-15T09:47:34-07:00</lastmod>

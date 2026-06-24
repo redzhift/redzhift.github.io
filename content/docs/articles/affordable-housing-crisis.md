@@ -1,5 +1,5 @@
 ---
-weight: 630
+weight: 830
 title: "Boston's affordable housing crisis, 2020 [PDF]"
 description: "How corporate short-stays like Airbnb worsened the affordable housing crisis in Boston."
 lead: ""

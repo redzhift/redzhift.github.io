@@ -1,5 +1,5 @@
 ---
-weight: 600
+weight: 800
 title: "Articles"
 description: "Non-documentation examples of my writing, including research and policy analysis."
 icon: newsmode

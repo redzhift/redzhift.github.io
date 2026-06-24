@@ -10,9 +10,58 @@
 		
 		
 		
-			<lastBuildDate>Mon, 15 Jun 2026 09:47:34 -0700</lastBuildDate>
+			<lastBuildDate>Tue, 23 Jun 2026 16:44:12 -0700</lastBuildDate>
 		
 			<atom:link href="https://redzhift.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Installation</title>
+				<link>https://redzhift.github.io/tags/installation/</link>
+				<pubDate>Tue, 23 Jun 2026 16:44:12 -0700</pubDate>
+				<guid>https://redzhift.github.io/tags/installation/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Linux</title>
+				<link>https://redzhift.github.io/tags/linux/</link>
+				<pubDate>Tue, 23 Jun 2026 16:44:12 -0700</pubDate>
+				<guid>https://redzhift.github.io/tags/linux/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Linux Mint</title>
+				<link>https://redzhift.github.io/tags/linux-mint/</link>
+				<pubDate>Tue, 23 Jun 2026 16:44:12 -0700</pubDate>
+				<guid>https://redzhift.github.io/tags/linux-mint/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Verification</title>
+				<link>https://redzhift.github.io/tags/verification/</link>
+				<pubDate>Tue, 23 Jun 2026 16:44:12 -0700</pubDate>
+				<guid>https://redzhift.github.io/tags/verification/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Liveboot</title>
+				<link>https://redzhift.github.io/tags/liveboot/</link>
+				<pubDate>Tue, 23 Jun 2026 16:11:03 -0700</pubDate>
+				<guid>https://redzhift.github.io/tags/liveboot/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Partitions</title>
+				<link>https://redzhift.github.io/tags/partitions/</link>
+				<pubDate>Tue, 23 Jun 2026 16:11:03 -0700</pubDate>
+				<guid>https://redzhift.github.io/tags/partitions/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Usb</title>
+				<link>https://redzhift.github.io/tags/usb/</link>
+				<pubDate>Tue, 23 Jun 2026 16:10:55 -0700</pubDate>
+				<guid>https://redzhift.github.io/tags/usb/</guid>
+				<description></description>
+			</item>
 			<item>
 				<title>Docs</title>
 				<link>https://redzhift.github.io/tags/docs/</link>
@@ -32,13 +81,6 @@
 				<link>https://redzhift.github.io/tags/faqs/</link>
 				<pubDate>Fri, 12 Jun 2026 18:00:22 -0700</pubDate>
 				<guid>https://redzhift.github.io/tags/faqs/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Linux</title>
-				<link>https://redzhift.github.io/tags/linux/</link>
-				<pubDate>Fri, 12 Jun 2026 18:00:22 -0700</pubDate>
-				<guid>https://redzhift.github.io/tags/linux/</guid>
 				<description></description>
 			</item>
 			<item>

@@ -1,5 +1,5 @@
 ---
-weight: 105
+weight: 50
 title: "User guides"
 description: "Guides on maintaining your EndeavourOS system using the Linux CLI."
 icon: menu_book

@@ -1,5 +1,5 @@
 ---
-weight: 620
+weight: 820
 title: "Facial recognition software [PDF]"
 description: "The impact on 3 levels of privacy: local, state, and personal."
 lead: ""

@@ -20,17 +20,16 @@ hero:
     path: "images/logos"
     filename: "logo.png"
     alt: "Lotus Docs Logo"
-    height: 80px
+    height: 70px
 
   title: "Jin Y.C"
-  subtitle: Technical Writer
+  subtitle: "Technical Writer"
 
   ctaButton:
     icon: auto_awesome
     btnText: "About me"
     btnColor: danger
     url: "/docs/about"
-    color: danger
   cta2Button:
     icon: person
     btnText: "LinkedIn"
@@ -44,8 +43,8 @@ featureGrid:
   weight: 30
   template: feature grid
 
-  title: 
-  subtitle: 
+  title: "Jin Y.C"
+  subtitle: "Technical Writer"
 
   items:
     - title: 
