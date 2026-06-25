@@ -6,33 +6,27 @@
     <lastmod>2026-06-22T21:31:56-07:00</lastmod>
   </url><url>
     <loc>https://redzhift.github.io/docs/</loc>
-    <lastmod>2026-06-13T22:38:51-07:00</lastmod>
+    <lastmod>2026-06-24T15:00:39-07:00</lastmod>
   </url><url>
     <loc>https://redzhift.github.io/docs/about/</loc>
-    <lastmod>2026-06-15T02:49:09-07:00</lastmod>
-  </url><url>
-    <loc>https://redzhift.github.io/docs/install-linux-mint/</loc>
-    <lastmod>2026-06-23T16:44:12-07:00</lastmod>
+    <lastmod>2026-06-24T15:00:39-07:00</lastmod>
   </url><url>
     <loc>https://redzhift.github.io/docs/user-guides/</loc>
-    <lastmod>2026-06-15T02:43:19-07:00</lastmod>
+    <lastmod>2026-06-24T15:00:39-07:00</lastmod>
   </url><url>
-    <loc>https://redzhift.github.io/docs/user-guides/install-linux-mint/</loc>
-    <lastmod>2026-06-23T15:54:19-07:00</lastmod>
-  </url><url>
-    <loc>https://redzhift.github.io/docs/user-guides/install-linux-mint/overview/</loc>
+    <loc>https://redzhift.github.io/docs/installation-guide/overview/</loc>
     <lastmod>2026-06-24T12:30:11-07:00</lastmod>
   </url><url>
-    <loc>https://redzhift.github.io/docs/user-guides/install-linux-mint/initial-prep/</loc>
+    <loc>https://redzhift.github.io/docs/installation-guide/initial-prep/</loc>
     <lastmod>2026-06-23T15:58:58-07:00</lastmod>
   </url><url>
-    <loc>https://redzhift.github.io/docs/user-guides/install-linux-mint/verify-iso/</loc>
+    <loc>https://redzhift.github.io/docs/installation-guide/verify-iso/</loc>
     <lastmod>2026-06-23T16:10:36-07:00</lastmod>
   </url><url>
-    <loc>https://redzhift.github.io/docs/user-guides/install-linux-mint/create-ventoy-liveboot/</loc>
+    <loc>https://redzhift.github.io/docs/installation-guide/create-ventoy-liveboot/</loc>
     <lastmod>2026-06-23T16:10:55-07:00</lastmod>
   </url><url>
-    <loc>https://redzhift.github.io/docs/user-guides/install-linux-mint/run-install/</loc>
+    <loc>https://redzhift.github.io/docs/installation-guide/install-from-live-session/</loc>
     <lastmod>2026-06-23T16:11:03-07:00</lastmod>
   </url><url>
     <loc>https://redzhift.github.io/docs/user-guides/user-config/</loc>
@@ -44,14 +38,17 @@
     <loc>https://redzhift.github.io/docs/user-guides/user-config/downgrade-to-specific-date/</loc>
     <lastmod>2026-06-15T09:47:34-07:00</lastmod>
   </url><url>
+    <loc>https://redzhift.github.io/docs/installation-guide/</loc>
+    <lastmod>2026-06-23T15:54:19-07:00</lastmod>
+  </url><url>
     <loc>https://redzhift.github.io/docs/user-guides/system-maintenance/</loc>
-    <lastmod>2026-06-14T03:19:32-07:00</lastmod>
+    <lastmod>2026-06-24T15:00:39-07:00</lastmod>
   </url><url>
     <loc>https://redzhift.github.io/docs/user-guides/system-maintenance/update-packages/</loc>
-    <lastmod>2026-06-14T03:19:32-07:00</lastmod>
+    <lastmod>2026-06-24T15:00:39-07:00</lastmod>
   </url><url>
     <loc>https://redzhift.github.io/docs/user-guides/system-maintenance/rerank-mirrors/</loc>
-    <lastmod>2026-06-15T02:43:28-07:00</lastmod>
+    <lastmod>2026-06-24T15:00:39-07:00</lastmod>
   </url><url>
     <loc>https://redzhift.github.io/docs/user-guides/faqs/</loc>
     <lastmod>2026-06-15T02:43:19-07:00</lastmod>
@@ -66,40 +63,34 @@
     <lastmod>2026-06-14T03:19:32-07:00</lastmod>
   </url><url>
     <loc>https://redzhift.github.io/docs/research/</loc>
-    <lastmod>2026-06-13T22:38:51-07:00</lastmod>
+    <lastmod>2026-06-24T15:00:39-07:00</lastmod>
   </url><url>
     <loc>https://redzhift.github.io/docs/research/game-psychology-research/</loc>
-    <lastmod>2026-06-15T02:43:19-07:00</lastmod>
+    <lastmod>2026-06-24T15:00:39-07:00</lastmod>
   </url><url>
     <loc>https://redzhift.github.io/docs/research/crime-policy-analysis/</loc>
-    <lastmod>2026-06-15T02:43:19-07:00</lastmod>
+    <lastmod>2026-06-24T15:00:39-07:00</lastmod>
   </url><url>
     <loc>https://redzhift.github.io/docs/articles/</loc>
-    <lastmod>2026-06-13T22:38:51-07:00</lastmod>
+    <lastmod>2026-06-24T15:00:39-07:00</lastmod>
   </url><url>
     <loc>https://redzhift.github.io/docs/articles/facial-recognition/</loc>
-    <lastmod>2026-06-13T22:38:51-07:00</lastmod>
+    <lastmod>2026-06-24T15:00:39-07:00</lastmod>
   </url><url>
     <loc>https://redzhift.github.io/docs/articles/facial-recognition-pdf/</loc>
-    <lastmod>2026-06-15T02:43:19-07:00</lastmod>
+    <lastmod>2026-06-24T15:00:39-07:00</lastmod>
   </url><url>
     <loc>https://redzhift.github.io/docs/articles/affordable-housing-crisis/</loc>
-    <lastmod>2026-06-15T02:43:19-07:00</lastmod>
+    <lastmod>2026-06-24T15:00:39-07:00</lastmod>
   </url><url>
     <loc>https://redzhift.github.io/tags/installation/</loc>
-    <lastmod>2026-06-23T16:44:12-07:00</lastmod>
+    <lastmod>2026-06-23T16:11:03-07:00</lastmod>
   </url><url>
     <loc>https://redzhift.github.io/tags/linux/</loc>
-    <lastmod>2026-06-23T16:44:12-07:00</lastmod>
+    <lastmod>2026-06-24T15:00:39-07:00</lastmod>
   </url><url>
     <loc>https://redzhift.github.io/tags/linux-mint/</loc>
-    <lastmod>2026-06-23T16:44:12-07:00</lastmod>
-  </url><url>
-    <loc>https://redzhift.github.io/tags/</loc>
-    <lastmod>2026-06-23T16:44:12-07:00</lastmod>
-  </url><url>
-    <loc>https://redzhift.github.io/tags/verification/</loc>
-    <lastmod>2026-06-23T16:44:12-07:00</lastmod>
+    <lastmod>2026-06-23T16:11:03-07:00</lastmod>
   </url><url>
     <loc>https://redzhift.github.io/tags/liveboot/</loc>
     <lastmod>2026-06-23T16:11:03-07:00</lastmod>
@@ -107,23 +98,29 @@
     <loc>https://redzhift.github.io/tags/partitions/</loc>
     <lastmod>2026-06-23T16:11:03-07:00</lastmod>
   </url><url>
+    <loc>https://redzhift.github.io/tags/</loc>
+    <lastmod>2026-06-24T15:00:39-07:00</lastmod>
+  </url><url>
     <loc>https://redzhift.github.io/tags/usb/</loc>
     <lastmod>2026-06-23T16:10:55-07:00</lastmod>
   </url><url>
+    <loc>https://redzhift.github.io/tags/verification/</loc>
+    <lastmod>2026-06-23T16:10:36-07:00</lastmod>
+  </url><url>
     <loc>https://redzhift.github.io/tags/docs/</loc>
-    <lastmod>2026-06-15T09:47:34-07:00</lastmod>
+    <lastmod>2026-06-24T15:00:39-07:00</lastmod>
   </url><url>
     <loc>https://redzhift.github.io/tags/endeavouros/</loc>
-    <lastmod>2026-06-15T09:47:34-07:00</lastmod>
+    <lastmod>2026-06-24T15:00:39-07:00</lastmod>
   </url><url>
     <loc>https://redzhift.github.io/tags/faqs/</loc>
     <lastmod>2026-06-15T02:43:19-07:00</lastmod>
   </url><url>
     <loc>https://redzhift.github.io/tags/reflector/</loc>
-    <lastmod>2026-06-15T02:43:28-07:00</lastmod>
+    <lastmod>2026-06-24T15:00:39-07:00</lastmod>
   </url><url>
     <loc>https://redzhift.github.io/tags/userguides/</loc>
-    <lastmod>2026-06-15T09:47:34-07:00</lastmod>
+    <lastmod>2026-06-24T15:00:39-07:00</lastmod>
   </url><url>
     <loc>https://redzhift.github.io/tags/kernel/</loc>
     <lastmod>2026-06-15T09:47:34-07:00</lastmod>
@@ -132,10 +129,10 @@
     <lastmod>2026-06-15T09:47:34-07:00</lastmod>
   </url><url>
     <loc>https://redzhift.github.io/tags/pacman/</loc>
-    <lastmod>2026-06-14T03:19:32-07:00</lastmod>
+    <lastmod>2026-06-24T15:00:39-07:00</lastmod>
   </url><url>
     <loc>https://redzhift.github.io/tags/about/</loc>
-    <lastmod>2026-06-15T02:49:09-07:00</lastmod>
+    <lastmod>2026-06-24T15:00:39-07:00</lastmod>
   </url><url>
     <loc>https://redzhift.github.io/categories/</loc>
   </url>

@@ -14,11 +14,11 @@
 		
 			<atom:link href="https://redzhift.github.io/tags/partitions/index.xml" rel="self" type="application/rss+xml" />
 			<item>
-				<title>Run Installation</title>
-				<link>https://redzhift.github.io/docs/user-guides/install-linux-mint/run-install/</link>
+				<title>Install from live session</title>
+				<link>https://redzhift.github.io/docs/installation-guide/install-from-live-session/</link>
 				<pubDate>Tue, 23 Jun 2026 16:11:03 -0700</pubDate>
-				<guid>https://redzhift.github.io/docs/user-guides/install-linux-mint/run-install/</guid>
-				<description></description>
+				<guid>https://redzhift.github.io/docs/installation-guide/install-from-live-session/</guid>
+				<description>&lt;h2 id=&#34;overview&#34;&gt;Overview &lt;a href=&#34;#overview&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;With your &lt;strong&gt;liveboot USB&lt;/strong&gt; set up, you can prepare to boot into a &lt;strong&gt;live session&lt;/strong&gt; of Linux Mint.&lt;/p&gt;&#xA;&lt;p&gt;First, you need to set your computer system to recognize that it should boot from a different device at startup (your &lt;strong&gt;Ventoy&lt;/strong&gt; device). This option is changed in your computer’s &lt;code&gt;BIOS MENU&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&#xA;&lt;nav&gt;&#xA;&#x9;&lt;div class=&#34;nav nav-tabs&#34; id=&#34;nav-tab&#34; role=&#34;tablist&#34;&gt;&#xA;&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;&#xA;&#xA;&#x9;&#x9;&#xA;&#xA;&#x9;&#x9;&lt;a class=&#34;nav-link  active&#34;&#xA;&#x9;&#x9;   id=&#34;decbfaTab&#34; data-bs-toggle=&#34;tab&#34; data-bs-target=&#34;#decbfa&#34;&#xA;&#x9;&#x9;   type=&#34;button&#34; role=&#34;tab&#34; aria-controls=&#34;decbfa&#34; aria-selected=&#34;true&#34;&gt;Disable secure boot in BIOS&lt;/a&gt;&#xA;&#xA;&#x9;&#x9;&#xA;&#xA;&#x9;&#x9;&lt;a class=&#34;nav-link &#34;&#xA;&#x9;&#x9;   id=&#34;efbadcTab&#34; data-bs-toggle=&#34;tab&#34; data-bs-target=&#34;#efbadc&#34;&#xA;&#x9;&#x9;   type=&#34;button&#34; role=&#34;tab&#34; aria-controls=&#34;efbadc&#34; aria-selected=&#34;true&#34;&gt;Change default boot order&lt;/a&gt;&#xA;&#xA;&#x9;&#x9;&#xA;&#xA;&#x9;&lt;/div&gt;&#xA;&lt;/nav&gt;&#xA;&#xA;&lt;div class=&#34;tab-content&#34; id=&#34;nav-tab-content&#34;&gt;&#xA;&#xA;&#x9;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;tab-pane fade show active&#34; id=&#34;decbfa&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;nav-1&#34;&gt;&#xA;&#xA;&#x9;&lt;h2 id=&#34;disable-secure-boot-in-bios-menu&#34;&gt;Disable secure boot in &lt;code&gt;BIOS MENU&lt;/code&gt; &lt;a href=&#34;#disable-secure-boot-in-bios-menu&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Reboot your computer with the &lt;strong&gt;Ventoy USB&lt;/strong&gt; still inserted.&lt;/p&gt;</description>
 			</item>
 	</channel>
 </rss>
