@@ -39,6 +39,7 @@ If you’re unsure about what key you need to press, you may need to restart a f
 {{% /tab %}}
 
 {{% tab tabName="Change default boot order" %}}
+
 ## Change default boot order
 
 You will need to change your computer’s default boot order so that __Ventoy__ shows up at boot. 
@@ -59,12 +60,14 @@ You will need to change your computer’s default boot order so that __Ventoy__ 
 In a live session, you can safely test out any programs and the desktop environment without impacting the OS installed on your computer. This is a good way to test out distros before installing them as well.
 
 1. Double-click on the __Install Linux Mint__ application on the desktop (top left corner).
-    
+   
     ![The Linux Mint desktop from a live session with the installation helper in the top left corner.][install-1]
     
 2. Select the options in each step as desired for your computer setup. It is recommended to install with an internet connection for access to all files.
 
     ![Linux Mint installation prompt to install multimedia codecs.][install-2]
+
+---
 
 ## Set up partitions
 
@@ -117,8 +120,8 @@ Dualbooting is a setup recommended for users who need to access Windows/macOS-ex
 [partitions]: https://linuxmint-installation-guide.readthedocs.io/en/latest/partitioning.html
 [multi-boot]: https://linuxmint-installation-guide.readthedocs.io/en/latest/multiboot.html
 
-
 <!-- images -->
+
 [lifewire-bios]: https://www.lifewire.com/thmb/7WG5p4rmzh2dBxQa5ILYAsNfPig=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/boot-options-cd-first-599596b1845b340010bd4a99.png
 [install-1]: /images/mint/install-1.png
 [install-2]: /images/mint/install-2.png

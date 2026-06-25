@@ -40,7 +40,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://redzhift.github.io/docs/installation-guide/overview/" /><meta property="og:image" content="https://redzhift.github.io/opengraph/card-base-2_hu_aefbc690f0cabfb9.png"/><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2026-06-24T12:30:11-07:00" />
-<meta property="article:modified_time" content="2026-06-24T12:30:11-07:00" /><meta name="twitter:card" content="summary_large_image"/>
+<meta property="article:modified_time" content="2026-06-24T18:14:23-07:00" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://redzhift.github.io/opengraph/card-base-2_hu_aefbc690f0cabfb9.png"/>
 <meta name="twitter:title" content="Overview"/>
 <meta name="twitter:description" content="An overview of the Linux Mint installation process and required tools."/>
@@ -134,6 +134,11 @@
                                                             
                                                             
                                                                 <li class=" "><a class="sidebar-nested-link" href="https://redzhift.github.io/docs/user-guides/user-config/downgrade-to-specific-date/">Downgrade with eos-shifttime</a></li>
+                                                            
+                                                        
+                                                            
+                                                            
+                                                                <li class=" "><a class="sidebar-nested-link" href="https://redzhift.github.io/docs/user-guides/user-config/install-new-theme-in-typora/">Install new theme in Typora</a></li>
                                                             
                                                         
                                                     </ul>
@@ -509,11 +514,10 @@
     <div data-prismjs-copy="" data-prismjs-copy-success="" data-prismjs-copy-error="">
         <h2 id="contents">Contents <a href="#contents" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>This is a guide to installing <strong>Linux Mint</strong> on your computer using a <strong>Ventoy liveboot USB</strong>.</p>
 <ol>
-<li>Initial prep &amp; backup</li>
-<li>Download files</li>
-<li>Verify files</li>
-<li>Set up Ventoy</li>
-<li>Run installation</li>
+<li><a href="/docs/installation-guide/initial-prep/">Initial prep &amp; backup</a></li>
+<li><a href="/docs/installation-guide/verify-iso/">Verify files</a></li>
+<li><a href="/docs/installation-guide/create-ventoy-liveboot/">Set up Ventoy</a></li>
+<li><a href="/docs/installation-guide/install-from-live-session/">Install from live session</a></li>
 </ol>
 <div class="alert alert-info d-flex" role="alert">
   <div class="flex-shrink-1 alert-icon">
@@ -560,6 +564,31 @@
 <!-- images -->
 
     </div>
+
+    
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+<div class="gitinfo d-flex flex-wrap justify-content-between align-items-center opacity-85 pt-3">
+    
+    <div id="last-modified" class="mt-1">
+        <p class="mb-0 fw-semibold">Last updated 
+            <span
+                    data-authdate="2026-06-24T12:30:11-0700">24 Jun 2026, 12:30 PDT</span>. <span class="material-icons size-20 align-text-bottom opacity-75">history</span>
+        </p>
+    </div>
+    
+</div>
 
     
 
@@ -935,6 +964,13 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
 
 
     
@@ -974,7 +1010,7 @@
                 href: "\/docs\/installation-guide\/overview\/",
                 title: "Overview",
                 description: "An overview of the Linux Mint installation process and required tools.",
-                content: "Contents linkThis is a guide to installing Linux Mint on your computer using a Ventoy liveboot USB.\nInitial prep \u0026 backup Download files Verify files Set up Ventoy Run installation info Linux Mint is a free, open-source operating system designed to work “out of the box.” It is a popular alternative for those accustomed to a traditional desktop OS like Windows, offering a simple transition and access to the apps that most people need.\nIt is completely free to install and use.\nYou can “dual boot” and install Linux Mint alongside your computer’s existing OS.\nResources linkThe official Linux Mint Installation instructions are referenced throughout this guide. Official documentation and additional getting-started guides are maintained by the Linux Mint community.\nHere are some resources if you need help with troubleshooting:\nInstallation guide (PDF)\nOfficial Linux Mint documentation\nLinux Mint forums\ninfo Browse DistroWatch for a comprehensive look at all the Linux distros out there. Note that installation steps may vary between the different major ‘branches’ of Linux. "
+                content: "Contents linkThis is a guide to installing Linux Mint on your computer using a Ventoy liveboot USB.\nInitial prep \u0026 backup Verify files Set up Ventoy Install from live session info Linux Mint is a free, open-source operating system designed to work “out of the box.” It is a popular alternative for those accustomed to a traditional desktop OS like Windows, offering a simple transition and access to the apps that most people need.\nIt is completely free to install and use.\nYou can “dual boot” and install Linux Mint alongside your computer’s existing OS.\nResources linkThe official Linux Mint Installation instructions are referenced throughout this guide. Official documentation and additional getting-started guides are maintained by the Linux Mint community.\nHere are some resources if you need help with troubleshooting:\nInstallation guide (PDF)\nOfficial Linux Mint documentation\nLinux Mint forums\ninfo Browse DistroWatch for a comprehensive look at all the Linux distros out there. Note that installation steps may vary between the different major ‘branches’ of Linux. "
             }
         );
     index.add(
@@ -1043,6 +1079,15 @@
     index.add(
             {
                 id:  11 ,
+                href: "\/docs\/user-guides\/user-config\/install-new-theme-in-typora\/",
+                title: "Install new theme in Typora",
+                description: "How to install a new custom theme in Typora.",
+                content: " Typora is a minimalist text editor that renders markdown and code in real-time. The software comes with several default themes that can be applied through the Themes option menu.\nFirst, find which custom theme you’d like to install from the Typora themes page.\nDownload the theme.\nOpen Typora and navigate to the File \u003e Preferences menu. The keyboard shortcut is Ctrl + comma\nGo to the Appearance tab and Open Theme Folder.\nExtract the files from the downloaded .zip into the themes folder. You should have:\nA folder containing the theme’s fonts (.tff, .otf,.woff files) A .css file with the theme’s styling Restart Typora to refresh the available themes.\nApply the new theme through the Themes menu, or from File \u003e Preferences \u003e Appearance options.\n"
+            }
+        );
+    index.add(
+            {
+                id:  12 ,
                 href: "\/docs\/installation-guide\/",
                 title: "Linux Mint Installation",
                 description: "How to download, verify, and install Linux Mint onto your computer with a liveboot USB.",
@@ -1051,7 +1096,7 @@
         );
     index.add(
             {
-                id:  12 ,
+                id:  13 ,
                 href: "\/docs\/user-guides\/system-maintenance\/",
                 title: "System maintenance",
                 description: "How to keep your EndeavourOS system up to date.",
@@ -1060,7 +1105,7 @@
         );
     index.add(
             {
-                id:  13 ,
+                id:  14 ,
                 href: "\/docs\/user-guides\/system-maintenance\/update-packages\/",
                 title: "Update packages",
                 description: "Update your system packages with `pacman` and `yay`.",
@@ -1069,7 +1114,7 @@
         );
     index.add(
             {
-                id:  14 ,
+                id:  15 ,
                 href: "\/docs\/user-guides\/system-maintenance\/rerank-mirrors\/",
                 title: "Re-rank mirrors",
                 description: "Re-rank mirrors every 1-2 months to keep your mirrorlist up to date.",
@@ -1078,7 +1123,7 @@
         );
     index.add(
             {
-                id:  15 ,
+                id:  16 ,
                 href: "\/docs\/user-guides\/faqs\/",
                 title: "FAQs",
                 description: "Common questions for users new to Linux.",
@@ -1087,7 +1132,7 @@
         );
     index.add(
             {
-                id:  16 ,
+                id:  17 ,
                 href: "\/docs\/user-guides\/faqs\/getting-update-errors\/",
                 title: "Why do I get errors when I try to update?",
                 description: "Outdated package databases will cause errors when pacman tries to retrieve the latest package files.\nThis can be prevented through regular mirror maintenance.\nSee: Update mirrors guide\nError: failed to commit transaction (conflicting files):\nRunning a sudo pacman -Syu update may fail and display the following errors:\nerror: failed to commit transaction (conflicting files) : /example exists in filesystem (owned by filesystem) : /lib/systemd/system/example.service exists in filesystem These issues can be resolved with manual intervention. Uninstall and remove the package from the system, then reinstall/update with these two commands:\n",
@@ -1096,7 +1141,7 @@
         );
     index.add(
             {
-                id:  17 ,
+                id:  18 ,
                 href: "\/docs\/user-guides\/faqs\/mirror-alternatives\/",
                 title: "Are there mirror management alternatives?",
                 description: "Popular alternatives to mirror management are listed on the Arch mirrors wiki. Some programs can automate mirror management when configured properly.\nOne such example is ghostmirror, which:\n",
@@ -1105,7 +1150,7 @@
         );
     index.add(
             {
-                id:  18 ,
+                id:  19 ,
                 href: "\/docs\/user-guides\/faqs\/what-is-aur\/",
                 title: "What is the AUR?",
                 description: "The Arch User Repository (known as AUR) is a large library of community user-produced packages for Arch Linux.\nPopular and well-maintained packages are voted on by the community to include in the official Arch extra repository.\nTo download and install AUR packages:\nClone the git repository listed on the package’s AUR page:\ngit clone https://aur.archlinux.org/.git Change into the package directory:\ncd Build and install the package with:\n",
@@ -1114,7 +1159,7 @@
         );
     index.add(
             {
-                id:  19 ,
+                id:  20 ,
                 href: "\/docs\/research\/",
                 title: "Research",
                 description: "Mixed-methods game psychology research and crime policy analysis.",
@@ -1123,7 +1168,7 @@
         );
     index.add(
             {
-                id:  20 ,
+                id:  21 ,
                 href: "\/docs\/research\/game-psychology-research\/",
                 title: "Game Psychology Research [PDF]",
                 description: "Mixed-methods based research on how narrative gameplay elements can influence player decisions.",
@@ -1132,7 +1177,7 @@
         );
     index.add(
             {
-                id:  21 ,
+                id:  22 ,
                 href: "\/docs\/research\/crime-policy-analysis\/",
                 title: "Crime policy analysis [PDF]",
                 description: "Policy analysis and case study on mass incarceration in the U.S. and how it developed over three eras of crime policies.",
@@ -1141,7 +1186,7 @@
         );
     index.add(
             {
-                id:  22 ,
+                id:  23 ,
                 href: "\/docs\/articles\/",
                 title: "Articles",
                 description: "Non-documentation examples of my writing, including research and policy analysis.",
@@ -1150,7 +1195,7 @@
         );
     index.add(
             {
-                id:  23 ,
+                id:  24 ,
                 href: "\/docs\/articles\/facial-recognition\/",
                 title: "Facial recognition software",
                 description: "The impact on 3 levels of privacy: local, state, and personal.",
@@ -1159,7 +1204,7 @@
         );
     index.add(
             {
-                id:  24 ,
+                id:  25 ,
                 href: "\/docs\/articles\/facial-recognition-pdf\/",
                 title: "Facial recognition software [PDF]",
                 description: "The impact on 3 levels of privacy: local, state, and personal.",
@@ -1168,7 +1213,7 @@
         );
     index.add(
             {
-                id:  25 ,
+                id:  26 ,
                 href: "\/docs\/articles\/affordable-housing-crisis\/",
                 title: "Boston's affordable housing crisis, 2020 [PDF]",
                 description: "How corporate short-stays like Airbnb worsened the affordable housing crisis in Boston.",

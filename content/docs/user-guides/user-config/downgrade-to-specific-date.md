@@ -7,6 +7,7 @@ date: 2026-05-13T14:09:31-07:00
 lastmod: 2026-05-12T14:09:31-07:00
 draft: false
 tags: ["docs","userguides","endeavourOS","linux","eos-shifttime"]
+toc: true
 images: []
 ---
 

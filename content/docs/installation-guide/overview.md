@@ -13,11 +13,10 @@ toc: true
 
 This is a guide to installing __Linux Mint__ on your computer using a __Ventoy liveboot USB__. 
 
-1. Initial prep & backup
-2. Download files
-3. Verify files
-4. Set up Ventoy
-5. Run installation
+1. [Initial prep & backup](/docs/installation-guide/initial-prep)
+3. [Verify files](/docs/installation-guide/verify-iso)
+4. [Set up Ventoy](/docs/installation-guide/create-ventoy-liveboot)
+5. [Install from live session](/docs/installation-guide/install-from-live-session)
 
 {{% alert icon="" context="info" %}}
 
