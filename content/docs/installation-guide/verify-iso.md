@@ -63,7 +63,7 @@ This process can also  be completed using other other hashing tools, such as the
 |----------------------------|--------|
 | Using __SHA-256__ checksums | Not other types such as SHA-128, SHA-512, MD-5, etc.  These are different types of encryption and will yield different results. |
 | Comparing with the __correct expected hash__ | This value varies depending on which version you downloaded (ex. __Cinnamon__ vs. __Mate__, or __v22.3__ vs. __22.1__). |
-| Hashing a completed download | `.iso` files are several gigabytes, and there is a possibility the download was interrupted. In this case, download the whole file again.|
+| Hashing a __complete download__ | `.iso` files are several gigabytes, and there is a possibility the download was interrupted. In this case, download the whole file again.|
 {{< /table >}}
 
 \
@@ -92,5 +92,5 @@ The [official Linux Mint guide](mint-guide) goes through a more thorough verific
 [bitakit-hash]: https://www.bitakit.com/hash-compare/
 
 <!-- images -->
-[checksum-1]: /images/checksum-1.png
-[checksum-2]: /images/checksum-2.png
+[checksum-1]: /images/mint/checksum-1.png
+[checksum-2]: /images/mint/checksum-2.png

@@ -33,7 +33,7 @@ You can download from any mirror listed on the download sites.
    1. __Right click__ the text on the page.
    2. __Save page as__ a `sha256sum.txt` file to the same directory as the `.iso`
    
- ![The save as window dialogue after right-clicking the SHA256sum text][sha256sum]
+ > ![The save as window dialogue after right-clicking the SHA256sum text][sha256sum]
 
 ---
 
@@ -73,4 +73,4 @@ The following online tools are used to verify the integrity of files, ensuring t
 
 
 <!-- images -->
-[sha256sum]: /images/sha256sum.png
+[sha256sum]: /images/mint/sha256sum.png

@@ -87,7 +87,7 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
         navDesc         = true                                # include front matter descriptions in Prev/Next navigation cards
         navDescTrunc    = 50                                  # Number of characters by which to truncate the Prev/Next descriptions
 
-        listDescTrunc   = 150                                 # Number of characters by which to truncate the list card description
+        listDescTrunc   = 120                                 # Number of characters by which to truncate the list card description
         backToTop       = true                                # enable back-to-top button? default true
 
         # front matter
