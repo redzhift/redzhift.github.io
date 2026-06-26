@@ -123,8 +123,8 @@ I'm __Jin__, a technical writer and trainer with 5+ years experience developing:
 {{% tab tabName="Currently learning..." %}}
 
 ![Hugo badge](https://img.shields.io/badge/Hugo-%23FF4088?style=for-the-badge&logo=hugo&logoColor=white&logoSize=auto&link=https://gohugo.io)
+![Static Badge](https://img.shields.io/badge/Postman-%23FF6C37?style=for-the-badge&logo=postman&logoColor=white&logoSize=auto&link=https%3A%2F%2Facademy.postman.com%2F) 
 ![Endeavour OS badge](https://img.shields.io/badge/Endeavour%20OS-%237F7FFF?style=for-the-badge&logo=endeavouros&logoColor=white&logoSize=auto&link=https%3A%2F%2Fendeavouros.com%2F)
-![Confluence badge](https://img.shields.io/badge/Confluence-%23172B4D?style=for-the-badge&logo=confluence&logoColor=white&logoSize=auto&link=https%3A%2F%2Fredzhift.atlassian.net%2Fwiki%2Fspaces%2F~jcho%2Foverview%2F)
 ![TOP badge](https://img.shields.io/badge/The%20Odin%20Project-%23A9792B?style=for-the-badge&logo=the%20odin%20project&logoColor=white&logoSize=auto&link=https://www.theodinproject.com)
 
 
@@ -137,6 +137,7 @@ I'm __Jin__, a technical writer and trainer with 5+ years experience developing:
 
 
 <!-- urls-->
+
 [confluence]: https://redzhift.atlassian.net/wiki/spaces/~jcho/overview/
 [gh]: https://github.com/redzhift
 [li]: https://linkedin.com/in/redzhift

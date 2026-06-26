@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Installation on Jin Y.C</title>
-		<link>https://redzhift.github.io/tags/installation/</link>
+		<link>http://localhost:1313/tags/installation/</link>
 		<description>Recent content in Installation on Jin Y.C</description>
 		<generator>Hugo</generator>
 		<language>en-US</language>
@@ -10,42 +10,42 @@
 		
 		
 		
-			<lastBuildDate>Wed, 24 Jun 2026 18:14:23 -0700</lastBuildDate>
+			<lastBuildDate>Thu, 25 Jun 2026 11:07:03 -0700</lastBuildDate>
 		
-			<atom:link href="https://redzhift.github.io/tags/installation/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/tags/installation/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Initial Prep</title>
-				<link>https://redzhift.github.io/docs/installation-guide/initial-prep/</link>
+				<link>http://localhost:1313/docs/installation-guide/initial-prep/</link>
 				<pubDate>Tue, 23 Jun 2026 15:58:58 -0700</pubDate>
-				<guid>https://redzhift.github.io/docs/installation-guide/initial-prep/</guid>
+				<guid>http://localhost:1313/docs/installation-guide/initial-prep/</guid>
 				<description>&lt;div class=&#34;alert alert-success d-flex&#34; role=&#34;alert&#34;&gt;&#xA;  &lt;div class=&#34;flex-shrink-1 alert-icon&#34;&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;div class=&#34;w-100&#34;&gt;&#xA;&lt;p&gt;It is recommended to have:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;USB drive (3.0, at least 8 GB)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;External HDD or SSD device&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;PC specs (RAM size, GPU model)&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;First, back up your files onto an &lt;strong&gt;external HDD/SSD&lt;/strong&gt;. This setup lets you access and recover the files separately if needed.&lt;/p&gt;&#xA;&lt;h2 id=&#34;download-files&#34;&gt;Download files &lt;a href=&#34;#download-files&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;You can download from any mirror listed on the download sites.&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;.iso&lt;/code&gt; downloads may take several minutes. Make sure that the download finishes completely before attempting verification.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Verify file integrity</title>
-				<link>https://redzhift.github.io/docs/installation-guide/verify-iso/</link>
+				<link>http://localhost:1313/docs/installation-guide/verify-iso/</link>
 				<pubDate>Tue, 23 Jun 2026 16:10:36 -0700</pubDate>
-				<guid>https://redzhift.github.io/docs/installation-guide/verify-iso/</guid>
+				<guid>http://localhost:1313/docs/installation-guide/verify-iso/</guid>
 				<description>&lt;div class=&#34;alert alert-danger d-flex&#34; role=&#34;alert&#34;&gt;&#xA;  &lt;div class=&#34;flex-shrink-1 alert-icon&#34;&gt;&#xA;  &#xA;  &lt;span class=&#34;material-icons size-20 me-2&#34;&gt;&#xA;  report&#xA;  &lt;/span&gt;&lt;/div&gt;&#xA;  &#xA;  &lt;div class=&#34;w-100&#34;&gt;&lt;strong&gt;You MUST pass this verification step before installation. Otherwise, you run a significant risk of bricking your computer and/or compromising its security.&lt;/strong&gt;&lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;&lt;p&gt;Before using the installation file (&lt;code&gt;.iso&lt;/code&gt;), we need to make sure that it is safe to use. A safe file is:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;From a &lt;strong&gt;verified source&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Is &lt;strong&gt;not corrupted&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Has &lt;strong&gt;not been tampered with&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This verification process is done by comparing &lt;strong&gt;checksums&lt;/strong&gt;.&lt;/p&gt;&#xA;&#xA;&lt;div class=&#34;alert alert-info d-flex&#34; role=&#34;alert&#34;&gt;&#xA;  &lt;div class=&#34;flex-shrink-1 alert-icon&#34;&gt;&#xA;  &#xA;  &lt;span class=&#34;material-icons size-20 me-2&#34;&gt;&#xA;  info&#xA;  &lt;/span&gt;&lt;/div&gt;&#xA;  &#xA;  &lt;div class=&#34;w-100&#34;&gt;&lt;strong&gt;Checksums&lt;/strong&gt;, or hashes, are the &lt;strong&gt;digital fingerprint&lt;/strong&gt; of a file. Any modification or inconsistency creates a different output than the expected hash.&lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;check-installation-iso-checksum&#34;&gt;Check installation &lt;code&gt;.iso&lt;/code&gt; checksum &lt;a href=&#34;#check-installation-iso-checksum&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Open the &lt;a href=&#34;https://emn178.github.io/online-tools/sha256_checksum.html&#34; rel=&#34;external&#34; target=&#34;_blank&#34;&gt;emn178 SHA256 checksum tool&lt;svg width=&#34;16&#34; height=&#34;16&#34; viewBox=&#34;0 0 24 24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path fill=&#34;currentColor&#34; d=&#34;M14 5c-.552 0-1-.448-1-1s.448-1 1-1h6c.552 0 1 .448 1 1v6c0 .552-.448 1-1 1s-1-.448-1-1v-3.586l-7.293 7.293c-.391.39-1.024.39-1.414 0-.391-.391-.391-1.024 0-1.414l7.293-7.293h-3.586zm-9 2c-.552 0-1 .448-1 1v11c0 .552.448 1 1 1h11c.552 0 1-.448 1-1v-4.563c0-.552.448-1 1-1s1 .448 1 1v4.563c0 1.657-1.343 3-3 3h-11c-1.657 0-3-1.343-3-3v-11c0-1.657 1.343-3 3-3h4.563c.552 0 1 .448 1 1s-.448 1-1 1h-4.563z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Create Ventoy Liveboot</title>
-				<link>https://redzhift.github.io/docs/installation-guide/create-ventoy-liveboot/</link>
+				<link>http://localhost:1313/docs/installation-guide/create-ventoy-liveboot/</link>
 				<pubDate>Tue, 23 Jun 2026 16:10:55 -0700</pubDate>
-				<guid>https://redzhift.github.io/docs/installation-guide/create-ventoy-liveboot/</guid>
+				<guid>http://localhost:1313/docs/installation-guide/create-ventoy-liveboot/</guid>
 				<description>&lt;h2 id=&#34;overview&#34;&gt;Overview &lt;a href=&#34;#overview&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A &lt;strong&gt;liveboot USB&lt;/strong&gt; contains a full operating system, which lets you use &amp;rsquo;live session&amp;rsquo; without installing the OS first.&lt;/p&gt;&#xA;&lt;p&gt;A &lt;strong&gt;live session&lt;/strong&gt; is required to safely install Linux Mint.&lt;/p&gt;&#xA;&lt;div class=&#34;alert alert-success d-flex&#34; role=&#34;alert&#34;&gt;&#xA;  &lt;div class=&#34;flex-shrink-1 alert-icon&#34;&gt;&#xA;  &lt;span class=&#34;material-icons size-20 me-2&#34;&gt;&#xA;  check_circle&#xA;  &lt;/span&gt;&lt;/div&gt;&#xA;  &lt;div class=&#34;w-100&#34;&gt;&#xA;&lt;p&gt;In this guide, &lt;strong&gt;Ventoy&lt;/strong&gt; software is used for a more streamlined liveboot experience. This tools lets you select from &lt;strong&gt;multiple boot options&lt;/strong&gt;, so you can install multiple Linux distros to try out on one USB stick.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Install from live session</title>
-				<link>https://redzhift.github.io/docs/installation-guide/install-from-live-session/</link>
+				<link>http://localhost:1313/docs/installation-guide/install-from-live-session/</link>
 				<pubDate>Tue, 23 Jun 2026 16:11:03 -0700</pubDate>
-				<guid>https://redzhift.github.io/docs/installation-guide/install-from-live-session/</guid>
-				<description>&lt;h2 id=&#34;overview&#34;&gt;Overview &lt;a href=&#34;#overview&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;With your &lt;strong&gt;liveboot USB&lt;/strong&gt; set up, you can prepare to boot into a &lt;strong&gt;live session&lt;/strong&gt; of Linux Mint.&lt;/p&gt;&#xA;&lt;p&gt;First, you need to set your computer system to recognize that it should boot from a different device at startup (your &lt;strong&gt;Ventoy&lt;/strong&gt; device). This option is changed in your computer’s &lt;code&gt;BIOS MENU&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&#xA;&lt;nav&gt;&#xA;&#x9;&lt;div class=&#34;nav nav-tabs&#34; id=&#34;nav-tab&#34; role=&#34;tablist&#34;&gt;&#xA;&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;&#xA;&#xA;&#x9;&#x9;&#xA;&#xA;&#x9;&#x9;&lt;a class=&#34;nav-link  active&#34;&#xA;&#x9;&#x9;   id=&#34;aefbcdTab&#34; data-bs-toggle=&#34;tab&#34; data-bs-target=&#34;#aefbcd&#34;&#xA;&#x9;&#x9;   type=&#34;button&#34; role=&#34;tab&#34; aria-controls=&#34;aefbcd&#34; aria-selected=&#34;true&#34;&gt;Disable secure boot in BIOS&lt;/a&gt;&#xA;&#xA;&#x9;&#x9;&#xA;&#xA;&#x9;&#x9;&lt;a class=&#34;nav-link &#34;&#xA;&#x9;&#x9;   id=&#34;edcafbTab&#34; data-bs-toggle=&#34;tab&#34; data-bs-target=&#34;#edcafb&#34;&#xA;&#x9;&#x9;   type=&#34;button&#34; role=&#34;tab&#34; aria-controls=&#34;edcafb&#34; aria-selected=&#34;true&#34;&gt;Change default boot order&lt;/a&gt;&#xA;&#xA;&#x9;&#x9;&#xA;&#xA;&#x9;&lt;/div&gt;&#xA;&lt;/nav&gt;&#xA;&#xA;&lt;div class=&#34;tab-content&#34; id=&#34;nav-tab-content&#34;&gt;&#xA;&#xA;&#x9;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;tab-pane fade show active&#34; id=&#34;aefbcd&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;nav-1&#34;&gt;&#xA;&#xA;&#x9;&lt;h2 id=&#34;disable-secure-boot-in-bios-menu&#34;&gt;Disable secure boot in &lt;code&gt;BIOS MENU&lt;/code&gt; &lt;a href=&#34;#disable-secure-boot-in-bios-menu&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Reboot your computer with the &lt;strong&gt;Ventoy USB&lt;/strong&gt; still inserted.&lt;/p&gt;</description>
+				<guid>http://localhost:1313/docs/installation-guide/install-from-live-session/</guid>
+				<description>&lt;h2 id=&#34;overview&#34;&gt;Overview &lt;a href=&#34;#overview&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;With your &lt;strong&gt;liveboot USB&lt;/strong&gt; set up, you can prepare to boot into a &lt;strong&gt;live session&lt;/strong&gt; of Linux Mint.&lt;/p&gt;&#xA;&lt;p&gt;First, you need to set your computer system to recognize that it should boot from a different device at startup (your &lt;strong&gt;Ventoy&lt;/strong&gt; device). This option is changed in your computer’s &lt;code&gt;BIOS MENU&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&#xA;&lt;nav&gt;&#xA;&#x9;&lt;div class=&#34;nav nav-tabs&#34; id=&#34;nav-tab&#34; role=&#34;tablist&#34;&gt;&#xA;&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;&#xA;&#xA;&#x9;&#x9;&#xA;&#xA;&#x9;&#x9;&lt;a class=&#34;nav-link  active&#34;&#xA;&#x9;&#x9;   id=&#34;acfbdeTab&#34; data-bs-toggle=&#34;tab&#34; data-bs-target=&#34;#acfbde&#34;&#xA;&#x9;&#x9;   type=&#34;button&#34; role=&#34;tab&#34; aria-controls=&#34;acfbde&#34; aria-selected=&#34;true&#34;&gt;Disable secure boot in BIOS&lt;/a&gt;&#xA;&#xA;&#x9;&#x9;&#xA;&#xA;&#x9;&#x9;&lt;a class=&#34;nav-link &#34;&#xA;&#x9;&#x9;   id=&#34;fcdeabTab&#34; data-bs-toggle=&#34;tab&#34; data-bs-target=&#34;#fcdeab&#34;&#xA;&#x9;&#x9;   type=&#34;button&#34; role=&#34;tab&#34; aria-controls=&#34;fcdeab&#34; aria-selected=&#34;true&#34;&gt;Change default boot order&lt;/a&gt;&#xA;&#xA;&#x9;&#x9;&#xA;&#xA;&#x9;&lt;/div&gt;&#xA;&lt;/nav&gt;&#xA;&#xA;&lt;div class=&#34;tab-content&#34; id=&#34;nav-tab-content&#34;&gt;&#xA;&#xA;&#x9;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;tab-pane fade show active&#34; id=&#34;acfbde&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;nav-1&#34;&gt;&#xA;&#xA;&#x9;&lt;h2 id=&#34;disable-secure-boot-in-bios-menu&#34;&gt;Disable secure boot in &lt;code&gt;BIOS MENU&lt;/code&gt; &lt;a href=&#34;#disable-secure-boot-in-bios-menu&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Reboot your computer with the &lt;strong&gt;Ventoy USB&lt;/strong&gt; still inserted.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Linux Mint Installation</title>
-				<link>https://redzhift.github.io/docs/installation-guide/</link>
+				<link>http://localhost:1313/docs/installation-guide/</link>
 				<pubDate>Tue, 23 Jun 2026 15:54:19 -0700</pubDate>
-				<guid>https://redzhift.github.io/docs/installation-guide/</guid>
+				<guid>http://localhost:1313/docs/installation-guide/</guid>
 				<description></description>
 			</item>
 	</channel>
