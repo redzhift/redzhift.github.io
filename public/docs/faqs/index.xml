@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>FAQs on Jin Y. Cho</title>
+		<link>http://localhost:1313/docs/faqs/</link>
+		<description>Recent content in FAQs on Jin Y. Cho</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Fri, 12 Jun 2026 18:00:22 -0700</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/docs/faqs/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Why do I get errors when I try to update?</title>
+				<link>http://localhost:1313/docs/faqs/getting-update-errors/</link>
+				<pubDate>Fri, 12 Jun 2026 18:00:22 -0700</pubDate>
+				<guid>http://localhost:1313/docs/faqs/getting-update-errors/</guid>
+				<description>&lt;p&gt;Outdated package databases will cause errors when &lt;code&gt;pacman&lt;/code&gt; tries to retrieve the latest package files.&lt;/p&gt;&#xA;&lt;p&gt;This can be prevented through regular &lt;a href=&#34;http://localhost:1313/docs/user-guides/system-maintenance/rerank-mirrors&#34;&gt;mirror maintenance&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Error: failed to commit transaction (conflicting files)&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;p&gt;Running a &lt;code&gt;sudo pacman -Syu&lt;/code&gt; update may fail and display the following errors:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; error: failed to commit transaction &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;conflicting files&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &amp;lt;example&amp;gt;: /example exists in filesystem &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;owned by filesystem&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &amp;lt;example&amp;gt;: /lib/systemd/system/example.service exists in filesystem&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;These issues can be resolved with manual intervention. Uninstall and remove the package from the system, then reinstall/update with these two commands:&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Are there mirror management alternatives?</title>
+				<link>http://localhost:1313/docs/faqs/mirror-alternatives/</link>
+				<pubDate>Fri, 12 Jun 2026 18:00:22 -0700</pubDate>
+				<guid>http://localhost:1313/docs/faqs/mirror-alternatives/</guid>
+				<description>&lt;p&gt;Popular alternatives to mirror management are listed on the &lt;a href=&#34;https://wiki.archlinux.org/title/Mirrors&#34;&gt;Arch mirrors wiki&lt;/a&gt;. Some programs can automate mirror management when configured properly.&lt;/p&gt;&#xA;&lt;p&gt;One such example is &lt;code&gt;ghostmirror&lt;/code&gt;, which:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Checks that mirrors are &lt;strong&gt;synchronized&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Performs &lt;strong&gt;download speed tests&lt;/strong&gt; on top of the usual ping test.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Automates the process via &lt;code&gt;systemd&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;See: &lt;a href=&#34;https://aur.archlinux.org/packages/ghostmirror/&#34;&gt;&lt;code&gt;ghostmirror&lt;/code&gt; (AUR)&lt;/a&gt;, &lt;a href=&#34;https://wiki.archlinux.org/title/Ghostmirror&#34;&gt;&lt;code&gt;ghostmirror&lt;/code&gt; wiki&lt;/a&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>What is the AUR?</title>
+				<link>http://localhost:1313/docs/faqs/what-is-aur/</link>
+				<pubDate>Fri, 12 Jun 2026 18:00:22 -0700</pubDate>
+				<guid>http://localhost:1313/docs/faqs/what-is-aur/</guid>
+				<description>&lt;p&gt;The &lt;strong&gt;Arch User Repository&lt;/strong&gt; (known as &lt;strong&gt;AUR&lt;/strong&gt;) is a large library of community user-produced packages for Arch Linux.&lt;/p&gt;&#xA;&lt;p&gt;Popular and well-maintained packages are voted on by the community to include in the official Arch &lt;code&gt;extra&lt;/code&gt; repository.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;To download and install AUR packages&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Clone the &lt;code&gt;git&lt;/code&gt; repository listed on the package&amp;rsquo;s AUR page:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; git clone https://aur.archlinux.org/&amp;lt;pkg&amp;gt;.git&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Change into the package directory:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd &amp;lt;pkg&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Build and install the package with:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; makepkg -si&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# or&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; pacman -U pkg-vers-1.0.1.pkg.tar.zst&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;blockquote class=&#39;book-hint warning&#39;&gt;&#xA;&lt;p&gt;AUR packages are community-maintained and &lt;strong&gt;unofficial&lt;/strong&gt;. Check for any suspicious package dependencies, and check build files (i.e. &lt;code&gt;PKGBUILD&lt;/code&gt;) for any malicious code BEFORE installation.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Outdated package databases will cause errors when pacman tries to retrieve the latest package files.
+This can be prevented through regular mirror maintenance.
+Error: failed to commit transaction (conflicting files):
+Running a sudo pacman -Syu update may fail and display the following errors:
+error: failed to commit transaction (conflicting files) &lt;example&gt;: /example exists in filesystem (owned by filesystem) &lt;example&gt;: /lib/systemd/system/example.service exists in filesystemThese issues can be resolved with manual intervention. Uninstall and remove the package from the system, then reinstall/update with these two commands:
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2e3440">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/faqs/getting-update-errors/">
+	<meta property="og:site_name" content="Jin Y. Cho">
+	<meta property="og:title" content="Why do I get errors when I try to update?">
+	<meta property="og:description" content="Outdated package databases will cause errors when pacman tries to retrieve the latest package files.
+This can be prevented through regular mirror maintenance.
+Error: failed to commit transaction (conflicting files):
+Running a sudo pacman -Syu update may fail and display the following errors:
+error: failed to commit transaction (conflicting files) &lt;example&gt;: /example exists in filesystem (owned by filesystem) &lt;example&gt;: /lib/systemd/system/example.service exists in filesystemThese issues can be resolved with manual intervention. Uninstall and remove the package from the system, then reinstall/update with these two commands:">
+	<meta property="og:locale" content="en">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="docs">
+		<meta property="article:published_time" content="2026-06-12T18:00:22-07:00">
+		<meta property="article:modified_time" content="2026-06-12T18:00:22-07:00">
+		<meta property="article:tag" content="Docs">
+		<meta property="article:tag" content="Userguides">
+		<meta property="article:tag" content="EndeavourOS">
+		<meta property="article:tag" content="Linux">
+		<meta property="article:tag" content="Faqs">
+
+
+	<meta itemprop="name" content="Why do I get errors when I try to update?">
+	<meta itemprop="description" content="Outdated package databases will cause errors when pacman tries to retrieve the latest package files.
+This can be prevented through regular mirror maintenance.
+Error: failed to commit transaction (conflicting files):
+Running a sudo pacman -Syu update may fail and display the following errors:
+error: failed to commit transaction (conflicting files) &lt;example&gt;: /example exists in filesystem (owned by filesystem) &lt;example&gt;: /lib/systemd/system/example.service exists in filesystemThese issues can be resolved with manual intervention. Uninstall and remove the package from the system, then reinstall/update with these two commands:">
+	<meta itemprop="datePublished" content="2026-06-12T18:00:22-07:00">
+	<meta itemprop="dateModified" content="2026-06-12T18:00:22-07:00">
+	<meta itemprop="wordCount" content="94">
+	<meta itemprop="keywords" content="Docs,Userguides,EndeavourOS,Linux,Faqs">
+
+<title>Why do I get errors when I try to update? • Jin Y. Cho</title>
+<link rel="icon" href="/favicon.svg" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/faqs/getting-update-errors/">
+<link rel="stylesheet" href="/book.min.b40f9323c2bd696e72b5634db2fe9e4547a911d3de99a6af1fd8fd0348bda410.css" integrity="sha256-tA&#43;TI8K9aW5ytWNNsv6eRUepEdPemaavH9j9A0i9pBA=" crossorigin="anonymous">
+
+
+  <script defer type="module" src="/en.search.min.10f5f416a6685a4a575730eff31c0e50e4d2d49459e9cdc16cf4735de61f62e6.js" integrity="sha256-EPX0FqZoWkpXVzDv8xwOUOTS1JRZ6c3BbPRzXeYfYuY=" crossorigin="anonymous"></script>
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><img src="/logos/logo.png" alt="Logo" /><span>Jin Y. Cho</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Search"
+    aria-label="Search"
+    maxlength="64" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/about/" class="">
+      About</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a>
+      User guides</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a>
+      User tools &amp; settings</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/user-config/change-default-kernel/" class="">
+      Change default kernel</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/user-config/downgrade-to-specific-date/" class="">
+      Downgrade with eos-shifttime</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/user-config/install-new-theme-in-typora/" class="">
+      Install new theme in Typora</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a>
+      Linux Mint Installation</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/installation-guide/overview/" class="">
+      Overview</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/installation-guide/initial-prep/" class="">
+      Initial Prep</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/installation-guide/verify-iso/" class="">
+      Verify file integrity</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/installation-guide/create-ventoy-liveboot/" class="">
+      Create Ventoy Liveboot</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/installation-guide/install-from-live-session/" class="">
+      Install from live session</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a>
+      System maintenance</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/system-maintenance/update-packages/" class="">
+      Update packages</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/system-maintenance/rerank-mirrors/" class="">
+      Re-rank mirrors</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a>
+      FAQs</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/faqs/getting-update-errors/" class="active">
+      Why do I get errors when I try to update?</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/faqs/mirror-alternatives/" class="">
+      Are there mirror management alternatives?</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/faqs/what-is-aur/" class="">
+      What is the AUR?</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a>
+      Research</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/research/game-psychology-research/" class="">
+      Game Psychology Research [PDF]</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/research/crime-policy-analysis/" class="">
+      Crime policy analysis [PDF]</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a>
+      Articles</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/articles/facial-recognition/" class="">
+      Facial recognition software</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/articles/facial-recognition-pdf/" class="">
+      Facial recognition software [PDF]</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/articles/affordable-housing-crisis/" class="">
+      Boston&#39;s affordable housing crisis, 2020 [PDF]</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Why do I get errors when I try to update?</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents"></nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><p>Outdated package databases will cause errors when <code>pacman</code> tries to retrieve the latest package files.</p>
+<p>This can be prevented through regular <a href="/docs/user-guides/system-maintenance/rerank-mirrors">mirror maintenance</a>.</p>
+<hr>
+<p><strong>Error: failed to commit transaction (conflicting files)</strong>:</p>
+<p>Running a <code>sudo pacman -Syu</code> update may fail and display the following errors:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> error: failed to commit transaction <span style="color:#f92672">(</span>conflicting files<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span> &lt;example&gt;: /example exists in filesystem <span style="color:#f92672">(</span>owned by filesystem<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span> &lt;example&gt;: /lib/systemd/system/example.service exists in filesystem</span></span></code></pre></div><p>These issues can be resolved with manual intervention. Uninstall and remove the package from the system, then reinstall/update with these two commands:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> $ sudo pacman -Rdd &lt;pkg&gt;
+</span></span><span style="display:flex;"><span> $ sudo pacman -Syu &lt;pkg&gt;</span></span></code></pre></div><hr>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+<div>
+
+</div>
+
+<div>
+
+  <a class="flex align-center" href="https://github.com/redzhift/redzhift.github.io/edit/main/content/docs/faqs/getting-update-errors.md" target="_blank" rel="noopener edit">
+    <img src="/icons/edit.svg" class="book-icon" alt="Edit" />
+    <span>Edit this page</span>
+  </a>
+
+</div>
+
+</div>
+
+<div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/docs/system-maintenance/rerank-mirrors/" class="flex align-center">
+        <img src="/icons/backward.svg" class="book-icon" alt="Backward" />
+        <span>Re-rank mirrors</span>
+      </a>
+    
+    </span>
+    <span>
+    
+      <a href="/docs/faqs/mirror-alternatives/" class="flex align-center">
+        <span>Are there mirror management alternatives?</span>
+        <img src="/icons/forward.svg" class="book-icon" alt="Forward" />
+      </a>
+    
+    </span>
+  </div>
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents"></nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

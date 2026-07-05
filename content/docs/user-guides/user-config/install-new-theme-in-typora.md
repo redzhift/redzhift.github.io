@@ -10,9 +10,9 @@ toc: true
 tags: ["docs","userguides","endeavourOS","linux","eos-shifttime"]
 ---
 
----
+# Install new theme in Typora
 
-\
+{{% steps %}}
 __Typora__ is a minimalist text editor that renders markdown and code in real-time. The software comes with several default themes that can be applied through the **Themes** option menu.
 
 First, find which custom theme you'd like to install from the [Typora themes page](https://theme.typora.io/).
@@ -39,7 +39,7 @@ First, find which custom theme you'd like to install from the [Typora themes pag
 
    ![Applying a newly available Typora theme after refreshing the application through the Themes menu.][typora-3] ![Applying a newly available Typora theme through the Preferences menu and Appearance tab options.][typora-4]
 
-
+{{% /steps %}}
 
 <!-- images -->
 

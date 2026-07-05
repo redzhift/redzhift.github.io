@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Usb on Jin Y.C</title>
+		<title>Usb on Jin Y. Cho</title>
 		<link>http://localhost:1313/tags/usb/</link>
-		<description>Recent content in Usb on Jin Y.C</description>
+		<description>Recent content in Usb on Jin Y. Cho</description>
 		<generator>Hugo</generator>
-		<language>en-US</language>
+		<language>en</language>
 		
 		
 		
 		
-			<lastBuildDate>Wed, 24 Jun 2026 18:14:23 -0700</lastBuildDate>
+			<lastBuildDate>Tue, 23 Jun 2026 16:10:55 -0700</lastBuildDate>
 		
 			<atom:link href="http://localhost:1313/tags/usb/index.xml" rel="self" type="application/rss+xml" />
 			<item>
@@ -18,7 +18,7 @@
 				<link>http://localhost:1313/docs/installation-guide/create-ventoy-liveboot/</link>
 				<pubDate>Tue, 23 Jun 2026 16:10:55 -0700</pubDate>
 				<guid>http://localhost:1313/docs/installation-guide/create-ventoy-liveboot/</guid>
-				<description>&lt;h2 id=&#34;overview&#34;&gt;Overview &lt;a href=&#34;#overview&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A &lt;strong&gt;liveboot USB&lt;/strong&gt; contains a full operating system, which lets you use &amp;rsquo;live session&amp;rsquo; without installing the OS first.&lt;/p&gt;&#xA;&lt;p&gt;A &lt;strong&gt;live session&lt;/strong&gt; is required to safely install Linux Mint.&lt;/p&gt;&#xA;&lt;div class=&#34;alert alert-success d-flex&#34; role=&#34;alert&#34;&gt;&#xA;  &lt;div class=&#34;flex-shrink-1 alert-icon&#34;&gt;&#xA;  &lt;span class=&#34;material-icons size-20 me-2&#34;&gt;&#xA;  check_circle&#xA;  &lt;/span&gt;&lt;/div&gt;&#xA;  &lt;div class=&#34;w-100&#34;&gt;&#xA;&lt;p&gt;In this guide, &lt;strong&gt;Ventoy&lt;/strong&gt; software is used for a more streamlined liveboot experience. This tools lets you select from &lt;strong&gt;multiple boot options&lt;/strong&gt;, so you can install multiple Linux distros to try out on one USB stick.&lt;/p&gt;</description>
+				<description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;a class=&#34;anchor&#34; href=&#34;#overview&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;strong&gt;liveboot USB&lt;/strong&gt; contains a full operating system, which lets you use &amp;rsquo;live session&amp;rsquo; without installing the OS first.&lt;/p&gt;&#xA;&lt;p&gt;A &lt;strong&gt;live session&lt;/strong&gt; is required to safely install Linux Mint.&lt;/p&gt;&#xA;&lt;blockquote class=&#39;book-hint success&#39;&gt;&#xA;&lt;p&gt;In this guide, &lt;strong&gt;Ventoy&lt;/strong&gt; software is used for a more streamlined liveboot experience. This tools lets you select from &lt;strong&gt;multiple boot options&lt;/strong&gt;, so you can install multiple Linux distros to try out on one USB stick.&lt;/p&gt;&#xA;&lt;p&gt;Details in this guide are specific to users running &lt;strong&gt;Windows OS&lt;/strong&gt;. For users on Linux or macOS, there is &lt;a href=&#34;ventoy-docs&#34;&gt;official Ventoy documentation&lt;/a&gt; available.&lt;/p&gt;</description>
 			</item>
 	</channel>
 </rss>

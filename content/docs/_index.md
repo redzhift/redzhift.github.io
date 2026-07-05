@@ -1,33 +1,56 @@
 ---
-weight: 10
-title: "Documentation"
-description: "Jin's documentation and writing examples."
-icon: menu_book
-lead: ""
-date: 2022-10-10T02:21:15+00:00
-lastmod: 2022-10-10T02:21:15+00:00
-draft: false
-images: []
+layout: blog
 ---
 
-Docs structure
-content/docs/
+# Well met! 🛰️✨
 
-    about.md - 10
-    _index.md
+I'm __Jin__, a technical writer and trainer with 5+ years experience developing:
 
-    user-guides/ - 50
+- Documentation strategy
+- Knowledge bases
+- User and software guides
+- Process documentation
 
-        install-linux-mint/ 100
+With a background in research and journalism, I bring an analytical eye and ready mindset to all I do. 
 
-        user-config/ 200
+---
 
-        system-maintenance/ 300
+## Docs
 
-        faqs/ 400
+{{% columns %}}
+- ### User Guides {anchor=false}
+  How to maintain your Endeavour OS system in the Linux CLI.
+  <div class="book-hero">
+  {{<button href="/docs/user-guides">}}See the docs{{</button>}}  
+  </div>
 
-    research/ 600
+- ### Research {anchor=false}
+  Mixed-methods game psychology research and a policy analysis.
+  <div class="book-hero">
+  {{<button href="/docs/research/game-psychology-research/">}}Learn more{{</button>}}  
+  </div>
 
-    articles/ 800
+- ### Journalism articles {anchor=false}
+  On modern challenges of digital privacy and affordable housing.
+  <div class="book-hero">
+  {{<button href="/docs/articles/facial-recognition/">}}Read more{{</button>}}  
+  </div>
+{{% /columns %}}
 
-    
+---
+
+## Contact
+
+`Email: redzhift@tuta.io`
+
+<div class="book-hero">
+  {{<button href="https://www.linkedin.com/in/redzhift">}}LinkedIn{{</button>}}
+  {{<button href="https://github.com/redzhift/">}}GitHub{{</button>}} 
+  {{<button href="https://redzhift.atlassian.net/wiki/spaces/~jcho/overview">}}Confluence{{</button>}} 
+  </div>
+
+<!-- urls-->
+
+[confluence]: https://redzhift.atlassian.net/wiki/spaces/~jcho/overview/
+[gh]: https://github.com/redzhift
+[li]: https://linkedin.com/in/redzhift

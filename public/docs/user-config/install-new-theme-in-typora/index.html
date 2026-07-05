@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="How to install a new custom theme in Typora.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2e3440">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/user-config/install-new-theme-in-typora/">
+	<meta property="og:site_name" content="Jin Y. Cho">
+	<meta property="og:title" content="Install new theme in Typora">
+	<meta property="og:description" content="How to install a new custom theme in Typora.">
+	<meta property="og:locale" content="en">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="docs">
+		<meta property="article:published_time" content="2026-06-25T10:37:17-07:00">
+		<meta property="article:modified_time" content="2026-06-25T10:37:17-07:00">
+		<meta property="article:tag" content="Docs">
+		<meta property="article:tag" content="Userguides">
+		<meta property="article:tag" content="EndeavourOS">
+		<meta property="article:tag" content="Linux">
+		<meta property="article:tag" content="Eos-Shifttime">
+
+
+	<meta itemprop="name" content="Install new theme in Typora">
+	<meta itemprop="description" content="How to install a new custom theme in Typora.">
+	<meta itemprop="datePublished" content="2026-06-25T10:37:17-07:00">
+	<meta itemprop="dateModified" content="2026-06-25T10:37:17-07:00">
+	<meta itemprop="wordCount" content="125">
+	<meta itemprop="keywords" content="Docs,Userguides,EndeavourOS,Linux,Eos-Shifttime">
+
+<title>Install new theme in Typora • Jin Y. Cho</title>
+<link rel="icon" href="/favicon.svg" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/user-config/install-new-theme-in-typora/">
+<link rel="stylesheet" href="/book.min.b40f9323c2bd696e72b5634db2fe9e4547a911d3de99a6af1fd8fd0348bda410.css" integrity="sha256-tA&#43;TI8K9aW5ytWNNsv6eRUepEdPemaavH9j9A0i9pBA=" crossorigin="anonymous">
+
+
+  <script defer type="module" src="/en.search.min.c1d0946e1ad78cb28c06ebfcc9aa9f528acff3816683630249e42e8feca5d5fc.js" integrity="sha256-wdCUbhrXjLKMBuv8yaqfUorP84Fmg2MCSeQuj&#43;yl1fw=" crossorigin="anonymous"></script>
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><img src="/logos/logo.png" alt="Logo" /><span>Jin Y. Cho</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Search"
+    aria-label="Search"
+    maxlength="64" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/about/" class="">
+      About</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-40a9468b58d6ddc7d29b37d8e6e33fe1" class="toggle" checked />
+    <label for="section-40a9468b58d6ddc7d29b37d8e6e33fe1" class="flex">
+      <a role="button" class="">
+        User tools &amp; settings</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/user-config/change-default-kernel/" class="">
+      Change default kernel</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/user-config/downgrade-to-specific-date/" class="">
+      Downgrade with eos-shifttime</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/user-config/install-new-theme-in-typora/" class="active">
+      Install new theme in Typora</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-413644dfd7e5b09dda6d878b896b5e3f" class="toggle"  />
+    <label for="section-413644dfd7e5b09dda6d878b896b5e3f" class="flex">
+      <a role="button" class="">
+        System maintenance</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/system-maintenance/update-packages/" class="">
+      Update packages</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/system-maintenance/rerank-mirrors/" class="">
+      Re-rank mirrors</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/system-maintenance/faqs/" class="">
+      FAQs</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7271d61d91cd618f6bd94ef61864618d" class="toggle"  />
+    <label for="section-7271d61d91cd618f6bd94ef61864618d" class="flex">
+      <a role="button" class="">
+        Research</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/research/game-psychology-research/" class="">
+      Game Psychology Research [PDF]</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/research/crime-policy-analysis/" class="">
+      Crime policy analysis [PDF]</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-694d57daf91c94508b4fd06129b48f67" class="toggle"  />
+    <label for="section-694d57daf91c94508b4fd06129b48f67" class="flex">
+      <a role="button" class="">
+        Articles</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/articles/facial-recognition/" class="">
+      Facial recognition software</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/articles/facial-recognition-pdf/" class="">
+      Facial recognition software [PDF]</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/articles/affordable-housing-crisis/" class="">
+      Boston&#39;s affordable housing crisis, 2020 [PDF]</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-639bdfb32ef58a5b42308d4d2d45ceb1" class="toggle"  />
+    <label for="section-639bdfb32ef58a5b42308d4d2d45ceb1" class="flex">
+      <a role="button" class="">
+        Linux Mint Installation</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/installation-guide/overview/" class="">
+      Overview</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/installation-guide/initial-prep/" class="">
+      Initial Prep</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/installation-guide/verify-iso/" class="">
+      Verify file integrity</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/installation-guide/create-ventoy-liveboot/" class="">
+      Create Ventoy Liveboot</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/installation-guide/install-from-live-session/" class="">
+      Install from live session</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Install new theme in Typora</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents"></nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><hr>
+<p><br>
+<strong>Typora</strong> is a minimalist text editor that renders markdown and code in real-time. The software comes with several default themes that can be applied through the <strong>Themes</strong> option menu.</p>
+<p>First, find which custom theme you&rsquo;d like to install from the <a href="https://theme.typora.io/">Typora themes page</a>.</p>
+<ol>
+<li>
+<p><strong>Download</strong> the theme.</p>
+</li>
+<li>
+<p><strong>Open Typora</strong> and navigate to the <strong>File &gt; Preferences</strong> menu. The keyboard shortcut is <code>Ctrl + comma</code></p>
+<p><img src="/images/typora-1.png" alt="The Appearance tab in the Preferences options menu" /></p>
+</li>
+<li>
+<p>Go to the <strong>Appearance</strong> tab and <strong>Open Theme Folder</strong>.</p>
+</li>
+<li>
+<p><strong>Extract the files</strong> from the downloaded <code>.zip</code> into the themes folder. You should have:</p>
+<ul>
+<li>A folder containing the theme&rsquo;s fonts (<code>.tff</code>, <code>.otf</code>,<code>.woff</code> files)</li>
+<li>A <code>.css</code> file with the theme&rsquo;s styling</li>
+</ul>
+<p><img src="/images/typora-2.png" alt="The Typora themes folder containing theme folders and .css files" /></p>
+</li>
+<li>
+<p><strong>Restart</strong> <strong>Typora</strong> to refresh the available themes.</p>
+</li>
+<li>
+<p><strong>Apply</strong> the new theme through the <strong>Themes</strong> menu, or from <strong>File &gt; Preferences &gt; Appearance</strong> options.</p>
+<p><img src="/images/typora-3.png" alt="Applying a newly available Typora theme after refreshing the application through the Themes menu." /> <img src="/images/typora-4.png" alt="Applying a newly available Typora theme through the Preferences menu and Appearance tab options." /></p>
+</li>
+</ol>
+<!-- images -->
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+<div>
+
+</div>
+
+<div>
+
+  <a class="flex align-center" href="https://github.com/redzhift/redzhift.github.io/edit/main/content/docs/user-config/install-new-theme-in-typora.md" target="_blank" rel="noopener edit">
+    <img src="/icons/edit.svg" class="book-icon" alt="Edit" />
+    <span>Edit this page</span>
+  </a>
+
+</div>
+
+</div>
+
+<div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/docs/user-config/downgrade-to-specific-date/" class="flex align-center">
+        <img src="/icons/backward.svg" class="book-icon" alt="Backward" />
+        <span>Downgrade with eos-shifttime</span>
+      </a>
+    
+    </span>
+    <span>
+    
+      <a href="/docs/system-maintenance/update-packages/" class="flex align-center">
+        <span>Update packages</span>
+        <img src="/icons/forward.svg" class="book-icon" alt="Forward" />
+      </a>
+    
+    </span>
+  </div>
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents"></nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

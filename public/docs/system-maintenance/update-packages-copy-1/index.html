@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Update your system packages with `pacman` and `yay`.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2e3440">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/system-maintenance/update-packages-copy-1/">
+	<meta property="og:site_name" content="Jin Y. Cho">
+	<meta property="og:title" content="Update packages">
+	<meta property="og:description" content="Update your system packages with `pacman` and `yay`.">
+	<meta property="og:locale" content="en">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="docs">
+		<meta property="article:published_time" content="2026-05-12T14:09:31-07:00">
+		<meta property="article:modified_time" content="2026-05-12T14:09:31-07:00">
+		<meta property="article:tag" content="Docs">
+		<meta property="article:tag" content="Userguides">
+		<meta property="article:tag" content="EndeavourOS">
+		<meta property="article:tag" content="Linux">
+		<meta property="article:tag" content="Pacman">
+
+
+	<meta itemprop="name" content="Update packages">
+	<meta itemprop="description" content="Update your system packages with `pacman` and `yay`.">
+	<meta itemprop="datePublished" content="2026-05-12T14:09:31-07:00">
+	<meta itemprop="dateModified" content="2026-05-12T14:09:31-07:00">
+	<meta itemprop="wordCount" content="584">
+	<meta itemprop="keywords" content="Docs,Userguides,EndeavourOS,Linux,Pacman">
+
+<title>Update packages • Jin Y. Cho</title>
+<link rel="icon" href="/favicon.svg" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/system-maintenance/update-packages-copy-1/">
+<link rel="stylesheet" href="/book.min.b40f9323c2bd696e72b5634db2fe9e4547a911d3de99a6af1fd8fd0348bda410.css" integrity="sha256-tA&#43;TI8K9aW5ytWNNsv6eRUepEdPemaavH9j9A0i9pBA=" crossorigin="anonymous">
+
+
+  <script defer type="module" src="/en.search.min.10f5f416a6685a4a575730eff31c0e50e4d2d49459e9cdc16cf4735de61f62e6.js" integrity="sha256-EPX0FqZoWkpXVzDv8xwOUOTS1JRZ6c3BbPRzXeYfYuY=" crossorigin="anonymous"></script>
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><img src="/logos/logo.png" alt="Logo" /><span>Jin Y. Cho</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Search"
+    aria-label="Search"
+    maxlength="64" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/about/" class="">
+      About</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a>
+      User tools &amp; settings</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/user-config/change-default-kernel/" class="">
+      Change default kernel</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/user-config/downgrade-to-specific-date/" class="">
+      Downgrade with eos-shifttime</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/user-config/install-new-theme-in-typora/" class="">
+      Install new theme in Typora</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a>
+      System maintenance</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/system-maintenance/update-packages-copy-1/" class="active">
+      Update packages</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/system-maintenance/update-packages/" class="">
+      Update packages</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/system-maintenance/rerank-mirrors/" class="">
+      Re-rank mirrors</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a>
+      FAQs</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/faqs/getting-update-errors/" class="">
+      Why do I get errors when I try to update?</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/faqs/mirror-alternatives/" class="">
+      Are there mirror management alternatives?</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/faqs/what-is-aur/" class="">
+      What is the AUR?</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a>
+      Research</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/research/game-psychology-research/" class="">
+      Game Psychology Research [PDF]</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/research/crime-policy-analysis/" class="">
+      Crime policy analysis [PDF]</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a>
+      Articles</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/articles/facial-recognition/" class="">
+      Facial recognition software</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/articles/facial-recognition-pdf/" class="">
+      Facial recognition software [PDF]</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/articles/affordable-housing-crisis/" class="">
+      Boston&#39;s affordable housing crisis, 2020 [PDF]</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Update packages</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents"></nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><p>There are 3 commands used to update <strong>Endeavour OS</strong> systems:</p>
+<div class="book-tabs" >
+<input type="radio" class="toggle" name="tabs-&lt;nil&gt;" id="tabs-&lt;nil&gt;-0" checked="checked" /><label for="tabs-&lt;nil&gt;-0"></label><div class="book-tabs-content markdown-inner">
+<p><code>pacman</code> is the package manager used to install and update programs in Arch Linux.</p>
+<p>To perform a full system update and refresh, run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ sudo pacman -Syu</span></span></code></pre></div><blockquote class='book-hint note'>
+<p>Some commands require prepending <code>sudo</code> to them as they require <code>super user</code> (or root) permissions to run.</p></blockquote><p><strong>Example terminal output</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> <span style="color:#f92672">[</span>user@computer ~<span style="color:#f92672">]</span> $ sudo pacman -Syu
+</span></span><span style="display:flex;"><span> <span style="color:#f92672">[</span>sudo password <span style="color:#66d9ef">for</span> user<span style="color:#f92672">]</span>: *
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span> :: Synchronizing package databases...
+</span></span><span style="display:flex;"><span> endeavouros       17.0 KiB   3.17 KiB/s 00:05 <span style="color:#f92672">[</span>--------------<span style="color:#f92672">]</span> 100%
+</span></span><span style="display:flex;"><span> core             117.4 KiB   23.3 KiB/s 00:05 <span style="color:#f92672">[</span>--------------<span style="color:#f92672">]</span> 100%
+</span></span><span style="display:flex;"><span> extra              8.0 MiB   <span style="color:#ae81ff">1447</span> KiB/s 00:06 <span style="color:#f92672">[</span>--------------<span style="color:#f92672">]</span> 100%
+</span></span><span style="display:flex;"><span> multilib         125.4 KiB    <span style="color:#ae81ff">416</span> KiB/s 00:00 <span style="color:#f92672">[</span>--------------<span style="color:#f92672">]</span> 100%
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> :: Starting full system upgrade...
+</span></span><span style="display:flex;"><span> resolving dependencies...
+</span></span><span style="display:flex;"><span> looking <span style="color:#66d9ef">for</span> conflicting packages... 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> Package <span style="color:#f92672">(</span>2<span style="color:#f92672">)</span>           Old Version  New Version  Net Change  Download Size
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> endeavouros/package-1    25.11-1   25.11.1-1     0.00 MiB    0.02 MiB
+</span></span><span style="display:flex;"><span> endeavouros/package-2    12.5.2-2  12.5.3-1      0.02 MiB    3.20 MiB 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> Total Download Size:   3.21 MiB 
+</span></span><span style="display:flex;"><span> Total Installed Size:  9.42 MiB
+</span></span><span style="display:flex;"><span> Net Upgrade Size:      0.02 MiB
+</span></span><span style="display:flex;"><span>                                     <span style="color:#75715e"># enter Y to confirm</span>
+</span></span><span style="display:flex;"><span> :: Proceed with installation? <span style="color:#f92672">[</span>Y/n<span style="color:#f92672">]</span>       <span style="color:#75715e"># n to cancel</span></span></span></code></pre></div><hr>
+<p><strong>Other <code>pacman</code> options</strong></p>
+<table>
+	<thead>
+			<tr>
+					<th>Command</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>-S &lt;pkg&gt;</code></td>
+					<td>Installs the specific package.</td>
+			</tr>
+			<tr>
+					<td><code>-Rs &lt;pkg&gt;</code></td>
+					<td>Removes a package and also its dependencies to prevent orphan dependencies.</td>
+			</tr>
+			<tr>
+					<td><code>-Ss &lt;pkg&gt;</code></td>
+					<td>Searches for a specified package on the system.</td>
+			</tr>
+			<tr>
+					<td><code>-Qi &lt;pkg&gt;</code></td>
+					<td>Retrieve a list of the dependencies a package needs to run.</td>
+			</tr>
+	</tbody>
+</table>
+<p>See: <a href="https://man.archlinux.org/man/pacman.8"><code>pacman manpage</code></a>, <a href="https://wiki.archlinux.org/title/Pacman"><code>pacman</code> wiki</a></p>
+</div>
+<input type="radio" class="toggle" name="tabs-&lt;nil&gt;" id="tabs-&lt;nil&gt;-1"  /><label for="tabs-&lt;nil&gt;-1"></label><div class="book-tabs-content markdown-inner">
+<p><code>yay</code>, or &ldquo;yet another yogurt&rdquo;, is an <strong>AUR helper</strong>.</p>
+<p>To update the system&rsquo;s native and AUR packages, run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ yay</span></span></code></pre></div><p>Like <code>pacman</code>, <code>yay</code> performs package manager tasks to download, install, update, or remove AUR packages.</p>
+<ul>
+<li>It is recommended to run this command every 1 to 2 weeks.</li>
+<li>Keep an eye out for any AUR-related news to make certain of package statuses.</li>
+</ul>
+<hr>
+<p>The terminal lists packages available to upgrade and may ask for the user to select. Select the options for each one, or hit <code>ENTER</code> to apply default options:</p>
+<ol>
+<li>Which package provider should be used (where to download files from)</li>
+<li>If any packages should be excluded from the upgrade</li>
+<li>If the Make dependencies should also be removed</li>
+<li>Etc.</li>
+</ol>
+<blockquote class='book-hint info'>
+<p>&ldquo;The <strong>Arch User Repository</strong>, also known as <strong>AUR</strong>, is a large library of community user-produced packages for Arch Linux.&rdquo;</p></blockquote><p>See: <code>yay</code> <a href="https://aur.archlinux.org/">(AUR)</a>, <a href="https://linuxcommandlibrary.com/man/yay"><code>yay</code> commands list</a>, <a href="https://aur.archlinux.org/">Arch User Repository (AUR)</a>, <a href="https://wiki.archlinux.org/title/AUR_helpers">AUR helpers</a></p>
+</div>
+<input type="radio" class="toggle" name="tabs-&lt;nil&gt;" id="tabs-&lt;nil&gt;-2"  /><label for="tabs-&lt;nil&gt;-2"></label><div class="book-tabs-content markdown-inner">
+<p><strong>EndeavourOS</strong> provides an update script that utilizes <code>pacman</code> and <code>yay</code> to run updates with additional options.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ eos-update</span></span></code></pre></div><p>In practice, <code>eos-update --aur</code> and <code>eos-update</code> perform the same tasks as <code>yay</code> and <code>pacman -Syu</code>, but provide an added layer of options. Some options may require more advanced setup.</p>
+<p>Notably, running <code>eos-update</code> may be more helpful for users just needing a quick fix to the system, and/or for users who do not update the system frequently.</p>
+<hr>
+<p><strong><code>eos-update --help</code> output</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ eos-update --help
+</span></span><span style="display:flex;"><span>  eos-update is a package updater <span style="color:#66d9ef">for</span> EndeavourOS and Arch.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  eos-update is implemented as a wrapper around commands pacman and optionally yay/paru.
+</span></span><span style="display:flex;"><span>  Essentially runs commands <span style="color:#e6db74">&#39;pacman -Syu&#39;</span> and optionally <span style="color:#e6db74">&#39;yay -Sua&#39;</span> or <span style="color:#e6db74">&#39;paru -Sua&#39;</span>.
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>  eos-update includes <span style="color:#f92672">(</span>by default<span style="color:#f92672">)</span> special help in the following situations:
+</span></span><span style="display:flex;"><span>  - A dangling pacman db lock file <span style="color:#f92672">(</span>/var/lib/pacman/db.lck<span style="color:#f92672">)</span>.
+</span></span><span style="display:flex;"><span>  - Disk space availability <span style="color:#66d9ef">for</span> updates <span style="color:#f92672">(</span>with a configurable minimum space<span style="color:#f92672">)</span>.
+</span></span><span style="display:flex;"><span>  - Keyring package updating before updating other packages.
+</span></span><span style="display:flex;"><span>  - Running the <span style="color:#e6db74">&#39;sync&#39;</span> command after update. 
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>  Optional help: 
+</span></span><span style="display:flex;"><span>  - Can clear package databases in <span style="color:#66d9ef">case</span> of constant problems with them.
+</span></span><span style="display:flex;"><span>  - Can reset keyrings in <span style="color:#66d9ef">case</span> of constant problems with them.
+</span></span><span style="display:flex;"><span>  - Can check the validity of the locally configured lists of mirrors.
+</span></span><span style="display:flex;"><span>  - Updates AUR packages <span style="color:#f92672">(</span>with option --helper, see Usage below<span style="color:#f92672">)</span>.
+</span></span><span style="display:flex;"><span>  - Ad hoc check <span style="color:#66d9ef">for</span> Nvidia GPU driver vs. kernel updates <span style="color:#f92672">(</span>non-dkms only<span style="color:#f92672">)</span>.</span></span></code></pre></div></div>
+</div>
+<hr>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+<div>
+
+</div>
+
+<div>
+
+  <a class="flex align-center" href="https://github.com/redzhift/redzhift.github.io/edit/main/content/docs/system-maintenance/update-packages%20%28copy%201%29.md" target="_blank" rel="noopener edit">
+    <img src="/icons/edit.svg" class="book-icon" alt="Edit" />
+    <span>Edit this page</span>
+  </a>
+
+</div>
+
+</div>
+
+<div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/docs/user-config/install-new-theme-in-typora/" class="flex align-center">
+        <img src="/icons/backward.svg" class="book-icon" alt="Backward" />
+        <span>Install new theme in Typora</span>
+      </a>
+    
+    </span>
+    <span>
+    
+      <a href="/docs/system-maintenance/update-packages/" class="flex align-center">
+        <span>Update packages</span>
+        <img src="/icons/forward.svg" class="book-icon" alt="Forward" />
+      </a>
+    
+    </span>
+  </div>
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents"></nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -10,22 +10,20 @@ tags: ["docs","userguides","endeavourOS","linux","kernel"]
 images: []
 ---
 
----
+# Change default kernel
 
-{{< alert context="info" text="__Note__: This guide is for systems using the default `systemd-boot` UEFI boot manager in Endeavour OS." />}}
+> [!NOTE]\
+> This guide is for systems using the default `systemd-boot` UEFI boot manager in Endeavour OS.
 
-Your system can have multiple kernels (or versions) of Linux. The default kernel is usually set to the newest one, but can be adjusted to user preference.
+Your system can have multiple kernels (or versions) of Linux. The default kernel is usually the latest version, but can be adjusted to user preference.
 
 First, you need to identify and adjust the kernel `ids` used in the `boot loader` config file.
 
 ---
 
-### Find the kernel `id`
+## Find kernel `id` with `bootctl`
 
-{{< tabs tabTotal="2">}}
-{{% tab tabName="Use `bootctl` to view kernel info" %}}
-
-#### Find kernel `id` with `bootctl`
+{{% steps %}}
 
 1. Change to the root user with `sudo -s` and enter your password.
 
@@ -61,35 +59,28 @@ First, you need to identify and adjust the kernel `ids` used in the `boot loader
        ```
 
 4. Copy the `machine-id` of the kernel you want to set as the default.
-{{% /tab %}}
 
-{{% tab tabName="Use `cat` to view current default" %}}
+> [!INFO]\
+> You can also use `cat` to view the boot loader config file with a simpler output.
+>
+> Enter `sudo cat /efi/loader/loader.conf` to display the boot loader config and default `machine-id`.
+>  ```sh
+>   $ sudo cat /efi/loader/loader.conf
+>   default <your-machine-id>*  # kernel id
+>   timeout 20
+>   console-mode auto
 
-#### Use `cat` to view current boot config
-
-You can use `cat` to view the boot loader config file with a simpler output.
-
-1. Enter `sudo cat /efi/loader/loader.conf` to display the boot loader config.
-
-      ```sh
-       $ sudo cat /efi/loader/loader.conf
-       default <your-machine-id>*  # kernel id
-       timeout 20
-       console-mode auto
-       reboot-for-bitlocker 1
-
-2. Your current default `machine-id` is displayed. 
-
-{{% /tab %}}
-{{< /tabs >}}
+{{% /steps %}}
 
 ---
 
-### Edit boot loader config
+## Edit boot loader config
 
+{{% steps %}}
+
+1. Enter `nano /efi/loader/loader.conf` in the terminal to edit the boot loader config.\
+\
 ![Terminal window showing the loader.conf file being edited with GNU nano editor][nano-efi-loader]
-
-1. Enter `nano /efi/loader/loader.conf` in the terminal to edit the boot loader config.
 
 2. On the line containing `default`, replace the old `machine-id` with the updated `id`.
 
@@ -106,11 +97,15 @@ You can use `cat` to view the boot loader config file with a simpler output.
 
 5. Press `Ctrl+X` to finish editing, then press `Y` to save the updated config.
 
+{{% /steps %}}
+
 [nano-efi-loader]: /images/nano-efi-loader-conf.png
 
 ---
 
-### Verify and reboot
+## Verify and reboot
+
+{{% steps %}}
 
 1. Run `bootctl list` again to verify the desired kernel has `(default)` by the kernel title.
 
@@ -122,6 +117,8 @@ You can use `cat` to view the boot loader config file with a simpler output.
      ```
 
 2. `Reboot` the system to check that the correct kernel boots by default.
+
+{{% /steps %}}
 
 ---
 

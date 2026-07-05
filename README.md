@@ -1,4 +1,4 @@
-## Well met! 🛰️✨ 
+## Well met! 🛰️✨
 
 My name is Jin. \
 I'm currently working on polishing up my [Hugo site][hugo-site].

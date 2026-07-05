@@ -11,19 +11,27 @@ toc: true
 images: []
 ---
 
----
+# Downgrade with `eos-shifttime`
 
-{{< alert context="warning" text="Using `eos-shifttime` does not revert AUR packages. The downgrade only applies to official Arch packages from the archive repositories." />}}
+> [!WARNING]\
+>Using `eos-shifttime` does not revert AUR packages. The downgrade only applies to official Arch packages from the archive repositories.
 
 The `eos-shifttime` application can revert system packages to their state at a specified date. 
 
+
+{{% steps %}}
+
 1. Open a terminal window and run `eos-shifttime` with root permissions.
 
-2. Select the date to revert to on the GUI window, then click __Revert__.
+2. Select the date to revert to on the GUI window, then click __Revert__.\
+\
+![A GUI window for the `eos-shifttime` tool displaying a monthly calendar. The selected date is January 2, 2026.][eos-shifttime]
+
 
 3. __Reboot__ to apply the changes.
 
-![A GUI window for the `eos-shifttime` tool displaying a monthly calendar. The selected date is January 2, 2026.][eos-shifttime]
+
+{{% /steps %}}
 
 ---
 

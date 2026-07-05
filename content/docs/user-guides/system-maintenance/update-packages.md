@@ -10,10 +10,21 @@ tags: ["docs","userguides","endeavourOS","linux","pacman"]
 images: []
 ---
 
+# Update packages
+
 There are 3 commands used to update __Endeavour OS__ systems:
 
-{{< tabs tabTotal="3">}}
-{{% tab tabName="pacman -Syu" %}}
+- `pacman - Syu`
+- `yay`
+- `eos-update`
+
+> [!NOTE]\
+> Some commands require prepending `sudo` as they require `super user` (or root) permissions to run.
+>
+> However, `yay` and `eos-update` do not require `sudo`.
+
+
+## `pacman -Syu`
 
 `pacman` is the package manager used to install and update programs in Arch Linux. 
 
@@ -23,9 +34,7 @@ To perform a full system update and refresh, run:
 $ sudo pacman -Syu
 ```
 
-{{< alert context="info" text="Some commands require prepending `sudo` to them as they require `super user` (or root) permissions to run." />}}
-
-__Example terminal output__
+{{% details title="Example terminal output" open=false %}}
 
 ```sh
  [user@computer ~] $ sudo pacman -Syu
@@ -52,6 +61,7 @@ __Example terminal output__
                                      # enter Y to confirm
  :: Proceed with installation? [Y/n]       # n to cancel
 ```
+{{% /details %}}
 
 ---
 
@@ -64,14 +74,19 @@ __Other `pacman` options__
 | `-Ss <pkg>` | Searches for a specified package on the system. |
 | `-Qi <pkg>` | Retrieve a list of the dependencies a package needs to run. |
 
-See: [`pacman manpage`][pacman], [`pacman` wiki][pacman-wiki]
+---
+
+__Resources:__
+- [`pacman manpage`][pacman]
+- [`pacman` wiki][pacman-wiki]
 
 [pacman]: https://man.archlinux.org/man/pacman.8
 [pacman-wiki]: https://wiki.archlinux.org/title/Pacman
 [yay]: https://aur.archlinux.org/packages/yay
 
-{{% /tab %}}
-{{% tab tabName="yay" %}}
+---
+
+## `yay`
 
 `yay`, or "yet another yogurt", is an __AUR helper__. 
 
@@ -80,11 +95,10 @@ To update the system's native and AUR packages, run:
 $ yay
 ```
 
-Like `pacman`, `yay` performs package manager tasks to download, install, update, or remove AUR packages. 
-- It is recommended to run this command every 1 to 2 weeks.
-- Keep an eye out for any AUR-related news to make certain of package statuses.
+{{% steps %}}
 
----
+Like `pacman`, `yay` performs package manager tasks to download, install, update, or remove AUR packages. 
+    It is recommended to run this command every 1 to 2 weeks.
 
 The terminal lists packages available to upgrade and may ask for the user to select. Select the options for each one, or hit `ENTER` to apply default options:
 
@@ -93,7 +107,12 @@ The terminal lists packages available to upgrade and may ask for the user to sel
   3. If the Make dependencies should also be removed
   4. Etc.
 
-{{< alert context="info" text="The __Arch User Repository__, also known as __AUR__, is a large library of community user-produced packages for Arch Linux." />}}
+> [!INFO]\
+> The __Arch User Repository__, also known as __AUR__, is a large library of community user-produced packages for Arch Linux.
+>
+> Keep an eye out for any AUR-related news to make certain of package safety and stability.
+
+{{% /steps %}}
 
 
 See: `yay` [(AUR)][aur], [`yay` commands list][yay-commands], [Arch User Repository (AUR)][aur], [AUR helpers][aur-helpers]
@@ -102,8 +121,9 @@ See: `yay` [(AUR)][aur], [`yay` commands list][yay-commands], [Arch User Reposit
 [aur]: https://aur.archlinux.org/
 [aur-helpers]: https://wiki.archlinux.org/title/AUR_helpers
 
-{{% /tab %}}
-{{% tab tabName="eos-update" %}}
+---
+
+## `eos-update`
 
 __EndeavourOS__ provides an update script that utilizes `pacman` and `yay` to run updates with additional options.
 
@@ -117,7 +137,7 @@ Notably, running `eos-update` may be more helpful for users just needing a quick
 
 ---
 
-__`eos-update --help` output__
+{{% details title="Example terminal help output" open=false %}}
 ```sh
 $ eos-update --help
   eos-update is a package updater for EndeavourOS and Arch.
@@ -138,9 +158,7 @@ $ eos-update --help
   - Updates AUR packages (with option --helper, see Usage below).
   - Ad hoc check for Nvidia GPU driver vs. kernel updates (non-dkms only).
  ```
-
-{{% /tab %}}
-{{< /tabs >}}
+{{% /details %}}
 
 
 ---

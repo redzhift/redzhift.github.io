@@ -12,15 +12,16 @@ image: ""
 
 [rerank-eos]: /docs/user-guides/rerank-endeavouros-mirrors/
 
-__Mirrors__ are servers located around the world that store copies of software packages. When upgrading packages, your EndeavourOS system utilizes multiple mirrors, which are noted in a `mirrorlist`. 
+# Re-rank mirrors
 
-A well-maintained `mirrorlist` ensures the `pacman` package manager can access up-to-date package files when performing system updates. Outdated mirrors can prevent `pacman` from updating __core packages__.
+__Mirrors__ are servers located around the world that store copies of software packages. 
+
+When upgrading packages, your EndeavourOS system utilizes multiple mirrors, which are noted in a `mirrorlist`. Outdated mirrors can prevent `pacman` from updating __core packages__.
 
 ---
 
-
-{{< tabs tabTotal="3">}}
-{{% tab tabName="Re-rank Arch mirrors" %}}
+{{< tabs >}}
+{{% tab "Re-rank Arch mirrors" %}}
 
 Update the Arch `mirrorlist` by running:
 
@@ -28,11 +29,16 @@ Update the Arch `mirrorlist` by running:
 $ reflector-simple
 ```
 
+{{% details title="reflector-simple GUI tool" open=false %}}
+[reflector-1]: /images/reflector-simple-1.png
+![`reflector-simple` graphical tool showing options such as mirror location and ranking priority.][reflector-1]
+{{% /details %}}
+
+{{% steps %}}
+
 1. Adjust your preferences in the `reflector-simple` GUI tool. You can choose the number of mirrors to store in your mirrorlist, the country of origin, and ranks based on speed or age.
     -  By default, `reflector-simple` selects the __20 fastest__ mirrors based on your location.
 
-   [reflector-1]: /images/reflector-simple-1.png
-   ![`reflector-simple` graphical tool showing options such as mirror location and ranking priority.][reflector-1]
 
 2. Hit __OK__ to confirm the selection and run the process. It is normal to see warnings as `reflector` tests various mirrors for connectivity speed and age.
 
@@ -46,9 +52,16 @@ $ reflector-simple
     ```sh
     $ yay -Syyu
     ```
+    > [!DANGER]\
+    > Do not run `yay` with root permissions (`sudo`), or it may cause accidental (and potentially fatal) system changes. AUR helpers do not require root permissions to manage packages.
+{{% /steps %}}
+
+
+
 
 {{% /tab %}}
-{{% tab tabName="Re-rank EndeavourOS mirrors" %}}
+
+{{% tab "Re-rank EndeavourOS mirrors" %}}
 
 __Endeavour OS__ has its own distro-unique packages, which may be slightly modified versions of Arch packages.
 
@@ -57,6 +70,11 @@ Update the Endeavour OS `mirrorlist` with:
  ```sh
 $ eos-rankmirrors
  ```
+
+> [!INFO]\
+> The `eos-rankmirrors` process only shows terminal output (no GUI tool).
+
+{{% steps %}}
 
 1. The terminal may display errors/warnings as the system tests various mirrors for connectivity and speed. It may take a few minutes to find the requisite amount of mirrors.
 
@@ -71,18 +89,17 @@ $ eos-rankmirrors
     $ yay -Syyu
     ```
 
-If you do __NOT__ wish to make the  `mirrorlist` changes, __stop__ the terminal process. By default, this shortcut is bound to `Ctrl+C` in the terminal.
+3. If you do __NOT__ wish to make the  `mirrorlist` changes, __stop__ the terminal process. By default, this shortcut is bound to `Ctrl+C` in the terminal.
 
-{{< alert context="info" text="The `eos-rankmirrors` process only shows terminal output (no GUI tool)." />}}
+{{% /steps %}}
 
 {{% /tab %}}
-{{% tab tabName="Common issues" %}}
+{{% tab "Common issues" %}}
 
 __Common issues: outdated mirrors__
 
 When `pacman` receives a command to update packages and refresh the system, it attempts to connect to the package databases stored in mirrors. Outdated mirrors can prevent `pacman` from updating your system to the newest packages. 
 
-{{< table >}}
 | Error message | Probable cause | 
 |---------------|----------------|
 | `GPGME error: No data` | Files from the package database are outdated or corrupt | 
@@ -90,7 +107,6 @@ When `pacman` receives a command to update packages and refresh the system, it a
 | `The requested URL returned error: 404` | Mirror cannot be reached - most likely outdated and expired. | 
 | `failed to commit transaction` | Mirror cannot be reached, or package files are not available . | 
 | `too many errors from arch.mirror.mx` | Slow/unstable mirror connection (timed out) or network issues. |
-{{< /table >}}
 
 ---
 
@@ -102,15 +118,5 @@ See: __[Update packages guide][update-packages]__
 
 [update-packages]: /docs/user-guides/system-maintenance/update-packages
 
----
-
 {{% /tab %}}
 {{< /tabs >}}
-
-
-{{< alert context="danger" text="Do not run `yay` with root permissions (`sudo`), or it may cause accidental (and potentially fatal) system changes. AUR helpers do not require root permissions to manage packages." />}}
-
-
----
-
-

@@ -31,7 +31,14 @@ images: []
 [state-of-surv]: https://stateofsurveillance.org/news/
 <!-------------------------------------------->
 
+
+# Facial recognition software: the impact on 3 levels of privacy
+
 _Journalism article originally written in 2019 → edited June 2026._
+
+> [!NOTE]\
+> You can also directly view [the PDF version here](/pdfs/2019_facial-recognition-privacy.pdf).
+
 
 ## Introduction
 

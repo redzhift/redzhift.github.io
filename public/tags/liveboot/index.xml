@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Liveboot on Jin Y.C</title>
+		<title>Liveboot on Jin Y. Cho</title>
 		<link>http://localhost:1313/tags/liveboot/</link>
-		<description>Recent content in Liveboot on Jin Y.C</description>
+		<description>Recent content in Liveboot on Jin Y. Cho</description>
 		<generator>Hugo</generator>
-		<language>en-US</language>
+		<language>en</language>
 		
 		
 		
 		
-			<lastBuildDate>Thu, 25 Jun 2026 11:07:03 -0700</lastBuildDate>
+			<lastBuildDate>Tue, 23 Jun 2026 16:11:03 -0700</lastBuildDate>
 		
 			<atom:link href="http://localhost:1313/tags/liveboot/index.xml" rel="self" type="application/rss+xml" />
 			<item>
@@ -18,14 +18,14 @@
 				<link>http://localhost:1313/docs/installation-guide/create-ventoy-liveboot/</link>
 				<pubDate>Tue, 23 Jun 2026 16:10:55 -0700</pubDate>
 				<guid>http://localhost:1313/docs/installation-guide/create-ventoy-liveboot/</guid>
-				<description>&lt;h2 id=&#34;overview&#34;&gt;Overview &lt;a href=&#34;#overview&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;A &lt;strong&gt;liveboot USB&lt;/strong&gt; contains a full operating system, which lets you use &amp;rsquo;live session&amp;rsquo; without installing the OS first.&lt;/p&gt;&#xA;&lt;p&gt;A &lt;strong&gt;live session&lt;/strong&gt; is required to safely install Linux Mint.&lt;/p&gt;&#xA;&lt;div class=&#34;alert alert-success d-flex&#34; role=&#34;alert&#34;&gt;&#xA;  &lt;div class=&#34;flex-shrink-1 alert-icon&#34;&gt;&#xA;  &lt;span class=&#34;material-icons size-20 me-2&#34;&gt;&#xA;  check_circle&#xA;  &lt;/span&gt;&lt;/div&gt;&#xA;  &lt;div class=&#34;w-100&#34;&gt;&#xA;&lt;p&gt;In this guide, &lt;strong&gt;Ventoy&lt;/strong&gt; software is used for a more streamlined liveboot experience. This tools lets you select from &lt;strong&gt;multiple boot options&lt;/strong&gt;, so you can install multiple Linux distros to try out on one USB stick.&lt;/p&gt;</description>
+				<description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;a class=&#34;anchor&#34; href=&#34;#overview&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;strong&gt;liveboot USB&lt;/strong&gt; contains a full operating system, which lets you use &amp;rsquo;live session&amp;rsquo; without installing the OS first.&lt;/p&gt;&#xA;&lt;p&gt;A &lt;strong&gt;live session&lt;/strong&gt; is required to safely install Linux Mint.&lt;/p&gt;&#xA;&lt;blockquote class=&#39;book-hint success&#39;&gt;&#xA;&lt;p&gt;In this guide, &lt;strong&gt;Ventoy&lt;/strong&gt; software is used for a more streamlined liveboot experience. This tools lets you select from &lt;strong&gt;multiple boot options&lt;/strong&gt;, so you can install multiple Linux distros to try out on one USB stick.&lt;/p&gt;&#xA;&lt;p&gt;Details in this guide are specific to users running &lt;strong&gt;Windows OS&lt;/strong&gt;. For users on Linux or macOS, there is &lt;a href=&#34;ventoy-docs&#34;&gt;official Ventoy documentation&lt;/a&gt; available.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Install from live session</title>
 				<link>http://localhost:1313/docs/installation-guide/install-from-live-session/</link>
 				<pubDate>Tue, 23 Jun 2026 16:11:03 -0700</pubDate>
 				<guid>http://localhost:1313/docs/installation-guide/install-from-live-session/</guid>
-				<description>&lt;h2 id=&#34;overview&#34;&gt;Overview &lt;a href=&#34;#overview&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;With your &lt;strong&gt;liveboot USB&lt;/strong&gt; set up, you can prepare to boot into a &lt;strong&gt;live session&lt;/strong&gt; of Linux Mint.&lt;/p&gt;&#xA;&lt;p&gt;First, you need to set your computer system to recognize that it should boot from a different device at startup (your &lt;strong&gt;Ventoy&lt;/strong&gt; device). This option is changed in your computer’s &lt;code&gt;BIOS MENU&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&#xA;&lt;nav&gt;&#xA;&#x9;&lt;div class=&#34;nav nav-tabs&#34; id=&#34;nav-tab&#34; role=&#34;tablist&#34;&gt;&#xA;&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;&#xA;&#xA;&#x9;&#x9;&#xA;&#xA;&#x9;&#x9;&lt;a class=&#34;nav-link  active&#34;&#xA;&#x9;&#x9;   id=&#34;acfbdeTab&#34; data-bs-toggle=&#34;tab&#34; data-bs-target=&#34;#acfbde&#34;&#xA;&#x9;&#x9;   type=&#34;button&#34; role=&#34;tab&#34; aria-controls=&#34;acfbde&#34; aria-selected=&#34;true&#34;&gt;Disable secure boot in BIOS&lt;/a&gt;&#xA;&#xA;&#x9;&#x9;&#xA;&#xA;&#x9;&#x9;&lt;a class=&#34;nav-link &#34;&#xA;&#x9;&#x9;   id=&#34;fcdeabTab&#34; data-bs-toggle=&#34;tab&#34; data-bs-target=&#34;#fcdeab&#34;&#xA;&#x9;&#x9;   type=&#34;button&#34; role=&#34;tab&#34; aria-controls=&#34;fcdeab&#34; aria-selected=&#34;true&#34;&gt;Change default boot order&lt;/a&gt;&#xA;&#xA;&#x9;&#x9;&#xA;&#xA;&#x9;&lt;/div&gt;&#xA;&lt;/nav&gt;&#xA;&#xA;&lt;div class=&#34;tab-content&#34; id=&#34;nav-tab-content&#34;&gt;&#xA;&#xA;&#x9;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;tab-pane fade show active&#34; id=&#34;acfbde&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;nav-1&#34;&gt;&#xA;&#xA;&#x9;&lt;h2 id=&#34;disable-secure-boot-in-bios-menu&#34;&gt;Disable secure boot in &lt;code&gt;BIOS MENU&lt;/code&gt; &lt;a href=&#34;#disable-secure-boot-in-bios-menu&#34; class=&#34;anchor&#34; aria-hidden=&#34;true&#34;&gt;&lt;i class=&#34;material-icons align-middle&#34;&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Reboot your computer with the &lt;strong&gt;Ventoy USB&lt;/strong&gt; still inserted.&lt;/p&gt;</description>
+				<description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;a class=&#34;anchor&#34; href=&#34;#overview&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;With your &lt;strong&gt;liveboot USB&lt;/strong&gt; set up, you can prepare to boot into a &lt;strong&gt;live session&lt;/strong&gt; of Linux Mint.&lt;/p&gt;&#xA;&lt;p&gt;First, you need to set your computer system to recognize that it should boot from a different device at startup (your &lt;strong&gt;Ventoy&lt;/strong&gt; device). This option is changed in your computer’s &lt;code&gt;BIOS MENU&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;div class=&#34;book-tabs&#34; &gt;&#xA;&#xA;&lt;input type=&#34;radio&#34; class=&#34;toggle&#34; name=&#34;tabs-&amp;lt;nil&amp;gt;&#34; id=&#34;tabs-&amp;lt;nil&amp;gt;-0&#34; checked=&#34;checked&#34; /&gt;&lt;label for=&#34;tabs-&amp;lt;nil&amp;gt;-0&#34;&gt;&lt;/label&gt;&lt;div class=&#34;book-tabs-content markdown-inner&#34;&gt;&#xA;&lt;h2 id=&#34;disable-secure-boot-in-bios-menu&#34;&gt;Disable secure boot in &lt;code&gt;BIOS MENU&lt;/code&gt;&lt;a class=&#34;anchor&#34; href=&#34;#disable-secure-boot-in-bios-menu&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Reboot your computer with the &lt;strong&gt;Ventoy USB&lt;/strong&gt; still inserted.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Before the computer can fully boot, enter the &lt;code&gt;BIOS MENU&lt;/code&gt; by pressing the required special key.&lt;/p&gt;</description>
 			</item>
 	</channel>
 </rss>
