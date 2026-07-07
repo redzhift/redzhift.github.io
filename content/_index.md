@@ -2,7 +2,9 @@
 layout: blog
 ---
 
-# Well met! 🛰️✨
+# Portfolio
+
+## Well met! 🛰️✨
 
 I'm __Jin__, a technical writer and trainer with 5+ years experience developing:
 
@@ -19,18 +21,18 @@ With a background in research and journalism, I bring an analytical eye and read
 
 {{% columns %}}
 - ### User Guides {anchor=false}
-  How to maintain your Endeavour OS system in the Linux CLI.
+  How to maintain your Endeavour OS system using the Linux CLI.
   <div class="book-hero">
   {{<button href="/docs/user-guides">}}See the docs{{</button>}}  
   </div>
 
 - ### Research {anchor=false}
-  Mixed-methods game psychology research and a policy analysis.
+  Mixed-methods game psychology research and crime policy analysis.
   <div class="book-hero">
   {{<button href="/docs/research/game-psychology-research/">}}Learn more{{</button>}}  
   </div>
 
-- ### Journalism articles {anchor=false}
+- ### Journalism {anchor=false}
   On modern challenges of digital privacy and affordable housing.
   <div class="book-hero">
   {{<button href="/docs/articles/facial-recognition/">}}Read more{{</button>}}  

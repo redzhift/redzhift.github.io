@@ -25,7 +25,7 @@ With a background in research and journalism, I bring an analytical eye and read
   </div>
 
 - ### Research {anchor=false}
-  Mixed-methods game psychology research and a policy analysis.
+  Mixed-methods game psychology research and crime policy analysis.
   <div class="book-hero">
   {{<button href="/docs/research/game-psychology-research/">}}Learn more{{</button>}}  
   </div>

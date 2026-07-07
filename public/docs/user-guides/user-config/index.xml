@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>User tools &amp; settings on Jin Y. Cho</title>
-		<link>http://localhost:1313/docs/user-guides/user-config/</link>
+		<link>https://redzhift.github.io/docs/user-guides/user-config/</link>
 		<description>Recent content in User tools &amp; settings on Jin Y. Cho</description>
 		<generator>Hugo</generator>
 		<language>en</language>
@@ -12,27 +12,27 @@
 		
 			<lastBuildDate>Thu, 25 Jun 2026 10:37:17 -0700</lastBuildDate>
 		
-			<atom:link href="http://localhost:1313/docs/user-guides/user-config/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://redzhift.github.io/docs/user-guides/user-config/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Change default kernel</title>
-				<link>http://localhost:1313/docs/user-guides/user-config/change-default-kernel/</link>
+				<link>https://redzhift.github.io/docs/user-guides/user-config/change-default-kernel/</link>
 				<pubDate>Mon, 08 Jun 2026 16:58:36 -0700</pubDate>
-				<guid>http://localhost:1313/docs/user-guides/user-config/change-default-kernel/</guid>
+				<guid>https://redzhift.github.io/docs/user-guides/user-config/change-default-kernel/</guid>
 				<description>&lt;h1 id=&#34;change-default-kernel&#34;&gt;Change default kernel&lt;a class=&#34;anchor&#34; href=&#34;#change-default-kernel&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;blockquote class=&#39;book-hint note&#39;&gt;&#xA;&lt;p&gt;This guide is for systems using the default &lt;code&gt;systemd-boot&lt;/code&gt; UEFI boot manager in Endeavour OS.&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;Your system can have multiple kernels (or versions) of Linux. The default kernel is usually the latest version, but can be adjusted to user preference.&lt;/p&gt;&#xA;&lt;p&gt;First, you need to identify and adjust the kernel &lt;code&gt;ids&lt;/code&gt; used in the &lt;code&gt;boot loader&lt;/code&gt; config file.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;find-kernel-id-with-bootctl&#34;&gt;Find kernel &lt;code&gt;id&lt;/code&gt; with &lt;code&gt;bootctl&lt;/code&gt;&lt;a class=&#34;anchor&#34; href=&#34;#find-kernel-id-with-bootctl&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;div class=&#34;book-steps&#34; &gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Change to the root user with &lt;code&gt;sudo -s&lt;/code&gt; and enter your password.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Downgrade with eos-shifttime</title>
-				<link>http://localhost:1313/docs/user-guides/user-config/downgrade-to-specific-date/</link>
+				<link>https://redzhift.github.io/docs/user-guides/user-config/downgrade-to-specific-date/</link>
 				<pubDate>Wed, 13 May 2026 14:09:31 -0700</pubDate>
-				<guid>http://localhost:1313/docs/user-guides/user-config/downgrade-to-specific-date/</guid>
-				<description>&lt;h1 id=&#34;downgrade-with-eos-shifttime&#34;&gt;Downgrade with &lt;code&gt;eos-shifttime&lt;/code&gt;&lt;a class=&#34;anchor&#34; href=&#34;#downgrade-with-eos-shifttime&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;blockquote class=&#39;book-hint warning&#39;&gt;&#xA;&lt;p&gt;Using &lt;code&gt;eos-shifttime&lt;/code&gt; does not revert AUR packages. The downgrade only applies to official Arch packages from the archive repositories.&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;The &lt;code&gt;eos-shifttime&lt;/code&gt; application can revert system packages to their state at a specified date.&lt;/p&gt;&#xA;&lt;div class=&#34;book-steps&#34; &gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Open a terminal window and run &lt;code&gt;eos-shifttime&lt;/code&gt; with root permissions.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Select the date to revert to on the GUI window, then click &lt;strong&gt;Revert&lt;/strong&gt;.&lt;br&gt;&#xA;&lt;br&gt;&#xA;&lt;img src=&#34;http://localhost:1313/images/eos-shifttime.png&#34; alt=&#34;A GUI window for the eos-shifttime tool displaying a monthly calendar. The selected date is January 2, 2026.&#34; /&gt;&lt;/p&gt;</description>
+				<guid>https://redzhift.github.io/docs/user-guides/user-config/downgrade-to-specific-date/</guid>
+				<description>&lt;h1 id=&#34;downgrade-with-eos-shifttime&#34;&gt;Downgrade with &lt;code&gt;eos-shifttime&lt;/code&gt;&lt;a class=&#34;anchor&#34; href=&#34;#downgrade-with-eos-shifttime&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;blockquote class=&#39;book-hint warning&#39;&gt;&#xA;&lt;p&gt;Using &lt;code&gt;eos-shifttime&lt;/code&gt; does not revert AUR packages. The downgrade only applies to official Arch packages from the archive repositories.&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;The &lt;code&gt;eos-shifttime&lt;/code&gt; application can revert system packages to their state at a specified date.&lt;/p&gt;&#xA;&lt;div class=&#34;book-steps&#34; &gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Open a terminal window and run &lt;code&gt;eos-shifttime&lt;/code&gt; with root permissions.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Select the date to revert to on the GUI window, then click &lt;strong&gt;Revert&lt;/strong&gt;.&lt;br&gt;&#xA;&lt;br&gt;&#xA;&lt;img src=&#34;https://redzhift.github.io/images/eos-shifttime.png&#34; alt=&#34;A GUI window for the eos-shifttime tool displaying a monthly calendar. The selected date is January 2, 2026.&#34; /&gt;&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Install new theme in Typora</title>
-				<link>http://localhost:1313/docs/user-guides/user-config/install-new-theme-in-typora/</link>
+				<link>https://redzhift.github.io/docs/user-guides/user-config/install-new-theme-in-typora/</link>
 				<pubDate>Thu, 25 Jun 2026 10:37:17 -0700</pubDate>
-				<guid>http://localhost:1313/docs/user-guides/user-config/install-new-theme-in-typora/</guid>
-				<description>&lt;h1 id=&#34;install-new-theme-in-typora&#34;&gt;Install new theme in Typora&lt;a class=&#34;anchor&#34; href=&#34;#install-new-theme-in-typora&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;div class=&#34;book-steps&#34; &gt;&#xA;&lt;p&gt;&lt;strong&gt;Typora&lt;/strong&gt; is a minimalist text editor that renders markdown and code in real-time. The software comes with several default themes that can be applied through the &lt;strong&gt;Themes&lt;/strong&gt; option menu.&lt;/p&gt;&#xA;&lt;p&gt;First, find which custom theme you&amp;rsquo;d like to install from the &lt;a href=&#34;https://theme.typora.io/&#34;&gt;Typora themes page&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Download&lt;/strong&gt; the theme.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Open Typora&lt;/strong&gt; and navigate to the &lt;strong&gt;File &amp;gt; Preferences&lt;/strong&gt; menu. The keyboard shortcut is &lt;code&gt;Ctrl + comma&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/typora-1.png&#34; alt=&#34;The Appearance tab in the Preferences options menu&#34; /&gt;&lt;/p&gt;</description>
+				<guid>https://redzhift.github.io/docs/user-guides/user-config/install-new-theme-in-typora/</guid>
+				<description>&lt;h1 id=&#34;install-new-theme-in-typora&#34;&gt;Install new theme in Typora&lt;a class=&#34;anchor&#34; href=&#34;#install-new-theme-in-typora&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;div class=&#34;book-steps&#34; &gt;&#xA;&lt;p&gt;&lt;strong&gt;Typora&lt;/strong&gt; is a minimalist text editor that renders markdown and code in real-time. The software comes with several default themes that can be applied through the &lt;strong&gt;Themes&lt;/strong&gt; option menu.&lt;/p&gt;&#xA;&lt;p&gt;First, find which custom theme you&amp;rsquo;d like to install from the &lt;a href=&#34;https://theme.typora.io/&#34;&gt;Typora themes page&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Download&lt;/strong&gt; the theme.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Open Typora&lt;/strong&gt; and navigate to the &lt;strong&gt;File &amp;gt; Preferences&lt;/strong&gt; menu. The keyboard shortcut is &lt;code&gt;Ctrl + comma&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://redzhift.github.io/images/typora-1.png&#34; alt=&#34;The Appearance tab in the Preferences options menu&#34; /&gt;&lt;/p&gt;</description>
 			</item>
 	</channel>
 </rss>

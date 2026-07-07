@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Kernel on Jin Y. Cho</title>
-		<link>http://localhost:1313/tags/kernel/</link>
+		<link>https://redzhift.github.io/tags/kernel/</link>
 		<description>Recent content in Kernel on Jin Y. Cho</description>
 		<generator>Hugo</generator>
 		<language>en</language>
@@ -12,12 +12,12 @@
 		
 			<lastBuildDate>Tue, 22 Nov 2022 12:36:15 +0000</lastBuildDate>
 		
-			<atom:link href="http://localhost:1313/tags/kernel/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://redzhift.github.io/tags/kernel/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Change default kernel</title>
-				<link>http://localhost:1313/docs/user-guides/user-config/change-default-kernel/</link>
+				<link>https://redzhift.github.io/docs/user-guides/user-config/change-default-kernel/</link>
 				<pubDate>Mon, 08 Jun 2026 16:58:36 -0700</pubDate>
-				<guid>http://localhost:1313/docs/user-guides/user-config/change-default-kernel/</guid>
+				<guid>https://redzhift.github.io/docs/user-guides/user-config/change-default-kernel/</guid>
 				<description>&lt;h1 id=&#34;change-default-kernel&#34;&gt;Change default kernel&lt;a class=&#34;anchor&#34; href=&#34;#change-default-kernel&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;blockquote class=&#39;book-hint note&#39;&gt;&#xA;&lt;p&gt;This guide is for systems using the default &lt;code&gt;systemd-boot&lt;/code&gt; UEFI boot manager in Endeavour OS.&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;Your system can have multiple kernels (or versions) of Linux. The default kernel is usually the latest version, but can be adjusted to user preference.&lt;/p&gt;&#xA;&lt;p&gt;First, you need to identify and adjust the kernel &lt;code&gt;ids&lt;/code&gt; used in the &lt;code&gt;boot loader&lt;/code&gt; config file.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;find-kernel-id-with-bootctl&#34;&gt;Find kernel &lt;code&gt;id&lt;/code&gt; with &lt;code&gt;bootctl&lt;/code&gt;&lt;a class=&#34;anchor&#34; href=&#34;#find-kernel-id-with-bootctl&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;div class=&#34;book-steps&#34; &gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Change to the root user with &lt;code&gt;sudo -s&lt;/code&gt; and enter your password.&lt;/p&gt;</description>
 			</item>
 	</channel>
