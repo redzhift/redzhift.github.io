@@ -1,5 +1,6 @@
 baseURL = 'https://redzhift.github.io/'
 title = "Jin Y. Cho"
+description = "Technical Writer"
 theme = ["hugo-embed-pdf-shortcode","hugo-book"]
 enableInlineShortcodes = true
 
