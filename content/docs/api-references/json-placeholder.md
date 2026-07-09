@@ -287,14 +287,14 @@ curl -X POST $BASE_URL/posts \
 
 ```sh
 #!/bin/bash
-# batch-create-posts.sh
+# create-batch-user-posts.sh
 
 BASE_URL="http://localhost:3000"
 
 posts=(
-  '{"userId": 1, "title": "Post 1", "body": "Content 1"}'
-  '{"userId": 1, "title": "Post 2", "body": "Content 2"}'
-  '{"userId": 2, "title": "Post 3", "body": "Content 3"}'
+  '{"userId": 1, "title": "Lorem ipsum", "body": "dolor sit amet"}'
+  '{"userId": 3, "title": "consectetur adipiscing elit", "body": "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"}'
+  '{"userId": 7, "title": "Ut enim ad minim veniam", "body": "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}'
 )
 
 for post in "${posts[@]}"; do
