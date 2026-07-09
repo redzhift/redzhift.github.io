@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://redzhift.github.io/docs/api-references/json-placeholder/</loc>
+  </url><url>
+    <loc>https://redzhift.github.io/docs/api-references/json-placeholder-users/</loc>
+  </url><url>
+    <loc>https://redzhift.github.io/docs/api-references/</loc>
+  </url><url>
     <loc>https://redzhift.github.io/docs/user-guides/user-config/change-default-kernel/</loc>
     <lastmod>2022-11-22T12:36:15+00:00</lastmod>
   </url><url>

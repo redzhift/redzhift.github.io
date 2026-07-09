@@ -73,7 +73,7 @@ enableInlineShortcodes = true
     weight = 1
 
 [[menu.after]]
-    name = "redzhift@tuta.io"
+    name = "🖂 redzhift@tuta.io"
     url = "mailto:redzhift@tuta.io"
     weight = 1
 

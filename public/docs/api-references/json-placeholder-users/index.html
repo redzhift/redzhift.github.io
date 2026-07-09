@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="JSONPlaceholder API - Users# The users resource includes user account information, including:
+Name and address Contact information Company details To test endpoints from the command line, run:
+# Set base URL export BASE_URL=&#34;https://jsonplaceholder.typicode.com&#34; # Then test the connection curl $BASE_URL/ # Test endpoints curl $BASE_URL/&lt;resource&gt;/&lt;id&gt; Schema# interface User { # minimum data id: number name: string username: string email: string # full data address: { street: string suite: string city: string zipcode: string geo: { lat: string lng: string } } phone: string website: string company: { name: string catchPhrase: string bs: string } } Endpoints# Get all users# curl https://jsonplaceholder.typicode.com/users/Response:
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2e3440">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://redzhift.github.io/docs/api-references/json-placeholder-users/">
+	<meta property="og:site_name" content="Jin Y. Cho">
+	<meta property="og:title" content="Users">
+	<meta property="og:description" content="JSONPlaceholder API - Users# The users resource includes user account information, including:
+Name and address Contact information Company details To test endpoints from the command line, run:
+# Set base URL export BASE_URL=&#34;https://jsonplaceholder.typicode.com&#34; # Then test the connection curl $BASE_URL/ # Test endpoints curl $BASE_URL/&lt;resource&gt;/&lt;id&gt; Schema# interface User { # minimum data id: number name: string username: string email: string # full data address: { street: string suite: string city: string zipcode: string geo: { lat: string lng: string } } phone: string website: string company: { name: string catchPhrase: string bs: string } } Endpoints# Get all users# curl https://jsonplaceholder.typicode.com/users/Response:">
+	<meta property="og:locale" content="en">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="docs">
+
+
+	<meta itemprop="name" content="Users">
+	<meta itemprop="description" content="JSONPlaceholder API - Users# The users resource includes user account information, including:
+Name and address Contact information Company details To test endpoints from the command line, run:
+# Set base URL export BASE_URL=&#34;https://jsonplaceholder.typicode.com&#34; # Then test the connection curl $BASE_URL/ # Test endpoints curl $BASE_URL/&lt;resource&gt;/&lt;id&gt; Schema# interface User { # minimum data id: number name: string username: string email: string # full data address: { street: string suite: string city: string zipcode: string geo: { lat: string lng: string } } phone: string website: string company: { name: string catchPhrase: string bs: string } } Endpoints# Get all users# curl https://jsonplaceholder.typicode.com/users/Response:">
+	<meta itemprop="wordCount" content="972">
+
+<title>Users • Jin Y. Cho</title>
+<link rel="icon" href="/favicon.svg" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="https://redzhift.github.io/docs/api-references/json-placeholder-users/">
+<link rel="stylesheet" href="/book.min.98c83e4c8e1c8661368bcb29bbaf4dcc9d31b8164f76aae322d82d86a9750c65.css" integrity="sha256-mMg&#43;TI4chmE2i8spu69NzJ0xuBZPdqrjItgthql1DGU=" crossorigin="anonymous">
+
+
+  <script defer type="module" src="/en.search.min.187184d238152b9cf6cab0bf2dcb37c27df14fc2f34d9ca180d882e3d463acd9.js" integrity="sha256-GHGE0jgVK5z2yrC/Lcs3wn3xT8LzTZyhgNiC49RjrNk=" crossorigin="anonymous"></script>
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><img src="/logos/logo.png" alt="Logo" /><span>Jin Y. Cho</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Search"
+    aria-label="Search"
+    maxlength="64" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+<ul><li><a href="/">Home / About</a></li></ul>
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a7912812062bbff5cd008a06aa6f7358" class="toggle" checked />
+    <label for="section-a7912812062bbff5cd008a06aa6f7358" class="flex">
+      <a role="button" class="">
+        API Reference</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/api-references/json-placeholder/" class="">
+      JSONPlaceholder API Reference</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/api-references/json-placeholder-users/" class="active">
+      Users</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b088e6d46b9d18f31b1be6e56a9f2b00" class="toggle"  />
+    <label for="section-b088e6d46b9d18f31b1be6e56a9f2b00" class="flex">
+      <a href="/docs/user-guides/" class="">
+        User guides</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3830fe34a4298205d832095f0f9fb3d2" class="toggle"  />
+    <label for="section-3830fe34a4298205d832095f0f9fb3d2" class="flex">
+      <a role="button" class="">
+        User tools &amp; settings</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/user-guides/user-config/change-default-kernel/" class="">
+      Change default kernel</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/user-guides/user-config/downgrade-to-specific-date/" class="">
+      Downgrade with eos-shifttime</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/user-guides/user-config/install-new-theme-in-typora/" class="">
+      Install new theme in Typora</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1564a0cc4d6c2777d003b6dca996ecb6" class="toggle"  />
+    <label for="section-1564a0cc4d6c2777d003b6dca996ecb6" class="flex">
+      <a role="button" class="">
+        System maintenance</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/user-guides/system-maintenance/update-packages/" class="">
+      Update packages</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/user-guides/system-maintenance/rerank-mirrors/" class="">
+      Re-rank mirrors</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/user-guides/system-maintenance/faqs/" class="">
+      FAQs</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7271d61d91cd618f6bd94ef61864618d" class="toggle"  />
+    <label for="section-7271d61d91cd618f6bd94ef61864618d" class="flex">
+      <a role="button" class="">
+        Research</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/research/game-psychology-research/" class="">
+      Game psychology publication</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/research/crime-policy-analysis/" class="">
+      Crime policy analysis</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-694d57daf91c94508b4fd06129b48f67" class="toggle"  />
+    <label for="section-694d57daf91c94508b4fd06129b48f67" class="flex">
+      <a role="button" class="">
+        Articles</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/articles/facial-recognition/" class="">
+      Facial recognition software</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/articles/affordable-housing-crisis/" class="">
+      Boston&#39;s affordable housing crisis (2020)</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+<ul><li><a href="mailto:redzhift@tuta.io" target="_blank" rel="noopener">🖂 redzhift@tuta.io</a></li></ul>
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Users</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#schema">Schema</a></li>
+    <li><a href="#endpoints">Endpoints</a>
+      <ul>
+        <li><a href="#get-all-users">Get all users</a></li>
+        <li><a href="#get-single-user">Get single user</a></li>
+        <li><a href="#get-users-posts">Get user&rsquo;s posts</a></li>
+        <li><a href="#create-new-user-min-data">Create new user (min data)</a></li>
+        <li><a href="#create-new-user-all-data">Create new user (all data)</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="jsonplaceholder-api---users">JSONPlaceholder API - Users<a class="anchor" href="#jsonplaceholder-api---users">#</a></h1>
+<hr>
+<p>The <strong>users</strong> resource includes user account information, including:</p>
+<ul>
+<li>Name and address</li>
+<li>Contact information</li>
+<li>Company details</li>
+</ul>
+<p>To test endpoints from the command line, run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># Set base URL</span>
+</span></span><span style="display:flex;"><span>export BASE_URL<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://jsonplaceholder.typicode.com&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Then test the connection</span>
+</span></span><span style="display:flex;"><span>curl $BASE_URL/
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Test endpoints</span>
+</span></span><span style="display:flex;"><span>curl $BASE_URL/&lt;resource&gt;/&lt;id&gt;</span></span></code></pre></div><hr>
+<h2 id="schema">Schema<a class="anchor" href="#schema">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> interface User <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># minimum data</span>
+</span></span><span style="display:flex;"><span>        id: number
+</span></span><span style="display:flex;"><span>      name: string
+</span></span><span style="display:flex;"><span>  username: string
+</span></span><span style="display:flex;"><span>     email: string
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># full data</span>
+</span></span><span style="display:flex;"><span>   address: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      street: string
+</span></span><span style="display:flex;"><span>       suite: string
+</span></span><span style="display:flex;"><span>        city: string
+</span></span><span style="display:flex;"><span>     zipcode: string
+</span></span><span style="display:flex;"><span>         geo: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>            lat: string
+</span></span><span style="display:flex;"><span>            lng: string
+</span></span><span style="display:flex;"><span>         <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>     phone: string
+</span></span><span style="display:flex;"><span>   website: string
+</span></span><span style="display:flex;"><span>   company: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>            name: string
+</span></span><span style="display:flex;"><span>     catchPhrase: string
+</span></span><span style="display:flex;"><span>              bs: string
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span> <span style="color:#f92672">}</span></span></span></code></pre></div><hr>
+<h2 id="endpoints">Endpoints<a class="anchor" href="#endpoints">#</a></h2>
+<h3 id="get-all-users">Get all users<a class="anchor" href="#get-all-users">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>curl https://jsonplaceholder.typicode.com/users/</span></span></code></pre></div><p><strong>Response:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#f92672">[</span> 
+</span></span><span style="display:flex;"><span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;id&#34;</span>: 1,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Leanne Graham&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;username&#34;</span>: <span style="color:#e6db74">&#34;Bret&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;email&#34;</span>: <span style="color:#e6db74">&#34;Sincere@april.biz&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;address&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;street&#34;</span>: <span style="color:#e6db74">&#34;Kulas Light&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;suite&#34;</span>: <span style="color:#e6db74">&#34;Apt. 556&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;city&#34;</span>: <span style="color:#e6db74">&#34;Gwenborough&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;zipcode&#34;</span>: <span style="color:#e6db74">&#34;92998-3874&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;geo&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;lat&#34;</span>: <span style="color:#e6db74">&#34;-37.3159&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;lng&#34;</span>: <span style="color:#e6db74">&#34;81.1496&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;phone&#34;</span>: <span style="color:#e6db74">&#34;1-770-736-8031 x56442&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;website&#34;</span>: <span style="color:#e6db74">&#34;hildegard.org&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;company&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Romaguera-Crona&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;catchPhrase&#34;</span>: <span style="color:#e6db74">&#34;Multi-layered client-server neural-net&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;bs&#34;</span>: <span style="color:#e6db74">&#34;harness real-time e-markets&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span> <span style="color:#75715e"># 9 more users (total 10)</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">]</span></span></span></code></pre></div><details ><summary>Full 10 user response:</summary><div class="markdown-inner">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#f92672">[</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;id&#34;</span>: 1,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Leanne Graham&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;username&#34;</span>: <span style="color:#e6db74">&#34;Bret&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;email&#34;</span>: <span style="color:#e6db74">&#34;Sincere@april.biz&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;address&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;street&#34;</span>: <span style="color:#e6db74">&#34;Kulas Light&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;suite&#34;</span>: <span style="color:#e6db74">&#34;Apt. 556&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;city&#34;</span>: <span style="color:#e6db74">&#34;Gwenborough&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;zipcode&#34;</span>: <span style="color:#e6db74">&#34;92998-3874&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;geo&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;lat&#34;</span>: <span style="color:#e6db74">&#34;-37.3159&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;lng&#34;</span>: <span style="color:#e6db74">&#34;81.1496&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;phone&#34;</span>: <span style="color:#e6db74">&#34;1-770-736-8031 x56442&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;website&#34;</span>: <span style="color:#e6db74">&#34;hildegard.org&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;company&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Romaguera-Crona&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;catchPhrase&#34;</span>: <span style="color:#e6db74">&#34;Multi-layered client-server neural-net&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;bs&#34;</span>: <span style="color:#e6db74">&#34;harness real-time e-markets&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;id&#34;</span>: 2,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Ervin Howell&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;username&#34;</span>: <span style="color:#e6db74">&#34;Antonette&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;email&#34;</span>: <span style="color:#e6db74">&#34;Shanna@melissa.tv&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;address&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;street&#34;</span>: <span style="color:#e6db74">&#34;Victor Plains&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;suite&#34;</span>: <span style="color:#e6db74">&#34;Suite 879&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;city&#34;</span>: <span style="color:#e6db74">&#34;Wisokyburgh&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;zipcode&#34;</span>: <span style="color:#e6db74">&#34;90566-7771&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;geo&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;lat&#34;</span>: <span style="color:#e6db74">&#34;-43.9509&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;lng&#34;</span>: <span style="color:#e6db74">&#34;-34.4618&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;phone&#34;</span>: <span style="color:#e6db74">&#34;010-692-6593 x09125&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;website&#34;</span>: <span style="color:#e6db74">&#34;anastasia.net&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;company&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Deckow-Crist&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;catchPhrase&#34;</span>: <span style="color:#e6db74">&#34;Proactive didactic contingency&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;bs&#34;</span>: <span style="color:#e6db74">&#34;synergize scalable supply-chains&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;id&#34;</span>: 3,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Clementine Bauch&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;username&#34;</span>: <span style="color:#e6db74">&#34;Samantha&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;email&#34;</span>: <span style="color:#e6db74">&#34;Nathan@yesenia.net&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;address&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;street&#34;</span>: <span style="color:#e6db74">&#34;Douglas Extension&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;suite&#34;</span>: <span style="color:#e6db74">&#34;Suite 847&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;city&#34;</span>: <span style="color:#e6db74">&#34;McKenziehaven&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;zipcode&#34;</span>: <span style="color:#e6db74">&#34;59590-4157&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;geo&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;lat&#34;</span>: <span style="color:#e6db74">&#34;-68.6102&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;lng&#34;</span>: <span style="color:#e6db74">&#34;-47.0653&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;phone&#34;</span>: <span style="color:#e6db74">&#34;1-463-123-4447&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;website&#34;</span>: <span style="color:#e6db74">&#34;ramiro.info&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;company&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Romaguera-Jacobson&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;catchPhrase&#34;</span>: <span style="color:#e6db74">&#34;Face to face bifurcated interface&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;bs&#34;</span>: <span style="color:#e6db74">&#34;e-enable strategic applications&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;id&#34;</span>: 4,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Patricia Lebsack&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;username&#34;</span>: <span style="color:#e6db74">&#34;Karianne&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;email&#34;</span>: <span style="color:#e6db74">&#34;Julianne.OConner@kory.org&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;address&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;street&#34;</span>: <span style="color:#e6db74">&#34;Hoeger Mall&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;suite&#34;</span>: <span style="color:#e6db74">&#34;Apt. 692&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;city&#34;</span>: <span style="color:#e6db74">&#34;South Elvis&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;zipcode&#34;</span>: <span style="color:#e6db74">&#34;53919-4257&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;geo&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;lat&#34;</span>: <span style="color:#e6db74">&#34;29.4572&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;lng&#34;</span>: <span style="color:#e6db74">&#34;-164.2990&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;phone&#34;</span>: <span style="color:#e6db74">&#34;493-170-9623 x156&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;website&#34;</span>: <span style="color:#e6db74">&#34;kale.biz&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;company&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Robel-Corkery&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;catchPhrase&#34;</span>: <span style="color:#e6db74">&#34;Multi-tiered zero tolerance productivity&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;bs&#34;</span>: <span style="color:#e6db74">&#34;transition cutting-edge web services&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;id&#34;</span>: 5,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Chelsey Dietrich&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;username&#34;</span>: <span style="color:#e6db74">&#34;Kamren&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;email&#34;</span>: <span style="color:#e6db74">&#34;Lucio_Hettinger@annie.ca&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;address&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;street&#34;</span>: <span style="color:#e6db74">&#34;Skiles Walks&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;suite&#34;</span>: <span style="color:#e6db74">&#34;Suite 351&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;city&#34;</span>: <span style="color:#e6db74">&#34;Roscoeview&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;zipcode&#34;</span>: <span style="color:#e6db74">&#34;33263&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;geo&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;lat&#34;</span>: <span style="color:#e6db74">&#34;-31.8129&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;lng&#34;</span>: <span style="color:#e6db74">&#34;62.5342&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;phone&#34;</span>: <span style="color:#e6db74">&#34;(254)954-1289&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;website&#34;</span>: <span style="color:#e6db74">&#34;demarco.info&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;company&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Keebler LLC&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;catchPhrase&#34;</span>: <span style="color:#e6db74">&#34;User-centric fault-tolerant solution&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;bs&#34;</span>: <span style="color:#e6db74">&#34;revolutionize end-to-end systems&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;id&#34;</span>: 6,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Mrs. Dennis Schulist&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;username&#34;</span>: <span style="color:#e6db74">&#34;Leopoldo_Corkery&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;email&#34;</span>: <span style="color:#e6db74">&#34;Karley_Dach@jasper.info&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;address&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;street&#34;</span>: <span style="color:#e6db74">&#34;Norberto Crossing&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;suite&#34;</span>: <span style="color:#e6db74">&#34;Apt. 950&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;city&#34;</span>: <span style="color:#e6db74">&#34;South Christy&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;zipcode&#34;</span>: <span style="color:#e6db74">&#34;23505-1337&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;geo&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;lat&#34;</span>: <span style="color:#e6db74">&#34;-71.4197&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;lng&#34;</span>: <span style="color:#e6db74">&#34;71.7478&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;phone&#34;</span>: <span style="color:#e6db74">&#34;1-477-935-8478 x6430&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;website&#34;</span>: <span style="color:#e6db74">&#34;ola.org&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;company&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Considine-Lockman&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;catchPhrase&#34;</span>: <span style="color:#e6db74">&#34;Synchronised bottom-line interface&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;bs&#34;</span>: <span style="color:#e6db74">&#34;e-enable innovative applications&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;id&#34;</span>: 7,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Kurtis Weissnat&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;username&#34;</span>: <span style="color:#e6db74">&#34;Elwyn.Skiles&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;email&#34;</span>: <span style="color:#e6db74">&#34;Telly.Hoeger@billy.biz&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;address&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;street&#34;</span>: <span style="color:#e6db74">&#34;Rex Trail&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;suite&#34;</span>: <span style="color:#e6db74">&#34;Suite 280&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;city&#34;</span>: <span style="color:#e6db74">&#34;Howemouth&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;zipcode&#34;</span>: <span style="color:#e6db74">&#34;58804-1099&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;geo&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;lat&#34;</span>: <span style="color:#e6db74">&#34;24.8918&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;lng&#34;</span>: <span style="color:#e6db74">&#34;21.8984&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;phone&#34;</span>: <span style="color:#e6db74">&#34;210.067.6132&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;website&#34;</span>: <span style="color:#e6db74">&#34;elvis.io&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;company&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Johns Group&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;catchPhrase&#34;</span>: <span style="color:#e6db74">&#34;Configurable multimedia task-force&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;bs&#34;</span>: <span style="color:#e6db74">&#34;generate enterprise e-tailers&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;id&#34;</span>: 8,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Nicholas Runolfsdottir V&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;username&#34;</span>: <span style="color:#e6db74">&#34;Maxime_Nienow&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;email&#34;</span>: <span style="color:#e6db74">&#34;Sherwood@rosamond.me&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;address&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;street&#34;</span>: <span style="color:#e6db74">&#34;Ellsworth Summit&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;suite&#34;</span>: <span style="color:#e6db74">&#34;Suite 729&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;city&#34;</span>: <span style="color:#e6db74">&#34;Aliyaview&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;zipcode&#34;</span>: <span style="color:#e6db74">&#34;45169&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;geo&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;lat&#34;</span>: <span style="color:#e6db74">&#34;-14.3990&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;lng&#34;</span>: <span style="color:#e6db74">&#34;-120.7677&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;phone&#34;</span>: <span style="color:#e6db74">&#34;586.493.6943 x140&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;website&#34;</span>: <span style="color:#e6db74">&#34;jacynthe.com&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;company&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Abernathy Group&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;catchPhrase&#34;</span>: <span style="color:#e6db74">&#34;Implemented secondary concept&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;bs&#34;</span>: <span style="color:#e6db74">&#34;e-enable extensible e-tailers&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;id&#34;</span>: 9,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Glenna Reichert&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;username&#34;</span>: <span style="color:#e6db74">&#34;Delphine&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;email&#34;</span>: <span style="color:#e6db74">&#34;Chaim_McDermott@dana.io&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;address&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;street&#34;</span>: <span style="color:#e6db74">&#34;Dayna Park&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;suite&#34;</span>: <span style="color:#e6db74">&#34;Suite 449&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;city&#34;</span>: <span style="color:#e6db74">&#34;Bartholomebury&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;zipcode&#34;</span>: <span style="color:#e6db74">&#34;76495-3109&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;geo&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;lat&#34;</span>: <span style="color:#e6db74">&#34;24.6463&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;lng&#34;</span>: <span style="color:#e6db74">&#34;-168.8889&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;phone&#34;</span>: <span style="color:#e6db74">&#34;(775)976-6794 x41206&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;website&#34;</span>: <span style="color:#e6db74">&#34;conrad.com&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;company&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Yost and Sons&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;catchPhrase&#34;</span>: <span style="color:#e6db74">&#34;Switchable contextually-based project&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;bs&#34;</span>: <span style="color:#e6db74">&#34;aggregate real-time technologies&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;id&#34;</span>: 10,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Clementina DuBuque&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;username&#34;</span>: <span style="color:#e6db74">&#34;Moriah.Stanton&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;email&#34;</span>: <span style="color:#e6db74">&#34;Rey.Padberg@karina.biz&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;address&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;street&#34;</span>: <span style="color:#e6db74">&#34;Kattie Turnpike&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;suite&#34;</span>: <span style="color:#e6db74">&#34;Suite 198&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;city&#34;</span>: <span style="color:#e6db74">&#34;Lebsackbury&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;zipcode&#34;</span>: <span style="color:#e6db74">&#34;31428-2261&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;geo&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;lat&#34;</span>: <span style="color:#e6db74">&#34;-38.2386&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;lng&#34;</span>: <span style="color:#e6db74">&#34;57.2232&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;phone&#34;</span>: <span style="color:#e6db74">&#34;024-648-3804&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;website&#34;</span>: <span style="color:#e6db74">&#34;ambrose.net&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;company&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Hoeger LLC&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;catchPhrase&#34;</span>: <span style="color:#e6db74">&#34;Centralized empowering task-force&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;bs&#34;</span>: <span style="color:#e6db74">&#34;target end-to-end models&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">]</span></span></span></code></pre></div></div></details>
+<hr>
+<h3 id="get-single-user">Get single user<a class="anchor" href="#get-single-user">#</a></h3>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>id</code> - User ID (numbers 1 to 10)</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>curl $BASE_URL/&lt;id&gt;</span></span></code></pre></div><p><strong>Response:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  <span style="color:#75715e"># userId=7</span>
+</span></span><span style="display:flex;"><span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;id&#34;</span>: 7,
+</span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Kurtis Weissnat&#34;</span>,
+</span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;username&#34;</span>: <span style="color:#e6db74">&#34;Elwyn.Skiles&#34;</span>,
+</span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;email&#34;</span>: <span style="color:#e6db74">&#34;Telly.Hoeger@billy.biz&#34;</span>,
+</span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;address&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;street&#34;</span>: <span style="color:#e6db74">&#34;Rex Trail&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;suite&#34;</span>: <span style="color:#e6db74">&#34;Suite 280&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;city&#34;</span>: <span style="color:#e6db74">&#34;Howemouth&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;zipcode&#34;</span>: <span style="color:#e6db74">&#34;58804-1099&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;geo&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;lat&#34;</span>: <span style="color:#e6db74">&#34;24.8918&#34;</span>,
+</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;lng&#34;</span>: <span style="color:#e6db74">&#34;21.8984&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">}</span>,
+</span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;phone&#34;</span>: <span style="color:#e6db74">&#34;210.067.6132&#34;</span>,
+</span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;website&#34;</span>: <span style="color:#e6db74">&#34;elvis.io&#34;</span>,
+</span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;company&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Johns Group&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;catchPhrase&#34;</span>: <span style="color:#e6db74">&#34;Configurable multimedia task-force&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;bs&#34;</span>: <span style="color:#e6db74">&#34;generate enterprise e-tailers&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span></span></span></code></pre></div><h3 id="get-users-posts">Get user&rsquo;s posts<a class="anchor" href="#get-users-posts">#</a></h3>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li><code>id</code> - User ID (numbers 1 to 10)</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>curl $BASE_URL/&lt;id&gt;/posts</span></span></code></pre></div><p><strong>Response:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># userId=5</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;userId&#34;</span>: 5,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;id&#34;</span>: 41,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;title&#34;</span>: <span style="color:#e6db74">&#34;non est facere&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;body&#34;</span>: <span style="color:#e6db74">&#34;molestias id nostrum\nexcepturi molestiae dolore omnis repellendus quaerat saepe\nconsectetur iste quaerat tenetur asperiores accusamus ex ut\nnam quidem est ducimus sunt debitis saepe&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;userId&#34;</span>: 5,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;id&#34;</span>: 42,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;title&#34;</span>: <span style="color:#e6db74">&#34;commodi ullam sint et excepturi error explicabo praesentium voluptas&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;body&#34;</span>: <span style="color:#e6db74">&#34;odio fugit voluptatum ducimus earum autem est incidunt voluptatem\nodit reiciendis aliquam sunt sequi nulla dolorem\nnon facere repellendus voluptates quia\nratione harum vitae ut&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;userId&#34;</span>: 5,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;id&#34;</span>: 43,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;title&#34;</span>: <span style="color:#e6db74">&#34;eligendi iste nostrum consequuntur adipisci praesentium sit beatae perferendis&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;body&#34;</span>: <span style="color:#e6db74">&#34;similique fugit est\nillum et dolorum harum et voluptate eaque quidem\nexercitationem quos nam commodi possimus cum odio nihil nulla\ndolorum exercitationem magnam ex et a et distinctio debitis&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># 7 more posts</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">]</span></span></span></code></pre></div><h3 id="create-new-user-min-data">Create new user (min data)<a class="anchor" href="#create-new-user-min-data">#</a></h3>
+<p><strong>Request body:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>curl -X POST $BASE_URL/users <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  -H <span style="color:#e6db74">&#34;Content-Type: application/json&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  -d <span style="color:#e6db74">&#39;{
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;name&#34;: &#34;New User&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;username&#34;: &#34;newuser&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;email&#34;: &#34;user@example.com&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  }&#39;</span></span></span></code></pre></div><p><strong>Response</strong>:</p>
+<ul>
+<li><code>201 Created</code></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;id&#34;</span>: 20,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;New User&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;username&#34;</span>: <span style="color:#e6db74">&#34;newuser&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;email&#34;</span>: <span style="color:#e6db74">&#34;user@example.com&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></div><h3 id="create-new-user-all-data">Create new user (all data)<a class="anchor" href="#create-new-user-all-data">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># Create new user with all data points</span>
+</span></span><span style="display:flex;"><span>curl -X POST $BASE_URL/users <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  -H <span style="color:#e6db74">&#34;Content-Type: application/json&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  -d <span style="color:#e6db74">&#39;{
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;name&#34;: &#34;New User&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;username&#34;: &#34;newuser&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;email&#34;: &#34;user@example.com&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;address&#34;: {
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      &#34;street&#34;: &#34;1 Apple Wy&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      &#34;suite&#34;: &#34;Suite 365&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      &#34;city&#34;: &#34;New York&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      &#34;zipcode&#34;: &#34;10001&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      &#34;geo&#34;: {
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;lat&#34;: &#34;40.7128&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;lng&#34;: &#34;-74.0060&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      }
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    },
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;phone&#34;: &#34;1-110-101-0101&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;website&#34;: &#34;exampleuser.com&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;company&#34;: {
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      &#34;name&#34;: &#34;Acme Corp&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      &#34;catchPhrase&#34;: &#34;Innovative solutions for tomorrow&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      &#34;bs&#34;: &#34;synergize cutting-edge technologies&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    }
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  }&#39;</span></span></span></code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+<div>
+
+</div>
+
+<div>
+
+  <a class="flex align-center" href="https://github.com/redzhift/redzhift.github.io/edit/main/content/docs/api-references/json-placeholder-users.md" target="_blank" rel="noopener edit">
+    <img src="/icons/edit.svg" class="book-icon" alt="Edit" />
+    <span>Edit this page</span>
+  </a>
+
+</div>
+
+</div>
+
+<div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/docs/api-references/json-placeholder/" class="flex align-center">
+        <img src="/icons/backward.svg" class="book-icon" alt="Backward" />
+        <span>JSONPlaceholder API Reference</span>
+      </a>
+    
+    </span>
+    <span>
+    
+      <a href="/docs/user-guides/" class="flex align-center">
+        <span>User guides</span>
+        <img src="/icons/forward.svg" class="book-icon" alt="Forward" />
+      </a>
+    
+    </span>
+  </div>
+
+ 
+        
+  
+ 
+        
+        
+  
+ 
+        
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#schema">Schema</a></li>
+    <li><a href="#endpoints">Endpoints</a>
+      <ul>
+        <li><a href="#get-all-users">Get all users</a></li>
+        <li><a href="#get-single-user">Get single user</a></li>
+        <li><a href="#get-users-posts">Get user&rsquo;s posts</a></li>
+        <li><a href="#create-new-user-min-data">Create new user (min data)</a></li>
+        <li><a href="#create-new-user-all-data">Create new user (all data)</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

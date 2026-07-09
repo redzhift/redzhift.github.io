@@ -4,9 +4,11 @@ layout: blog
 
 # Portfolio
 
-## Well met! 🛰️✨
+---
 
-I'm __Jin__, a technical writer and trainer with 5+ years experience developing:
+## Intro
+
+Well met! 🛰️✨ I'm __Jin__, a technical writer and trainer with 5+ years experience developing:
 
 - Documentation strategy
 - Knowledge bases
@@ -15,25 +17,31 @@ I'm __Jin__, a technical writer and trainer with 5+ years experience developing:
 
 With a background in research and journalism, I bring an analytical eye and ready mindset to all I do. 
 
----
-
-## Docs
-
 {{% columns %}}
-- ### User Guides {anchor=false}
-  How to maintain your Endeavour OS system using the Linux CLI.
+- ## 📖 User Guides  {anchor=false}
+  How to maintain your Endeavour OS system using Linux CLI commands.
   <div class="book-hero">
   {{<button href="/docs/user-guides">}}See the docs{{</button>}}  
   </div>
 
-- ### Research {anchor=false}
+- ## { } API Reference {anchor=false}
+  JSONPlaceholder API reference and guide to command line testing with `cURL`.
+  <div class="book-hero">
+  {{<button href="/docs/api-references/json-placeholder">}}GET{{</button>}}  
+  </div>  
+
+
+{{% /columns %}}
+
+{{% columns %}}
+- ## 🔍 Research {anchor=false}
   Mixed-methods game psychology research and crime policy analysis.
   <div class="book-hero">
   {{<button href="/docs/research/game-psychology-research/">}}Learn more{{</button>}}  
   </div>
 
-- ### Journalism {anchor=false}
-  On modern challenges of digital privacy and affordable housing.
+- ## 📝 Journalism {anchor=false}
+  On modern-day challenges of digital privacy and affordable housing.
   <div class="book-hero">
   {{<button href="/docs/articles/facial-recognition/">}}Read more{{</button>}}  
   </div>
