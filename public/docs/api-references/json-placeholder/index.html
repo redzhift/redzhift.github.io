@@ -29,7 +29,7 @@ Base URL# # Public API (cURL) https://jsonplaceholder.typicode.com/To test endpo
 	<meta itemprop="description" content="JSONPlaceholder API Reference# JSONPlaceholder is a free, public RESTful API that supports standard HTTP methods and JSON responses.
 Built with Bun and Elysia.js 6 endpoint types Can be tested directly from the command line No authentication required This guide covers using cURL to test endpoints and references a different base URL. This removes the need for cloning the server’s repository for local testing.
 Base URL# # Public API (cURL) https://jsonplaceholder.typicode.com/To test endpoints from the command line, run:">
-	<meta itemprop="wordCount" content="599">
+	<meta itemprop="wordCount" content="608">
 
 <title>JSONPlaceholder API Reference • Jin Y. Cho</title>
 <link rel="icon" href="/favicon.svg" >
@@ -38,7 +38,7 @@ Base URL# # Public API (cURL) https://jsonplaceholder.typicode.com/To test endpo
 <link rel="stylesheet" href="/book.min.98c83e4c8e1c8661368bcb29bbaf4dcc9d31b8164f76aae322d82d86a9750c65.css" integrity="sha256-mMg&#43;TI4chmE2i8spu69NzJ0xuBZPdqrjItgthql1DGU=" crossorigin="anonymous">
 
 
-  <script defer type="module" src="/en.search.min.ddf2f7f8888373441c0243e33d481174d63cf35735914ebb4f84003557725724.js" integrity="sha256-3fL3&#43;IiDc0QcAkPjPUgRdNY881c1kU67T4QANVdyVyQ=" crossorigin="anonymous"></script>
+  <script defer type="module" src="/en.search.min.4449bb091669bfe90c020486bcb3d5bee54e8f80df4bfab5ffb178394470f52c.js" integrity="sha256-REm7CRZpv&#43;kMAgSGvLPVvuVOj4DfS/q1/7F4OURw9Sw=" crossorigin="anonymous"></script>
 
   
 </head>
@@ -453,7 +453,7 @@ Base URL# # Public API (cURL) https://jsonplaceholder.typicode.com/To test endpo
     <li><a href="#additional-curl-resources">Additional cURL resources</a>
       <ul>
         <li><a href="#error-handling-and-testing">Error handling and testing</a></li>
-        <li><a href="#create-user-batch-with-shell-script">Create user batch with shell script</a></li>
+        <li><a href="#create-batch-of-user-posts-with-shell-script">Create batch of user posts with shell script</a></li>
       </ul>
     </li>
   </ul>
@@ -740,7 +740,7 @@ Base URL# # Public API (cURL) https://jsonplaceholder.typicode.com/To test endpo
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># 400 - invalid JSON</span>
 </span></span><span style="display:flex;"><span>curl -X POST $BASE_URL/posts <span style="color:#ae81ff">\
 </span></span></span><span style="display:flex;"><span>  -H <span style="color:#e6db74">&#34;Content-Type: application/json&#34;</span> <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span>  -d <span style="color:#e6db74">&#39;{&#34;invalid&#34;: json}&#39;</span></span></span></code></pre></div><h3 id="create-user-batch-with-shell-script">Create user batch with shell script<a class="anchor" href="#create-user-batch-with-shell-script">#</a></h3>
+</span></span></span><span style="display:flex;"><span>  -d <span style="color:#e6db74">&#39;{&#34;invalid&#34;: json}&#39;</span></span></span></code></pre></div><h3 id="create-batch-of-user-posts-with-shell-script">Create batch of user posts with shell script<a class="anchor" href="#create-batch-of-user-posts-with-shell-script">#</a></h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"># create-batch-user-posts.sh</span>
 </span></span><span style="display:flex;"><span>
@@ -750,6 +750,7 @@ Base URL# # Public API (cURL) https://jsonplaceholder.typicode.com/To test endpo
 </span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#39;{&#34;userId&#34;: 1, &#34;title&#34;: &#34;Lorem ipsum&#34;, &#34;body&#34;: &#34;dolor sit amet&#34;}&#39;</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#39;{&#34;userId&#34;: 3, &#34;title&#34;: &#34;consectetur adipiscing elit&#34;, &#34;body&#34;: &#34;sed do eiusmod tempor incididunt ut labore et dolore magna aliqua&#34;}&#39;</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#39;{&#34;userId&#34;: 7, &#34;title&#34;: &#34;Ut enim ad minim veniam&#34;, &#34;body&#34;: &#34;quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&#34;}&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#39;{&#34;userId&#34;: 10, &#34;title&#34;: &#34;Etcetera&#34;, &#34;body&#34;: &#34;et. al&#34;}&#39;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">)</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> post in <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>posts[@]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>; <span style="color:#66d9ef">do</span>
@@ -839,7 +840,7 @@ Base URL# # Public API (cURL) https://jsonplaceholder.typicode.com/To test endpo
     <li><a href="#additional-curl-resources">Additional cURL resources</a>
       <ul>
         <li><a href="#error-handling-and-testing">Error handling and testing</a></li>
-        <li><a href="#create-user-batch-with-shell-script">Create user batch with shell script</a></li>
+        <li><a href="#create-batch-of-user-posts-with-shell-script">Create batch of user posts with shell script</a></li>
       </ul>
     </li>
   </ul>

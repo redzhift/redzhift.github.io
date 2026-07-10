@@ -9,7 +9,7 @@ https://github.com/alex-shpak/hugo-book
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="JSONPlaceholder API - Users# The users resource includes user account information, including:
-Name and address Contact information Company details To test endpoints from the command line, run:
+Name and address Contact information Company details Base URL# To test endpoints from the command line, run:
 # Set base URL export BASE_URL=&#34;https://jsonplaceholder.typicode.com&#34; # Then test the connection curl $BASE_URL/ # Test endpoints curl $BASE_URL/&lt;resource&gt;/&lt;id&gt; Schema# interface User { # minimum data id: number name: string username: string email: string # full data address: { street: string suite: string city: string zipcode: string geo: { lat: string lng: string } } phone: string website: string company: { name: string catchPhrase: string bs: string } } Endpoints# Get all users# curl https://jsonplaceholder.typicode.com/users/Response:
 ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
@@ -18,7 +18,7 @@ Name and address Contact information Company details To test endpoints from the 
 	<meta property="og:site_name" content="Jin Y. Cho">
 	<meta property="og:title" content="Users">
 	<meta property="og:description" content="JSONPlaceholder API - Users# The users resource includes user account information, including:
-Name and address Contact information Company details To test endpoints from the command line, run:
+Name and address Contact information Company details Base URL# To test endpoints from the command line, run:
 # Set base URL export BASE_URL=&#34;https://jsonplaceholder.typicode.com&#34; # Then test the connection curl $BASE_URL/ # Test endpoints curl $BASE_URL/&lt;resource&gt;/&lt;id&gt; Schema# interface User { # minimum data id: number name: string username: string email: string # full data address: { street: string suite: string city: string zipcode: string geo: { lat: string lng: string } } phone: string website: string company: { name: string catchPhrase: string bs: string } } Endpoints# Get all users# curl https://jsonplaceholder.typicode.com/users/Response:">
 	<meta property="og:locale" content="en">
 	<meta property="og:type" content="article">
@@ -27,9 +27,9 @@ Name and address Contact information Company details To test endpoints from the 
 
 	<meta itemprop="name" content="Users">
 	<meta itemprop="description" content="JSONPlaceholder API - Users# The users resource includes user account information, including:
-Name and address Contact information Company details To test endpoints from the command line, run:
+Name and address Contact information Company details Base URL# To test endpoints from the command line, run:
 # Set base URL export BASE_URL=&#34;https://jsonplaceholder.typicode.com&#34; # Then test the connection curl $BASE_URL/ # Test endpoints curl $BASE_URL/&lt;resource&gt;/&lt;id&gt; Schema# interface User { # minimum data id: number name: string username: string email: string # full data address: { street: string suite: string city: string zipcode: string geo: { lat: string lng: string } } phone: string website: string company: { name: string catchPhrase: string bs: string } } Endpoints# Get all users# curl https://jsonplaceholder.typicode.com/users/Response:">
-	<meta itemprop="wordCount" content="972">
+	<meta itemprop="wordCount" content="974">
 
 <title>Users • Jin Y. Cho</title>
 <link rel="icon" href="/favicon.svg" >
@@ -38,7 +38,7 @@ Name and address Contact information Company details To test endpoints from the 
 <link rel="stylesheet" href="/book.min.98c83e4c8e1c8661368bcb29bbaf4dcc9d31b8164f76aae322d82d86a9750c65.css" integrity="sha256-mMg&#43;TI4chmE2i8spu69NzJ0xuBZPdqrjItgthql1DGU=" crossorigin="anonymous">
 
 
-  <script defer type="module" src="/en.search.min.ddf2f7f8888373441c0243e33d481174d63cf35735914ebb4f84003557725724.js" integrity="sha256-3fL3&#43;IiDc0QcAkPjPUgRdNY881c1kU67T4QANVdyVyQ=" crossorigin="anonymous"></script>
+  <script defer type="module" src="/en.search.min.4449bb091669bfe90c020486bcb3d5bee54e8f80df4bfab5ffb178394470f52c.js" integrity="sha256-REm7CRZpv&#43;kMAgSGvLPVvuVOj4DfS/q1/7F4OURw9Sw=" crossorigin="anonymous"></script>
 
   
 </head>
@@ -440,6 +440,7 @@ Name and address Contact information Company details To test endpoints from the 
   
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#base-url">Base URL</a></li>
     <li><a href="#schema">Schema</a></li>
     <li><a href="#endpoints">Endpoints</a>
       <ul>
@@ -470,6 +471,7 @@ Name and address Contact information Company details To test endpoints from the 
 <li>Contact information</li>
 <li>Company details</li>
 </ul>
+<h2 id="base-url">Base URL<a class="anchor" href="#base-url">#</a></h2>
 <p>To test endpoints from the command line, run:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># Set base URL</span>
 </span></span><span style="display:flex;"><span>export BASE_URL<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://jsonplaceholder.typicode.com&#34;</span>
@@ -931,6 +933,7 @@ Name and address Contact information Company details To test endpoints from the 
   
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#base-url">Base URL</a></li>
     <li><a href="#schema">Schema</a></li>
     <li><a href="#endpoints">Endpoints</a>
       <ul>

@@ -20,6 +20,8 @@ The __users__ resource includes user account information, including:
 - Contact information
 - Company details
 
+## Base URL
+
 To test endpoints from the command line, run:
 ```sh
 # Set base URL

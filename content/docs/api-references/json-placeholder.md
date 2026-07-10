@@ -283,7 +283,7 @@ curl -X POST $BASE_URL/posts \
 
 ```
 
-### Create user batch with shell script
+### Create batch of user posts with shell script
 
 ```sh
 #!/bin/bash
@@ -295,6 +295,7 @@ posts=(
   '{"userId": 1, "title": "Lorem ipsum", "body": "dolor sit amet"}'
   '{"userId": 3, "title": "consectetur adipiscing elit", "body": "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"}'
   '{"userId": 7, "title": "Ut enim ad minim veniam", "body": "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}'
+  '{"userId": 10, "title": "Etcetera", "body": "et. al"}'
 )
 
 for post in "${posts[@]}"; do
