@@ -57,6 +57,9 @@ My portfolio showcases writing across structured technical documentation, invest
   {{<button href="https://redzhift.atlassian.net/wiki/spaces/~jcho/overview">}}Confluence{{</button>}} 
   </div>
 
+---
+
+_Built with Hugo. Last updated: July 2026_
 <!-- urls-->
 
 [confluence]: https://redzhift.atlassian.net/wiki/spaces/~jcho/overview/
