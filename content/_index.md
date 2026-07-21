@@ -15,7 +15,7 @@ Well met! 🛰️✨ I'm __Jin__, a technical writer and trainer with 5+ years e
 - User and software guides
 - Process documentation
 
-With a background in research and journalism, I bring an analytical eye and ready mindset to all I do. 
+My portfolio showcases writing across structured technical documentation, investigative pieces, and academic research. 
 
 {{% columns %}}
 - ## 📖 User Guides  {anchor=false}
@@ -25,12 +25,10 @@ With a background in research and journalism, I bring an analytical eye and read
   </div>
 
 - ## { } API Reference {anchor=false}
-  JSONPlaceholder API reference and guide to command line testing with `cURL`.
+  JSONPlaceholder API reference and sample guide to command line testing with `cURL`.
   <div class="book-hero">
   {{<button href="/docs/api-references/json-placeholder">}}GET{{</button>}}  
   </div>  
-
-
 {{% /columns %}}
 
 {{% columns %}}

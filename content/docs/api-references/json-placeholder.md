@@ -25,7 +25,7 @@ bookSearchExclude: false
 [json-repo]: https://github.com/ckissi/jsonplaceholder-api 
 
 > [!TIP]
-> This guide covers using `cURL` to test endpoints and references a different __base URL__. This removes the need for cloning the [server's repository](json-repo) for local testing. 
+> This sample API guide covers using `cURL` to test endpoints and references a different __base URL__. This removes the need for cloning the [server's repository](json-repo) for local testing. 
 
 ---
 
