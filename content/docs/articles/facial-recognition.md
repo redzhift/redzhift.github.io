@@ -112,7 +112,7 @@ As an immigrant native to Argentina, Falcón said that identities similar to his
 
 Currently, the non-profit organization is pushing the state government for a moratorium, a temporary prohibition, which would “press pause” on the usage of statewide technology throughout Massachusetts. 
 
-The __ACLUM__’s campaign is officially called “[Press Pause on Facial Surveillance][press-pause].”
+The __ACLUM__’s campaign is officially called “[Press Pause on Face Surveillance][press-pause].”
 
 ![Press Pause campaign poster from the ACLUM.][img-3]
 _Press Pause campaign poster from the [ACLUM][img-3-cred]._
