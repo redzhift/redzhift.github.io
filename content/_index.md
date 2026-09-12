@@ -59,7 +59,7 @@ My portfolio showcases writing across structured technical documentation, invest
 
 ---
 
-_Built with Hugo. Last updated: July 2026_
+_Built with Hugo. Last updated: Sept 2026_
 <!-- urls-->
 
 [confluence]: https://redzhift.atlassian.net/wiki/spaces/~jcho/overview/
