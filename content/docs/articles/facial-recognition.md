@@ -117,7 +117,7 @@ The __ACLUM__’s campaign is officially called “[Press Pause on Face Surveill
 ![Press Pause campaign poster from the ACLUM.][img-3]
 _Press Pause campaign poster from the [ACLUM][img-3-cred]._
 
-"Press Pause" is based around on two legislative bills:
+"Press Pause" is based on two legislative bills:
 > __Bill S.1385__
 >
 > - Focuses on establishing a moratorium on face recognition and other remote biometric surveillance systems. 
